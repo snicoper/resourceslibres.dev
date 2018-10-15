@@ -1,0 +1,41 @@
+// Font font-awesome.
+$fa-font-path: "../fonts/font-awesome" !default;
+
+// Font material-icons.
+$material-icons-font-path: "../fonts/material-icons/" !default;
+
+// Font Roboto.
+$roboto-font-path: '../fonts/roboto/';
+
+// Social colors.
+// https://designpieces.com/2012/12/social-media-colours-hex-and-rgb/
+$facebook-color: rgb(59, 89, 152) !default;
+$twitter-color: rgb(85, 172, 238) !default;
+$gplus-color: rgb(221, 75, 57) !default;
+$pinterest-color: rgb(203, 32, 39) !default;
+$linkedin-color: rgb(0, 123, 181) !default;
+
+//
+// Override Bootstrap.
+//
+
+// Fonts.
+$font-family-base: "Roboto", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif !default;
+
+// Colors.
+$body-color: #616161 !default;
+$brand-primary: #512da8 !default;
+$brand-secondary: lighten($brand-primary, 10%) !default;
+
+// Options.
+$enable-rounded: false !default;
+$enable-shadows: false !default;
+
+// Links.
+$link-hover-decoration: none !default;
+
+// tooltip
+$tooltip-bg: $brand-primary;
+$tooltip-color: #fff;
+$tooltip-padding-y: 0.5rem;
+$tooltip-padding-x: $tooltip-padding-y;

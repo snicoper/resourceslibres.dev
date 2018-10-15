@@ -1,0 +1,76 @@
+{# Lista de recursos pendientes de aprobación. #}
+{% extends "base.html" %}
+{% load read_tags %}
+
+{% block meta_description %}Lista de recursos leídos{% endblock meta_description %}
+{% block head_title %}- Lista de recursos leídos{% endblock head_title %}
+
+{% block page_title %}
+  <section class="jumbotron">
+    <section class="container">
+      <h1>Lista de recursos leídos</h1>
+    </section>
+  </section>
+{% endblock page_title %}
+
+{% block content %}
+  <section class="container">
+    <section class="row d-flex">
+      <div class="col-lg-3 flex-last flex-lg-first">
+        {% include "accounts/_sidenav.html" %}
+        {% sidenav_read_owner_tags_categories user %}
+      </div>
+
+      <div class="col-lg-9 mb-3">
+        {% if resource_list %}
+          {% for resource in resource_list %}
+            <div class="media mb-3">
+              <img class="d-flex mr-3 hidden-sm-down"
+                   src="{{ MEDIA_URL }}{{ resource.get_image }}"
+                   alt="{{ resource.title }}"
+                   width="120px"
+              >
+
+              <div class="media-body">
+                <a href="{% url 'resources:details' resource.slug %}">{{ resource.title }}</a>
+                <hr>
+
+                <ul class="list-unstyled">
+                  <li>
+                    <strong>Publicado:</strong>
+                    <a href="{% url 'accounts:profile_public' resource.owner.slug %}">
+                      {{ resource.owner }}
+                    </a>
+                  </li>
+                  <li><strong>Fecha publicación:</strong> {{ resource.create_at }}</li>
+                </ul>
+
+                <div class="bg-faded p-2 d-flex justify-content-start">
+                  <span class="mr-auto">
+                    {% for category in resource.categories.all %}
+                      <span class="badge badge-default">{{ category.title }}</span>
+                    {% endfor %}
+
+                    {% for tag in resource.tags.all %}
+                      <span class="badge badge-default">{{ tag.title }}</span>
+                    {% endfor %}
+                  </span>
+
+
+                  <span>
+                    <!-- recurso leído -->
+                    {% include "read/_resource_read_unread.html" with resource=resource %}
+                  </span>
+                </div>
+              </div>
+            </div>
+          {% endfor %}
+        {% else %}
+          <h5 class="text-center">No hay recursos para mostrar</h5>
+        {% endif %}
+      </div>
+    </section>
+
+    {% include "_pagination.html"  %}
+  </section>
+{% endblock content %}

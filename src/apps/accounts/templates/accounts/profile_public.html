@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+{% block meta_description %}Perfil de {{ profile.username }}{% endblock meta_description %}
+{% block head_title %}- Perfil de {{ profile.username }}{% endblock head_title %}
+
+{% block page_title %}
+  <section class="jumbotron">
+    <section class="container">
+      <h1>Perfil de {{ profile.username }}</h1>
+    </section>
+  </section>
+{% endblock page_title %}
+
+{% block content %}
+  <section class="container">
+    <section class="row">
+      <div class="col-lg-10 offset-lg-1">
+        <div class="text-center">
+          <img class="z-depth-1" src="{{ profile.get_avatar }}" alt="Avatar {{ profile.username }}">
+
+          {# Para poderle añadir votos, requiere de tener publicados recursos. #}
+          {# El mismo usuario no puede votarse #}
+          {% if profile.resource_owner.count and user != profile %}
+            <div class="text-center mt-3">
+              {% include "accounts/_buttons_karma.html" with user_karma=profile %}
+            </div>
+          {% endif %}
+        </div>
+
+        <div class="text-center mt-3">
+          {% if profile.resource_owner.count %}
+            <a class="btn btn-primary" href="{% url 'resources:public_user_list' profile.slug %}">
+              Ver recursos de {{ profile.username }}
+            </a>
+          {% else %}
+            {{ profile.username }} no ha publicado ningún recurso
+          {% endif %}
+        </div>
+      </div>
+    </section>
+  </section>
+{% endblock content %}

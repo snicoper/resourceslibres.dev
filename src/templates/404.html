@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% load staticfiles %}
+
+{% block meta_description %}{% trans "Error 404 - Pagina no encontrada" %}{% endblock meta_description %}
+{% block head_title %}{% trans "Error 404 - Pagina no encontrada" %}{% endblock head_title %}
+
+{% block content %}
+  <section class="row">
+    <div class="col s12 m10 offset-m1 center-align">
+      <h1 class="text-header">{% trans "Error 404 - Pagina no encontrada" %}</h1>
+
+      <img src="{% static 'dist/img/logo.png' %}" alt="logo">
+    </div>
+  </section>
+{% endblock content %}

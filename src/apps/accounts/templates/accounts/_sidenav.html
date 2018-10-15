@@ -1,0 +1,64 @@
+{% load accounts_tags %}
+{% load resources_tags %}
+
+{% if user.is_superuser %}
+  <div class="list-group mb-3">
+    <div class="list-group-item active">Administración</div>
+
+    <a class="list-group-item list-group-item-action justify-content-start" href="{% url 'resources:approve' %}">
+      <span><i class="material-icons">check_circle</i> Aprobar recursos</span>
+      {% get_num_approve_resources as aprove_resources %}
+      <span class="badge badge-pill badge-{% if aprove_resources %}success{% else %}default{% endif %} ml-auto">{{ aprove_resources }}</span>
+    </a>
+    <a class="list-group-item list-group-item-action justify-content-start" href="{% url 'resources:quick_list' %}">
+      <span><i class="material-icons">gesture</i> Recursos rápidos</span>
+      {% get_num_quick_resources as quick_resources %}
+      <span class="badge badge-pill badge-{% if quick_resources %}success{% else %}default{% endif %} ml-auto">{{ quick_resources }}</span>
+    </a>
+    <a class="list-group-item list-group-item-action justify-content-start" href="{% url 'resources:broken_links_superuser' %}">
+      <span><i class="material-icons">flag</i> Enlaces rotos (Global)</span>
+      {% get_num_broken_links_resources as broken_links %}
+      <span class="badge badge-pill badge-{% if broken_links > 0 %}success{% else %}default{% endif %} ml-auto">{{ broken_links }}</span>
+    </a>
+    <a class="list-group-item list-group-item-action justify-content-start" href="{% url 'resources:spam_links' %}">
+      <span><i class="material-icons">report</i> Spam</span>
+      {% get_num_spam_resources as spam_resources %}
+      <span class="badge badge-pill badge-{% if spam_resources %}success{% else %}default{% endif %} ml-auto">{{ spam_resources }}</span>
+    </a>
+    <a class="list-group-item list-group-item-action justify-content-start" href="{% url 'contact:list' %}">
+      <span><i class="material-icons">message</i> Lista de mensajes</span>
+      {% get_num_messages_unread as messages_unread %}
+      <span class="badge badge-pill badge-{% if messages_unread %}success{% else %}default{% endif %} ml-auto">{{ messages_unread }}</span>
+    </a>
+    <a class="list-group-item list-group-item-action justify-content-start" href="#">
+      <span><i class="material-icons">trending_up</i> Estadísticas</span>
+    </a>
+    <a class="list-group-item list-group-item-action justify-content-start" href="/admin/" target="_blank">
+      <span><i class="material-icons">supervisor_account</i> Admin</span>
+    </a>
+  </div>
+{% endif %}
+
+<div class="list-group mb-3">
+  <div class="list-group-item active">Menú</div>
+
+  <a class="list-group-item list-group-item-action justify-content-start" href="{% url 'accounts:profile' %}">
+    <span><i class="material-icons">person</i> Perfil</span>
+  </a>
+  <a class="list-group-item list-group-item-action justify-content-start" href="{% url 'favorites:list' %}">
+    <span><i class="material-icons">favorite</i> Favoritos</span>
+  </a>
+  <a class="list-group-item list-group-item-action justify-content-start" href="{% url 'read:list' %}">
+    <span><i class="material-icons">visibility</i> Leídos</span>
+  </a>
+  <a class="list-group-item list-group-item-action justify-content-start" href="{% url 'resources:private_user_list' user.slug %}">
+    <span><i class="material-icons">picture_in_picture</i> Mis recursos</span>
+  </a>
+  <a class="list-group-item list-group-item-action justify-content-start" href="{% url 'resources:broken_links_owner' %}">
+    <span><i class="material-icons">flag</i> Enlaces rotos</span>
+    {% get_num_resources_broken as resources_broken %}
+    <span class="badge badge-pill badge-{% if resources_broken %}success{% else %}default{% endif %} ml-auto">{{ resources_broken }}</span>
+  </a>
+</div>
+
+{% include "adsense/_adsense_sidenav.html" %}

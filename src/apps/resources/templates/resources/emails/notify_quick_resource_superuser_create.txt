@@ -1,0 +1,5 @@
+Se ha creado un nuevo recurso rápido en {{ site_name }}.
+
+{% if resource_message %}Ha añadido el siguiente mensaje:
+
+{{ resource_message }}{% endif %}

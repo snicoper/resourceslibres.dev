@@ -1,0 +1,119 @@
+<footer class="footer">
+  <section class="container">
+    <div class="row">
+      <div class="col-md-6 col-lg-4">
+        <ul class="list-unstyled links">
+          {# Todos los usuarios #}
+          <li>
+            <a href="{% url 'resources:create' %}">
+              <i class="material-icons">add</i> Añadir recurso
+            </a>
+          </li>
+
+          {# Usuarios logueados #}
+          {% if user.is_authenticated %}
+            <li>
+              <a href="{% url 'accounts:profile' %}">
+                <i class="material-icons">person</i> Mi cuenta
+              </a>
+            </li>
+            <li>
+              <a href="{% url 'favorites:list' %}">
+                <i class="material-icons">favorite</i> Favoritos
+              </a>
+            </li>
+            <li>
+              <a href="{% url 'read:list' %}">
+                <i class="material-icons">visibility</i> Leídos
+              </a>
+            </li>
+            <li>
+              <a href="{% url 'resources:private_user_list' user.slug %}">
+                <i class="material-icons">picture_in_picture</i> Mis recursos
+              </a>
+            </li>
+            <li>
+              <a href="{% url 'authentication:logout' %}">
+                <i class="material-icons">exit_to_app</i> Terminar sesión
+              </a>
+            </li>
+          {% else %}
+            {# Usuarios anónimos #}
+            <li>
+              <a href="{% url 'authentication:login' %}?next={{ request.get_full_path }}">
+                <i class="material-icons">person</i> Iniciar sesión
+              </a>
+            </li>
+            <li>
+              <a href="{% url 'authentication:register' %}">
+                <i class="material-icons">person_add</i> Registrar
+              </a>
+            </li>
+          {% endif %}
+        </ul>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <ul class="list-unstyled links">
+          <li>
+            <a href="{% url 'search:resources' %}">
+              <i class="material-icons">search</i> Buscar
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'contact:contact' %}">
+              <i class="material-icons">contact_mail</i> Contacta
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'feeds:list' %}">
+              <i class="material-icons">rss_feed</i> Feeds
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'pages:cookie_consent' %}">
+              <i class="material-icons">assignment</i> Politica de cookies
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'pages:terms' %}">
+              <i class="material-icons">assignment</i> Términos y condiciones
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        {% include "_paypal_donate_button.html" %}
+
+        <!-- Compartir con las redes -->
+        <section class="row mt-4">
+          <div class="col-12">
+            <div class="share-icons">
+              <a class="facebook" onclick="window.open('http://www.facebook.com/sharer/sharer.php?u={{ PROTOCOL }}{{ request.get_host }}&amp;title={{ SITE.name }}', '', 'width=500,height=300');">
+                <i class="fa fa-facebook-official" aria-hidden="true"></i>
+              </a>
+              <a class="gplus" onclick="window.open('https://plus.google.com/share?url={{ PROTOCOL }}{{ request.get_host }}', '', 'width=500,height=300');">
+                <i class="fa fa-google-plus-official" aria-hidden="true"></i>
+              </a>
+              <a class="twitter" onclick="window.open('http://twitter.com/intent/tweet?status={{ SITE.name }}+{{ PROTOCOL }}{{ request.get_host }}', '', 'width=500,height=300');">
+                <i class="fa fa-twitter-square" aria-hidden="true"></i>
+              </a>
+              <a class="twitter" onclick="window.open('http://www.linkedin.com/shareArticle?mini=true&amp;url={{ PROTOCOL }}{{ request.get_host }}&amp;title={{ SITE.name }}&amp;source={{ SITE.domain }}', '', 'width=500,height=300');">
+                <i class="fa fa-linkedin" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </section><!-- Compartir con las redes -->
+      </div>
+    </div>
+  </section>
+
+  <section class="row copy">
+    <div class="col-12">
+      <section class="container">
+        &copy; 2017-{% now "Y" %} {{ SITE.domain }} - Salvador Nicolas &lt;snicoper@gmail.com&gt;
+      </section>
+    </div>
+  </section>
+</footer>

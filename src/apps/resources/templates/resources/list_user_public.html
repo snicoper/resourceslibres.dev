@@ -1,0 +1,20 @@
+{# Lista publica de recursos de un usuario concreto. Igual que list.html pero con el contexto 'owner' #}
+{% extends "base.html" %}
+
+{% block meta_description %}Lista de recursos {{ owner.username }}{% endblock meta_description %}
+{% block head_title %}- Lista de recursos {{ owner.username }}{% endblock head_title %}
+
+{% block page_title %}
+  <section class="jumbotron">
+    <section class="container">
+      <h1>Lista de recursos de {{ owner.username }}</h1>
+    </section>
+  </section>
+{% endblock page_title %}
+
+{% block content %}
+  <section class="container">
+    {% include "resources/_resource_list.html" with resource_list=resource_list %}
+    {% include "_pagination.html" %}
+  </section>
+{% endblock content %}

@@ -1,0 +1,57 @@
+<div class="text-center">
+  <img class="img-fluid rounded z-depth-1"
+       src="{{ user.get_avatar }}"
+       alt="Avatar"
+       width="120px"
+  >
+
+  <p class="mt-3">
+    <a href="{% url 'accounts:avatar_update' %}" data-toggle="tooltip" title="Editar">
+      <i class="material-icons">mode_edit</i>
+    </a>
+  </p>
+</div>
+
+<table class="table">
+  <thead class="thead-default">
+    <tr>
+      <th colspan="2"><i class="material-icons">person</i> Información</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><i class="material-icons">person</i>Nombre de usuario</td>
+      <td class="text-value">{{ user.username }}</td>
+    </tr>
+    <tr>
+      <td><i class="material-icons">email</i>Email</td>
+      <td class="text-value">
+        {{ user.email }}
+        <a href="{% url 'authentication:email_update' %}" data-toggle="tooltip" title="Editar">
+          <i class="material-icons">mode_edit</i>
+        </a>
+      </td>
+    </tr>
+    <tr>
+      <td><i class="material-icons">enhanced_encryption</i>Contraseña</td>
+      <td class="text-value">
+        ************
+        <a href="{% url 'authentication:password_change' %}" data-toggle="tooltip" title="Editar">
+          <i class="material-icons">mode_edit</i>
+        </a>
+      </td>
+    </tr>
+    <tr>
+      <td><i class="material-icons text-success">thumb_up</i> Positivos</td>
+      <td class="text-value">
+        <span class="badge badge-success"><strong>{{ user.get_positives }}</strong></span>
+      </td>
+    </tr>
+    <tr>
+      <td><i class="material-icons text-danger">thumb_down</i> Negativos</td>
+      <td class="text-value">
+        <span class="badge badge-danger"><strong>{{ user.get_negatives }}</strong></span>
+      </td>
+    </tr>
+  </tbody>
+</table>

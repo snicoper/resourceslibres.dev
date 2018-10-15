@@ -1,0 +1,42 @@
+{% if user.is_authenticated %}
+  {% comment %}
+    Si no esta login, cuando le da al corazón, loguea y redirecciona a esta parte.
+    Se pone en la parte de logueado por que si no, no lo vería  pero se llama desde
+    el {% else %}
+  {% endcomment %}
+  <a id="fav"></a>
+  {% with request.user.favorites_user.resources.all as favorites_resource %}
+    <!-- Añade un resource como favorito -->
+    <i class="material-icons
+              {% if resource in favorites_resource %} hidden{% endif %}
+              text-muted
+              cursor-pointer
+              add-resource-favorite"
+       data-toggle="tooltip"
+       title="Añadir a favoritos"
+       data-resource-id="{{ resource.id }}"
+       data-url="{% url 'favorites:api_add' %}"
+       data-message-success="¡Favorito añadido con éxito!">favorite_border</i>
+    <!-- end Añade un resource como favorito -->
+
+    <!-- Elimina un resource como favorito -->
+    <i class="material-icons
+              {% if resource not in favorites_resource %} hidden{% endif %}
+              text-danger
+              cursor-pointer
+              remove-resource-favorite"
+       data-toggle="tooltip"
+       title="Eliminar de favoritos"
+       data-resource-id="{{ resource.id }}"
+       data-url="{% url 'favorites:api_remove' %}"
+       data-message-success="¡Favorito eliminado con éxito!">favorite</i>
+    <!-- end Elimina un resource como favorito -->
+  {% endwith %}
+{% else %}
+  {# Si no esta login, login primero y redirecciona de nuevo a esta pagina. #}
+  <a href="{% url 'authentication:login' %}?next={{ request.get_full_path }}#fav">
+    <i class="material-icons text-muted"
+       data-toggle="tooltip"
+       title="Añadir a favoritos, requiere iniciar sesión">favorite_border</i>
+  </a>
+{% endif %}

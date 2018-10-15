@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% load crispy_forms_tags %}
+
+{% block meta_description %}Recomendar recurso {{ resource.title }}{% endblock meta_description %}
+{% block head_title %}- Recomendar recurso {{ resource.title }}{% endblock head_title %}
+
+{% block page_title %}
+  <section class="jumbotron">
+    <section class="container">
+      <h1>Recomendar recurso</h1>
+      <hr>
+      <p class="lead">{{ resource.title }}</p>
+    </section>
+  </section>
+{% endblock page_title %}
+
+{% block content %}
+  <section class="container">
+    <section class="row">
+      <div class="col-lg-10 offset-lg-1">
+        <div class="text-center">
+          <img class="img-fluid" src="{{ MEDIA_URL }}/{{ resource.get_image }}" alt="{{ resource.title }}">
+        </div>
+
+        <form method="post" action="">
+          {% csrf_token %}
+          {{ form|crispy }}
+
+          <button class="btn btn-primary" type="submit">
+            Enviar
+            <i class="material-icons">send</i>
+          </button>
+          <a class="btn btn-success" href="{% url 'resources:details' resource.slug %}">Volver al recurso</a>
+        </form>
+      </div>
+    </section>
+  </section>
+{% endblock content %}

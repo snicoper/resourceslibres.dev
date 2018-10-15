@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="{% block meta_description %}{% endblock meta_description %}">
+  <meta name="keywords" content="programacion, lenguages, recursos, frameworks, diseño">
+  <meta name="author" content="Salvador Nicolas <snicoper@gmail.com>">
+  <!-- og properties -->
+  {% block og_properties %}{% endblock og_properties %}
+  <link rel="shortcut icon" href="{% static 'favicon.ico' %}">
+  <title>{{ SITE.name }} {% block head_title %}{% endblock head_title %}</title>
+  <!-- default css -->
+  {% if debug %}
+    <link href="{% static 'dist/css/main.css' %}" rel="stylesheet">
+  {% else %}
+    <link href="{% static 'dist/css/main.min.css' %}" rel="stylesheet">
+  {% endif %}
+
+  <!-- extras en header -->
+  {% block extra_heads %}{% endblock extra_heads %}
+
+  <!-- Google Analytics -->
+  {% if not debug %}
+    {% include "_google_analytics.html" %}
+  {% endif %}
+</head>
+<body>
+  <!-- header -->
+  {% block header %}
+    {% include "_header.html" %}
+  {% endblock header %}<!-- end header -->
+
+  <!-- content -->
+  <main>
+    <!-- Titulo de la pagina -->
+    {% block page_title %}{% endblock page_title %}
+
+    <!-- Bloque de anuncio -->
+    {% block main_addsense %}
+      {% include "adsense/_adsense_header.html" %}
+    {% endblock main_addsense %}
+
+    <div class="mt-4"></div>
+
+    <!-- Contenido principal -->
+    {% block content %}{% endblock content %}
+  </main><!-- end content -->
+
+  <!-- footer -->
+  {% block footer %}
+    {% include "_footer.html" %}
+  {% endblock footer %}<!-- end footer -->
+
+  <!-- Botón de subir, solo se muestra en resoluciones > tablets -->
+  <div class="to-top hidden-sm-down"></div>
+
+  <!-- cookieconsent -->
+  {% include "_cookieconsent.html" %}
+
+  <!-- default js -->
+  {% if debug %}
+    <script src="{% static 'dist/js/vendor.js' %}"></script>
+    <script src="{% static 'dist/js/main.js' %}"></script>
+  {% else %}
+    <script src="{% static 'dist/js/vendor.min.js' %}"></script>
+    <script src="{% static 'dist/js/main.min.js' %}"></script>
+  {% endif %}
+
+  <!-- mensajes -->
+  {% if messages %}
+    {% include "_messages.html" %}
+  {% endif %}
+
+  <!-- scripts -->
+  {% block scripts %}{% endblock scripts %}
+</body>
+</html>

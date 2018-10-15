@@ -1,0 +1,68 @@
+{# Lista de recursos publica. #}
+{% load utils_tags %}
+{% load resources_tags %}
+
+<section class="row d-flex">
+  <!-- block lateral -->
+  <div class="col-lg-3 flex-last flex-lg-first">
+    {# Si existe owner en el contexto, mostrar sidenav del owner. #}
+    {% if owner and resource_list %}
+      {% resources_public_owner_sidenav owner %}
+    {% else %}
+      {% resources_sidenav %}
+    {% endif %}
+
+    {% include "adsense/_adsense_sidenav.html" %}
+  </div><!-- end block lateral -->
+
+  <!-- main content -->
+  <div class="col-lg-9 mt-2">
+    <section class="row resource-list">
+      {% for resource in resource_list %}
+        <div class="col-lg-12 mb-4">
+          <div class="media">
+            <img class="d-flex mr-3 img-resource hidden-sm-down z-depth-1"
+                 src="{{ MEDIA_URL }}{{ resource.get_image }}"
+                 alt="{{ resource.title }}"
+            >
+
+            <div class="media-body">
+              <h5 class="mt-0">
+                <a class="media-title" href="{% url 'resources:details' resource.slug %}">{{ resource.title }}</a>
+              </h5>
+              <hr class="mt-1">
+
+              <div class="description">
+                {% markdown resource.description|truncatewords_html:50 safe=False %}
+              </div>
+
+              <div class="d-flex justify-content-right bg-faded px-2 pt-2 pb-1 media-footer">
+                <span>
+                  {% for category in resource.categories.all %}
+                    <a class="badge badge-default" href="{% url 'resources:list_by_category' category.slug %}">
+                      {{ category.title }}
+                    </a>
+                  {% endfor %}
+
+                  {% for tag in resource.tags.all %}
+                    <a class="badge badge-default" href="{% url 'resources:list_by_tag' tag.slug %}">
+                      {{ tag.title }}
+                    </a>
+                  {% endfor %}
+                </span>
+
+                <div class="ml-auto">
+                  {% include "resources/_rating_stars.html" with resource=resource readonly="1" %}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      {% empty %}
+        <div class="col-lg-12 mb-4">
+          <div class="text-center"><h5>No hay recursos para mostrar</h5></div>
+        </div>
+      {% endfor %}
+    </section>
+  </div><!-- end main content -->
+</section>

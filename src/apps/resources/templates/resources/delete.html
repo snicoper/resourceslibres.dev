@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+{% block meta_description %}Eliminar recurso {{ resource.title }}{% endblock meta_description %}
+{% block head_title %}- Eliminar recurso {{ resource.title }}{% endblock head_title %}
+
+{% block page_title %}
+  <section class="jumbotron">
+    <section class="container">
+      <h1>Eliminar recurso</h1>
+      <hr>
+      <p class="lead">{{ resource.title }}</p>
+    </section>
+  </section>
+{% endblock page_title %}
+
+{% block content %}
+  <section class="container">
+    <section class="row">
+      <div class="col-lg-10 offset-lg-1">
+        <p>¿Seguro que quiere eliminar <strong> {{ resource.title }}</strong>?</p>
+
+        {% if resource.image %}
+          <div class="center-align">
+            <img class="img-fluid" src="{{ MEDIA_URL }}{{ resource.get_image }}" alt="{{ resource.title }}">
+          </div>
+        {% endif %}
+
+        <form method="post" action="">
+          {% csrf_token %}
+
+          <button class="btn btn-danger" type="submit">Si, eliminar</button>
+          <a class="btn btn-primary" href="{% url 'resources:private_user_list' user.slug %}">
+            Cancelar
+          </a>
+        </form>
+      </div>
+    </section>
+  </section>
+{% endblock content %}

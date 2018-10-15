@@ -1,0 +1,9 @@
+Hola {{ user_name }},
+
+Te informamos que tu recurso {{ resource_title }} ha sido aprobado y publicado en {{ site_name }}.
+
+Puedes ver el recurso publicado dando al siguiente enlace.
+
+{{ resource_link }}
+
+Gracias, el equipo de {{ site_name }}

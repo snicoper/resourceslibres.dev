@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{# Meta descripción principal, esta es el home_page #}
+{% block meta_description %}Recursos gratuitos de programación y diseño, libros y videos{% endblock meta_description %}
+{% block head_title %}- Lista últimos recursos{% endblock head_title %}
+
+{% block content %}
+  <section class="container">
+    {% include "resources/_resource_list.html" with resource_list=resource_list %}
+    {% include "_pagination.html" %}
+  </section>
+
+  {# SEO, pero se oculta. Esta al final por que el espacio lo deja. #}
+  <h1 style="opacity: 0;">Lista últimos recursos</h1>
+{% endblock content %}

@@ -1,0 +1,4067 @@
+[
+{
+  "model": "resources.resourceformat",
+  "pk": 1,
+  "fields": {
+    "title": "Reading",
+    "image": "resources/formats/doc.png"
+  }
+},
+{
+  "model": "resources.resourceformat",
+  "pk": 2,
+  "fields": {
+    "title": "Video",
+    "image": "resources/formats/yt.png"
+  }
+},
+{
+  "model": "resources.category",
+  "pk": 1,
+  "fields": {
+    "title": "Design",
+    "slug": "design",
+    "image": "resources/categories/1488520923_Vectors_Art.png"
+  }
+},
+{
+  "model": "resources.category",
+  "pk": 2,
+  "fields": {
+    "title": "Development",
+    "slug": "developer",
+    "image": "resources/categories/1488520638_development.png"
+  }
+},
+{
+  "model": "resources.category",
+  "pk": 3,
+  "fields": {
+    "title": "Photography",
+    "slug": "photography",
+    "image": "resources/categories/1488734103_FEZ-05.png"
+  }
+},
+{
+  "model": "resources.category",
+  "pk": 4,
+  "fields": {
+    "title": "Video/Audio",
+    "slug": "videoaudio",
+    "image": "resources/categories/1488751118_Video-Camera-2.png"
+  }
+},
+{
+  "model": "resources.category",
+  "pk": 5,
+  "fields": {
+    "title": "Web",
+    "slug": "web",
+    "image": "resources/categories/www.png"
+  }
+},
+{
+  "model": "resources.category",
+  "pk": 6,
+  "fields": {
+    "title": "Software engineering",
+    "slug": "software-engineering",
+    "image": "resources/categories/servicing_icon.png"
+  }
+},
+{
+  "model": "resources.category",
+  "pk": 7,
+  "fields": {
+    "title": "Operating system",
+    "slug": "operating-system",
+    "image": "resources/categories/pc.png"
+  }
+},
+{
+  "model": "resources.category",
+  "pk": 8,
+  "fields": {
+    "title": "Software architecture",
+    "slug": "software-architecture",
+    "image": "resources/categories/1488733993_City.png"
+  }
+},
+{
+  "model": "resources.language",
+  "pk": 1,
+  "fields": {
+    "title": "Spanish",
+    "slug": "spanish",
+    "code": "es",
+    "flag": "resources/languages/Spain.png"
+  }
+},
+{
+  "model": "resources.language",
+  "pk": 2,
+  "fields": {
+    "title": "English",
+    "slug": "english",
+    "code": "en",
+    "flag": "resources/languages/United-Kingdom.png"
+  }
+},
+{
+  "model": "resources.language",
+  "pk": 3,
+  "fields": {
+    "title": "Multi Language",
+    "slug": "multi-language",
+    "code": "_multi",
+    "flag": "resources/languages/fotolia_flags.jpg"
+  }
+},
+{
+  "model": "resources.language",
+  "pk": 4,
+  "fields": {
+    "title": "Bulgarian",
+    "slug": "bulgarian",
+    "code": "bg",
+    "flag": "resources/languages/Bulgaria.png"
+  }
+},
+{
+  "model": "resources.language",
+  "pk": 5,
+  "fields": {
+    "title": "Portuguese",
+    "slug": "portuguese",
+    "code": "pt",
+    "flag": "resources/languages/Portugal.png"
+  }
+},
+{
+  "model": "resources.language",
+  "pk": 6,
+  "fields": {
+    "title": "Russian",
+    "slug": "russian",
+    "code": "ru",
+    "flag": "resources/languages/Russia.png"
+  }
+},
+{
+  "model": "resources.language",
+  "pk": 7,
+  "fields": {
+    "title": "French",
+    "slug": "french",
+    "code": "fr",
+    "flag": "resources/languages/France.png"
+  }
+},
+{
+  "model": "resources.tag",
+  "pk": 1,
+  "fields": {
+    "title": "Angular",
+    "slug": "angular",
+    "image": "resources/tags/angular_52I5dVX.png"
+  }
+},
+{
+  "model": "resources.tag",
+  "pk": 2,
+  "fields": {
+    "title": "C#",
+    "slug": "c",
+    "image": "resources/tags/csharp_BT4bRcU.png"
+  }
+},
+{
+  "model": "resources.tag",
+  "pk": 3,
+  "fields": {
+    "title": "Django",
+    "slug": "django",
+    "image": "resources/tags/django.png"
+  }
+},
+{
+  "model": "resources.tag",
+  "pk": 4,
+  "fields": {
+    "title": "DotNet",
+    "slug": "dotnet",
+    "image": "resources/tags/dotnet_1g2bUjc.png"
+  }
+},
+{
+  "model": "resources.tag",
+  "pk": 5,
+  "fields": {
+    "title": "PHP",
+    "slug": "php",
+    "image": "resources/tags/php.png"
+  }
+},
+{
+  "model": "resources.tag",
+  "pk": 6,
+  "fields": {
+    "title": "Python",
+    "slug": "python",
+    "image": "resources/tags/python_2dM3gE4.png"
+  }
+},
+{
+  "model": "resources.tag",
+  "pk": 7,
+  "fields": {
+    "title": "Javascript",
+    "slug": "javascript",
+    "image": "resources/tags/js.png"
+  }
+},
+{
+  "model": "resources.tag",
+  "pk": 8,
+  "fields": {
+    "title": "Bootstrap",
+    "slug": "bootstrap",
+    "image": "resources/tags/boostrap.png"
+  }
+},
+{
+  "model": "resources.tag",
+  "pk": 9,
+  "fields": {
+    "title": "CSS",
+    "slug": "css",
+    "image": "resources/tags/css3.png"
+  }
+},
+{
+  "model": "resources.tag",
+  "pk": 10,
+  "fields": {
+    "title": "Foundation",
+    "slug": "foundation",
+    "image": "resources/tags/foundation.png"
+  }
+},
+{
+  "model": "resources.tag",
+  "pk": 11,
+  "fields": {
+    "title": "Git",
+    "slug": "git",
+    "image": "resources/tags/git_ticOS4h.png"
+  }
+},
+{
+  "model": "resources.tag",
+  "pk": 12,
+  "fields": {
+    "title": "Grunt",
+    "slug": "grunt",
+    "image": "resources/tags/grunt.png"
+  }
+},
+{
+  "model": "resources.tag",
+  "pk": 13,
+  "fields": {
+    "title": "Gulp",
+    "slug": "gulp",
+    "image": "resources/tags/gulp.png"
+  }
+},
+{
+  "model": "resources.tag",
+  "pk": 14,
+  "fields": {
+    "title": "HTML",
+    "slug": "html",
+    "image": "resources/tags/html5_CiVge1Y.png"
+  }
+},
+{
+  "model": "resources.tag",
+  "pk": 15,
+  "fields": {
+    "title": "jQuery",
+    "slug": "jquery",
+    "image": "resources/tags/jquery_aCw2d9d.png"
+  }
+},
+{
+  "model": "resources.tag",
+  "pk": 16,
+  "fields": {
+    "title": "Less",
+    "slug": "less",
+    "image": "resources/tags/less.png"
+  }
+},
+{
+  "model": "resources.tag",
+  "pk": 17,
+  "fields": {
+    "title": "MaterializeCSS",
+    "slug": "materializecss",
+    "image": "resources/tags/materializecss.png"
+  }
+},
+{
+  "model": "resources.tag",
+  "pk": 18,
+  "fields": {
+    "title": "Nodejs",
+    "slug": "nodejs",
+    "image": "resources/tags/nodejs_ch46BON.png"
+  }
+},
+{
+  "model": "resources.tag",
+  "pk": 19,
+  "fields": {
+    "title": "Ruby",
+    "slug": "ruby",
+    "image": "resources/tags/ruby_CPwSqxO.png"
+  }
+},
+{
+  "model": "resources.tag",
+  "pk": 20,
+  "fields": {
+    "title": "Ruby on Rails",
+    "slug": "ruby-on-rails",
+    "image": "resources/tags/rubyonrails.png"
+  }
+},
+{
+  "model": "resources.tag",
+  "pk": 22,
+  "fields": {
+    "title": "MongoDB",
+    "slug": "mongodb",
+    "image": "resources/tags/mongodb_w55RFiY.png"
+  }
+},
+{
+  "model": "resources.tag",
+  "pk": 23,
+  "fields": {
+    "title": "Database",
+    "slug": "database",
+    "image": "resources/tags/database.png"
+  }
+},
+{
+  "model": "resources.tag",
+  "pk": 24,
+  "fields": {
+    "title": "CoffeeScript",
+    "slug": "coffeescript",
+    "image": "resources/tags/Coffeescript.png"
+  }
+},
+{
+  "model": "resources.tag",
+  "pk": 25,
+  "fields": {
+    "title": "Webpack",
+    "slug": "webpack",
+    "image": "resources/tags/webpack.png"
+  }
+},
+{
+  "model": "resources.tag",
+  "pk": 26,
+  "fields": {
+    "title": "ReactJS",
+    "slug": "reactjs",
+    "image": "resources/tags/reactjs.png"
+  }
+},
+{
+  "model": "resources.tag",
+  "pk": 27,
+  "fields": {
+    "title": "D3.js",
+    "slug": "d3js",
+    "image": "resources/tags/d3js.png"
+  }
+},
+{
+  "model": "resources.tag",
+  "pk": 28,
+  "fields": {
+    "title": "Backbone.js",
+    "slug": "backbonejs",
+    "image": "resources/tags/Backbone.js.png"
+  }
+},
+{
+  "model": "resources.tag",
+  "pk": 29,
+  "fields": {
+    "title": "UML",
+    "slug": "uml",
+    "image": "resources/tags/uml.png"
+  }
+},
+{
+  "model": "resources.tag",
+  "pk": 31,
+  "fields": {
+    "title": "SASS",
+    "slug": "sass",
+    "image": "resources/tags/sass_go6A4Qv.png"
+  }
+},
+{
+  "model": "resources.tag",
+  "pk": 32,
+  "fields": {
+    "title": "Go",
+    "slug": "golang",
+    "image": "resources/tags/golang.png"
+  }
+},
+{
+  "model": "resources.tag",
+  "pk": 33,
+  "fields": {
+    "title": "Flask",
+    "slug": "flask",
+    "image": "resources/tags/Flask-logo.png"
+  }
+},
+{
+  "model": "resources.tag",
+  "pk": 34,
+  "fields": {
+    "title": "GIMP",
+    "slug": "gimp",
+    "image": "resources/tags/GIMP-icon.png"
+  }
+},
+{
+  "model": "resources.tag",
+  "pk": 35,
+  "fields": {
+    "title": "Vue.js",
+    "slug": "vuejs",
+    "image": "resources/tags/vuejs.png"
+  }
+},
+{
+  "model": "resources.tag",
+  "pk": 36,
+  "fields": {
+    "title": "Laravel",
+    "slug": "laravel",
+    "image": "resources/tags/laravel.png"
+  }
+},
+{
+  "model": "resources.tag",
+  "pk": 37,
+  "fields": {
+    "title": "Java",
+    "slug": "java",
+    "image": "resources/tags/java_XsArYFa.png"
+  }
+},
+{
+  "model": "resources.tag",
+  "pk": 38,
+  "fields": {
+    "title": "Gnu/Linux",
+    "slug": "gnulinux",
+    "image": "resources/tags/linux.png"
+  }
+},
+{
+  "model": "resources.tag",
+  "pk": 39,
+  "fields": {
+    "title": "WEB2PY",
+    "slug": "web2py",
+    "image": "resources/tags/web2py_logo.png"
+  }
+},
+{
+  "model": "resources.tag",
+  "pk": 40,
+  "fields": {
+    "title": "DotNet Core",
+    "slug": "dotnetcore",
+    "image": "resources/tags/dotnetcore.png"
+  }
+},
+{
+  "model": "resources.tag",
+  "pk": 41,
+  "fields": {
+    "title": "F#",
+    "slug": "fsharp",
+    "image": "resources/tags/fsharp.png"
+  }
+},
+{
+  "model": "resources.tag",
+  "pk": 42,
+  "fields": {
+    "title": "Visual Basic",
+    "slug": "visual-basic",
+    "image": "resources/tags/vb.png"
+  }
+},
+{
+  "model": "resources.resource",
+  "pk": 1,
+  "fields": {
+    "title": "Mozilla Complete Django Development Guide | MDN",
+    "slug": "mozilla-complete-django-development-guide-mdn",
+    "owner": 1,
+    "main_tag": 3,
+    "resource_format": 1,
+    "link": "https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django",
+    "image": "",
+    "description": "Django is an extremely popular and fully featured server-side web framework, written in Python. The module shows you why Django is one of the most popular web server frameworks, how to set up a development environment, and how to get started with using it to create your own web applications.\r\n\r\n## Prerequisites\r\n\r\nBefore starting this module you don't need to have any knowledge of Django. You will need to understand what server-side web programming and web frameworks are, ideally by reading the topics in our Server-side website programming first steps module.\r\n\r\nA general knowledge of programming concepts and Python is recommended, but not essential to understanding the core concepts.",
+    "views": 1,
+    "clicks": 0,
+    "marked_broken": 0,
+    "marked_spam": 0,
+    "active": true,
+    "create_at": "2017-03-01T10:59:39.716Z",
+    "update_at": "2017-03-01T10:59:39.716Z",
+    "categories": [
+      2,
+      5
+    ],
+    "tags": [
+      3,
+      6
+    ],
+    "languages": [
+      2
+    ]
+  }
+},
+{
+  "model": "resources.resource",
+  "pk": 2,
+  "fields": {
+    "title": "Hello Web App",
+    "slug": "hello-web-app",
+    "owner": 1,
+    "main_tag": 3,
+    "resource_format": 1,
+    "link": "https://hellowebapp.com/tutorial/intro/",
+    "image": "resources/resources/hello_web_app.png",
+    "description": "**Learn how to code your first web app and get on the path to building your next side project, your lifestyle business, or your startup.**\r\n\r\nWritten by a designer and aimed at non-programmers, Hello Web App teaches the basics of web app programming using Python and Django. The tutorial uses down-to-earth, friendly, and jargon-free writing to walk you through choosing a project, setting up a database, creating your website, building features, and launching your app so you can start working with real customers and users.\r\n\r\nSimply the easiest way to get started building your own dynamic websites.\r\n\r\n**Table of Contents**\r\n\r\n* Chapter 1: What We\u2019re Building\r\n* Chapter 2: Prerequisites\r\n* Chapter 3: Getting Started\r\n* Chapter 4: Setting Up Your Templates\r\n* Chapter 5: Fun With Template Tags\r\n* Chapter 6: Adding Dynamic Data\r\n* Chapter 7: Displaying Dynamic Information in the Templates\r\n* Chapter 8: Setting Up Individual Object Pages\r\n* Chapter 9: Forms.py Funsies\r\n* Chapter 10: Adding a Registration Page\r\n* Chapter 11: Setting Up Basic Browse Pages\r\n* Chapter 12: Quick Hits: 404 Pages, requirements.txt, and Testing\r\n* Chapter 13: Deploying Your Web App\r\n* Chapter 14: What To Do If Your App Is Broken\r\n* Chapter 15: Important Things to Know\r\n* Chapter 16: Moving Forward",
+    "views": 1,
+    "clicks": 1,
+    "marked_broken": 0,
+    "marked_spam": 0,
+    "active": true,
+    "create_at": "2017-03-01T11:01:32.017Z",
+    "update_at": "2017-03-03T18:50:01.686Z",
+    "categories": [
+      2,
+      5
+    ],
+    "tags": [
+      3,
+      6
+    ],
+    "languages": [
+      2
+    ]
+  }
+},
+{
+  "model": "resources.resource",
+  "pk": 3,
+  "fields": {
+    "title": "Mastering Django: Core",
+    "slug": "mastering-django-core",
+    "owner": 1,
+    "main_tag": 3,
+    "resource_format": 1,
+    "link": "http://djangobook.com/",
+    "image": "resources/resources/Mastering_Django_Core.jpg",
+    "description": "Want a book on the Django web framework that doesn't leave anything out?\r\n\r\nOne you know comes from an authoritative source that you can trust to give you the good stuff?\r\n\r\nWell how about a book that was originally created by the creators of Django!\r\n\r\nYep, that's right - the original Django Book was written by none other than Adrian Holovaty and Jacob Kaplan-Moss - the seriously cool dudes who created Django.\r\n\r\nOf course, the original book got a bit outdated and Jacob and Adrian moved on to bigger and better things, so the book has been in desperate need of an update for about 6 years.\r\n\r\nMastering Django: Core is that update - rewritten from the ground up to support the newest long term support (LTS) version of Django (Version 1.8 if you were wondering).\r\n\r\nMastering Django: Core delivers absolutely everything you will ever need to know to become a master Django programmer:\r\n\r\n* Detailed installation instructions for Python and Django to get you up and running fast.\r\n* Starts at an absolute beginners level and builds your skills to mastery\r\n* Written in an easy, conversational style. Jargon and new concepts are introduced in plain language to increase your understanding quickly.\r\n* Answers all of the most common questions asked by new Django programmers.\r\n* Leaves nothing out - every part of the Django core is covered.\r\n* Covers the long-term support version of Django which means your skills will be up to date for many years.",
+    "views": 1,
+    "clicks": 1,
+    "marked_broken": 0,
+    "marked_spam": 0,
+    "active": true,
+    "create_at": "2017-03-01T11:02:35.142Z",
+    "update_at": "2017-03-05T04:28:59.116Z",
+    "categories": [
+      2,
+      5
+    ],
+    "tags": [
+      3,
+      6
+    ],
+    "languages": [
+      2
+    ]
+  }
+},
+{
+  "model": "resources.resource",
+  "pk": 4,
+  "fields": {
+    "title": "C# Yellow Book",
+    "slug": "c-yellow-book",
+    "owner": 1,
+    "main_tag": 2,
+    "resource_format": 1,
+    "link": "http://www.csharpcourse.com/",
+    "image": "resources/resources/csharp_yellow_book.png",
+    "description": "The C# Yellow Book is used by the Department of Computer Science in the University of Hull as the basis of their First Year programming course.",
+    "views": 3,
+    "clicks": 1,
+    "marked_broken": 0,
+    "marked_spam": 0,
+    "active": true,
+    "create_at": "2017-03-01T11:03:53.171Z",
+    "update_at": "2017-03-03T18:46:13.122Z",
+    "categories": [
+      2
+    ],
+    "tags": [
+      2,
+      4
+    ],
+    "languages": [
+      2
+    ]
+  }
+},
+{
+  "model": "resources.resource",
+  "pk": 5,
+  "fields": {
+    "title": "Test-Driven Development with Python",
+    "slug": "test-driven-development-with-python",
+    "owner": 1,
+    "main_tag": 3,
+    "resource_format": 1,
+    "link": "http://chimera.labs.oreilly.com/books/1234000000754",
+    "image": "resources/resources/final_cover.jpg",
+    "description": "Test-Driven Development with Python focuses on web development, with some coverage of JavaScript (inescapable for any web programmer). This book uses a concrete example\u2014the development of a website, from scratch\u2014to teach the TDD metholology, and how it applies to web programming, from the basics of database integration and javascript, going via browser-automation tools like Selenium, to advanced (and trendy) topics like NoSQL, websockets and Async programming.",
+    "views": 1,
+    "clicks": 1,
+    "marked_broken": 0,
+    "marked_spam": 0,
+    "active": true,
+    "create_at": "2017-03-01T11:06:25.325Z",
+    "update_at": "2017-03-07T03:35:23.819Z",
+    "categories": [
+      2,
+      5
+    ],
+    "tags": [
+      3,
+      6
+    ],
+    "languages": [
+      2
+    ]
+  }
+},
+{
+  "model": "resources.resource",
+  "pk": 6,
+  "fields": {
+    "title": "Tango With Django",
+    "slug": "tango-with-django",
+    "owner": 1,
+    "main_tag": 3,
+    "resource_format": 1,
+    "link": "http://www.tangowithdjango.com/",
+    "image": "resources/resources/twd-cover-crop.jpg",
+    "description": "**Tango With Django** is a begginner's guide to Web Development using the popular Python Based Web Framework Django. The book provides a hands-on guide to designing and building web applications, explaining how all the technology fits together as you build Rango and then deploying the application on PythonAnywhere. Through the course of the book, you will not only learn how to Tango with Django, but also learn about Javascript/Jquery, CSS/Bootstrap and HTML, PIP and Git/GitHub.",
+    "views": 1,
+    "clicks": 1,
+    "marked_broken": 0,
+    "marked_spam": 0,
+    "active": true,
+    "create_at": "2017-03-01T11:19:34.686Z",
+    "update_at": "2017-03-05T04:28:31.116Z",
+    "categories": [
+      2,
+      5
+    ],
+    "tags": [
+      3,
+      6
+    ],
+    "languages": [
+      2
+    ]
+  }
+},
+{
+  "model": "resources.resource",
+  "pk": 7,
+  "fields": {
+    "title": "Django Girls Tutorial",
+    "slug": "django-girls-tutorial",
+    "owner": 1,
+    "main_tag": 3,
+    "resource_format": 1,
+    "link": "https://www.gitbook.com/book/djangogirls/djangogirls-tutorial/details",
+    "image": "resources/resources/django-girls.png",
+    "description": "## Welcome\r\n\r\nWelcome to the Django Girls Tutorial! We are happy to see you here :) In this tutorial, we will take you on a journey under the hood of web technologies, offering you a glimpse of all the bits and pieces that need to come together to make the web work as we know it.\r\n\r\nAs with all unknown things, this is going to be an adventure - but no worries, since you already worked up the courage to be here, you'll be just fine :)\r\n\r\n## Introduction\r\n\r\nHave you ever felt that the world is more and more about technology to which you cannot (yet) relate? Have you ever wondered how to create a website but have never had enough motivation to start? Have you ever thought that the software world is too complicated for you to even try doing something on your own?\r\n\r\nWell, we have good news for you! Programming is not as hard as it seems and we want to show you how fun it can be.\r\n\r\nThis tutorial will not magically turn you into a programmer. If you want to be good at it, you need months or even years of learning and practice. But we want to show you that programming or creating websites is not as complicated as it seems. We will try to explain different bits and pieces as well as we can, so you will not feel intimidated by technology.\r\n\r\nWe hope that we'll be able to make you love technology as much as we do!",
+    "views": 1,
+    "clicks": 1,
+    "marked_broken": 0,
+    "marked_spam": 0,
+    "active": true,
+    "create_at": "2017-03-01T11:44:55.625Z",
+    "update_at": "2017-03-05T04:29:09.295Z",
+    "categories": [
+      2,
+      5
+    ],
+    "tags": [
+      3,
+      6
+    ],
+    "languages": [
+      3
+    ]
+  }
+},
+{
+  "model": "resources.resource",
+  "pk": 8,
+  "fields": {
+    "title": "TaskBuster Django Tutorial",
+    "slug": "taskbuster-django-tutorial",
+    "owner": 1,
+    "main_tag": 3,
+    "resource_format": 1,
+    "link": "http://www.marinamele.com/taskbuster-django-tutorial",
+    "image": "resources/resources/django_tutorial_pet-296x300.jpg",
+    "description": "I am really excited to present this **Django tutorial**, made with **Django 1.8** and **Python 3**.\r\n\r\nIn this tutorial, I will show you how to **create a Django Project from scratch**.\r\n\r\nI will focus in a simple Task manager project, but the idea is that you can follow this tutorial while building your own project.\r\n\r\nSpecially during the first posts. And you will be able to download a Django Project Boilerplate too! \ud83d\ude42\r\n\r\nHowever, **this is not a common Django tutorial**.\r\n\r\n**It is much better:** it is like a **check list to create a complex Django project**.\r\n\r\nYou will learn about security issues, different environments for developing and testing, version control repositories, deployment on Heroku, PostgreSQL configuration, and many more things!\r\n\r\nMoreover, while building the TaskBuster project, I\u2019ll try to cover as many Django **Best Practices** as I can.\r\n\r\nEnjoy, and learn as much as you can! \ud83d\ude42",
+    "views": 3,
+    "clicks": 3,
+    "marked_broken": 0,
+    "marked_spam": 0,
+    "active": true,
+    "create_at": "2017-03-01T14:53:12.685Z",
+    "update_at": "2017-03-07T08:55:38.037Z",
+    "categories": [
+      2,
+      5
+    ],
+    "tags": [
+      3,
+      6
+    ],
+    "languages": [
+      2
+    ]
+  }
+},
+{
+  "model": "resources.resource",
+  "pk": 9,
+  "fields": {
+    "title": "Eloquent JavaScript 2nd Edition",
+    "slug": "eloquent-javascript-2nd-edition",
+    "owner": 1,
+    "main_tag": 7,
+    "resource_format": 1,
+    "link": "http://eloquentjavascript.net/",
+    "image": "resources/resources/Eloquent_JavaScript.png",
+    "description": "JavaScript lies at the heart of almost every modern web application, from social apps to the newest browser-based games. Though simple for beginners to pick up and play with, JavaScript is a flexible, complex language that you can use to build full-scale applications.\r\n\r\nEloquent JavaScript, 2nd Edition dives deep into the JavaScript language to show you how to write beautiful, effective code. Author Marijn Haverbeke immerses you in example code from the start, while exercises and full-chapter projects give you hands-on experience with writing your own programs. As you build projects such as an artificial life simulation, a simple programming language, and a paint program, you'll learn:\r\n\r\n* The essential elements of programming, including syntax, control, and data\r\n* How to organize and clarify your code with object-oriented and functional programming techniques\r\n* How to script the browser and make basic web applications\r\n* How to use the DOM effectively to interact with browsers\r\n* How to harness Node.js to build servers and utilities\r\n\r\nThis edition is thoroughly revised and modernized to reflect the current state of JavaScript and web browsers, with brand-new material, such as a chapter on code performance in Java\u00c2\u00adScript, and expanded coverage of recursion and closures. All source code is available online in an interactive sandbox, where you can edit the code, run it, and see its output instantly.\r\n\r\nIsn't it time you became fluent in the language of the Web?",
+    "views": 1,
+    "clicks": 1,
+    "marked_broken": 0,
+    "marked_spam": 0,
+    "active": true,
+    "create_at": "2017-03-01T15:29:01.211Z",
+    "update_at": "2017-03-05T14:40:24.590Z",
+    "categories": [
+      2,
+      5
+    ],
+    "tags": [
+      7
+    ],
+    "languages": [
+      6,
+      5,
+      2,
+      4
+    ]
+  }
+},
+{
+  "model": "resources.resource",
+  "pk": 10,
+  "fields": {
+    "title": "JavaScript Enlightenment",
+    "slug": "javascript-enlightenment",
+    "owner": 1,
+    "main_tag": 7,
+    "resource_format": 1,
+    "link": "http://www.javascriptenlightenment.com/",
+    "image": "resources/resources/JavaScript_Enlightenment.jpg",
+    "description": "If you\u2019re an advanced beginner or intermediate JavaScript developer, JavaScript Enlightenment will solidify your understanding of the language\u2014especially if you use a JavaScript library. In this concise book, JavaScript expert Cody Lindley (jQuery Cookbook) provides an accurate view of the language by examining its objects and supporting nuances.\r\n\r\nLibraries and frameworks help you build web applications quickly and efficiently, but when things go wrong or performance becomes an issue, knowing how and why they work is critical. If you\u2019re ready to go under the hood and get your hands dirty with JavaScript internals, this is your book.\r\n\r\n* Get a short and digestible summary of ECMA-262, Edition 3, backed by real code you can run instantly\r\n* Examine the creation of JavaScript objects\r\n* Learn complex values, primitive values, scope, and inheritance\r\n* Understand the importance of the head object\r\n* Work with string, number, and Boolean objects and values\r\n* Discover how to use the null value and the built-in math object\r\n* Get into the details\u2014beyond Mozilla\u2019s reference guide for JavaScript 1.5",
+    "views": 1,
+    "clicks": 1,
+    "marked_broken": 0,
+    "marked_spam": 0,
+    "active": true,
+    "create_at": "2017-03-01T15:37:00.910Z",
+    "update_at": "2017-03-05T04:29:29.650Z",
+    "categories": [
+      2,
+      5
+    ],
+    "tags": [
+      7
+    ],
+    "languages": [
+      2
+    ]
+  }
+},
+{
+  "model": "resources.resource",
+  "pk": 11,
+  "fields": {
+    "title": "jQuery Enlightenment",
+    "slug": "jquery-enlightenment",
+    "owner": 1,
+    "main_tag": 15,
+    "resource_format": 1,
+    "link": "http://jqueryenlightenment.com/",
+    "image": "resources/resources/jQuery_Enlightenment.jpg",
+    "description": "jQuery Enlightenment was written to express, in short-order, the concepts essential to intermediate and advanced jQuery development. Its purpose is to instill in you, the reader, practices that jQuery developers take as common knowledge. Each chapter contains concepts essential to becoming a seasoned jQuery developer.\r\n\r\nThis book is intended for three types of readers. The first is someone who has read introductory books on jQuery and is looking for the next logical step. The second type of reader is a JavaScript developer, already versed in another library, now trying to quickly learn jQuery. The third reader is myself, the author. I crafted this book to be used as my own personal reference point for jQuery concepts. This is exactly the type of book I wish every JavaScript library had available.",
+    "views": 1,
+    "clicks": 1,
+    "marked_broken": 0,
+    "marked_spam": 0,
+    "active": true,
+    "create_at": "2017-03-01T15:41:24.365Z",
+    "update_at": "2017-03-05T04:28:51.476Z",
+    "categories": [
+      2,
+      5
+    ],
+    "tags": [
+      7,
+      15
+    ],
+    "languages": [
+      2
+    ]
+  }
+},
+{
+  "model": "resources.resource",
+  "pk": 12,
+  "fields": {
+    "title": "Practical ES6",
+    "slug": "practical-es6",
+    "owner": 1,
+    "main_tag": 7,
+    "resource_format": 1,
+    "link": "https://ponyfoo.com/books/practical-es6",
+    "image": "resources/resources/practical-es6.b2b35ad8.png",
+    "description": "Ideal for professional software developers with a basic understanding of JavaScript, this practical book shows you how to build small, interconnected ES6 JavaScript modules that emphasize reusability. You\u2019ll learn how to face a project with a modular mindset, and how to organize your applications into simple pieces that work well in isolation and can be combined to create a large, robust application.\r\n\r\nThis book focuses on two aspects of JavaScript development: modularity and ES6 features. You\u2019ll learn how to tackle application development by following a scale-out approach. As pieces of your codebase grow too big, you can break them up into smaller modules.",
+    "views": 1,
+    "clicks": 1,
+    "marked_broken": 0,
+    "marked_spam": 0,
+    "active": true,
+    "create_at": "2017-03-01T15:44:26.371Z",
+    "update_at": "2017-03-05T04:28:08.233Z",
+    "categories": [
+      2,
+      5
+    ],
+    "tags": [
+      7
+    ],
+    "languages": [
+      2
+    ]
+  }
+},
+{
+  "model": "resources.resource",
+  "pk": 13,
+  "fields": {
+    "title": "Thinking in HTML",
+    "slug": "thinking-in-html",
+    "owner": 1,
+    "main_tag": 14,
+    "resource_format": 1,
+    "link": "https://www.packtpub.com/packt/free-ebook/thinking-in-html2",
+    "image": "resources/resources/Thinking_in_HTML.jpg",
+    "description": "For anyone who wants to understand the web and how it works, HTML is an essential place to start. This free eBook provides you with everything you need to know to get to grips with HTML and to begin building your own web pages. Explore how HTML code structures a web page and use and adapt the examples for yourself to begin building your own web pages today.",
+    "views": 1,
+    "clicks": 1,
+    "marked_broken": 0,
+    "marked_spam": 0,
+    "active": true,
+    "create_at": "2017-03-01T15:47:17.703Z",
+    "update_at": "2017-03-05T04:28:18.394Z",
+    "categories": [
+      5
+    ],
+    "tags": [
+      14
+    ],
+    "languages": [
+      2
+    ]
+  }
+},
+{
+  "model": "resources.resource",
+  "pk": 14,
+  "fields": {
+    "title": "MongoDB Instant Starter",
+    "slug": "mongodb-instant-starter",
+    "owner": 1,
+    "main_tag": 22,
+    "resource_format": 1,
+    "link": "https://www.packtpub.com/packt/free-ebook/mongoDB-starter-guide",
+    "image": "resources/resources/MongoDB_Instant_Starter.jpg",
+    "description": "This free MongoDB eBook is designed to get you working with MongoDB as quickly as possible. Starting with installation and setup, we quickly show you how to start importing your data into the database. Learn about CRUD operations in MongoDB, its Map Reduce support, schema design, performance tuning operations, and more.\r\n\r\n* Discover various query operators that can be put to use to write powerful queries\r\n* Insert, update, and delete data in the collections\r\n* Discover schema design concepts and basic query level performance tuning\r\n* Utilize MapReduce support in MongoDB",
+    "views": 3,
+    "clicks": 1,
+    "marked_broken": 0,
+    "marked_spam": 0,
+    "active": true,
+    "create_at": "2017-03-01T15:56:49.949Z",
+    "update_at": "2017-03-03T18:45:57.993Z",
+    "categories": [
+      2
+    ],
+    "tags": [
+      23,
+      22
+    ],
+    "languages": [
+      2
+    ]
+  }
+},
+{
+  "model": "resources.resource",
+  "pk": 15,
+  "fields": {
+    "title": "Smooth CoffeeScript \u2014 Interactive Edition",
+    "slug": "smooth-coffeescript-interactive-edition",
+    "owner": 1,
+    "main_tag": 24,
+    "resource_format": 1,
+    "link": "http://autotelicum.github.io/Smooth-CoffeeScript/interactive/interactive-coffeescript.html",
+    "image": "resources/resources/SmoothCoverInteractive.png",
+    "description": "An introduction to programming in CoffeeScript with an emphasis on clarity and abstraction",
+    "views": 1,
+    "clicks": 0,
+    "marked_broken": 0,
+    "marked_spam": 0,
+    "active": true,
+    "create_at": "2017-03-01T16:04:56.595Z",
+    "update_at": "2017-03-01T17:36:03.082Z",
+    "categories": [
+      2,
+      5
+    ],
+    "tags": [
+      24,
+      7
+    ],
+    "languages": [
+      2
+    ]
+  }
+},
+{
+  "model": "resources.resource",
+  "pk": 16,
+  "fields": {
+    "title": "Designing Scalable JavaScript Applications",
+    "slug": "designing-scalable-javascript-applications",
+    "owner": 1,
+    "main_tag": 7,
+    "resource_format": 1,
+    "link": "https://www.manning.com/books/designing-scalable-javascript-applications",
+    "image": "resources/resources/Designing_Scalable_JavaScript_Applications.jpg",
+    "description": "If you\u2019ve ever written a non-trivial JavaScript application, you know that creating a code base that\u2019s easy to maintain and scales well over time is no small feat. The complexity only grows as the project becomes larger. While it\u2019s impossible to plan for every change that could possibly happen over the life of a project, you can help future-proof your front-end architecture by designing software that\u2019s pliable and easily extended. Well-designed, extensible architecture can help reduce development and maintenance costs, as bug fixes, enhancements, and new technologies can be incorporated more easily.\r\n\r\nDesigning Scalable JavaScript Applications helps you start thinking about which tools and frameworks you\u2019ll use and which design patterns you\u2019ll implement. This book brings together excerpts from four different Manning titles selected by Emmit Scott, the author of SPA Design and Architecture. These chapters are great starting points for understanding how to build better JavaScript applications. They introduce some fundamental concepts for creating clean, loosely coupled code, and show you how to make your development process more productive and efficient.",
+    "views": 1,
+    "clicks": 0,
+    "marked_broken": 0,
+    "marked_spam": 0,
+    "active": true,
+    "create_at": "2017-03-01T16:09:29.633Z",
+    "update_at": "2017-03-01T17:35:52.725Z",
+    "categories": [
+      2,
+      5
+    ],
+    "tags": [
+      7
+    ],
+    "languages": [
+      2
+    ]
+  }
+},
+{
+  "model": "resources.resource",
+  "pk": 17,
+  "fields": {
+    "title": "Thinking in JavaScript",
+    "slug": "thinking-in-javascript",
+    "owner": 1,
+    "main_tag": 7,
+    "resource_format": 1,
+    "link": "https://www.packtpub.com/packt/free-ebook/thinking-in-javascript2",
+    "image": "resources/resources/Thinking_in_JavaScript.jpg",
+    "description": "Get started with JavaScript with this free eBook and learn one of the most important languages in web development today. With helpful tips and code examples, discover how you can create websites with impressive and dynamic functionality. Explore JavaScript\u2019s in-built features and find out how to customize them in this accessible and free guide.\r\n\r\n**What You Will Learn**\r\n\r\n* Find out how JavaScript is applied to a web page and interacts with HTML\r\n* Learn the JavaScript syntax and follow code examples to put JavaScript to work\r\n* Explore JavaScript\u2019s in-built functions and find out how to create your own\r\n* Discover modern, responsive web design with JQuery",
+    "views": 1,
+    "clicks": 1,
+    "marked_broken": 0,
+    "marked_spam": 0,
+    "active": true,
+    "create_at": "2017-03-01T16:12:44.992Z",
+    "update_at": "2017-03-05T04:29:14.388Z",
+    "categories": [
+      2,
+      5
+    ],
+    "tags": [
+      7
+    ],
+    "languages": [
+      2
+    ]
+  }
+},
+{
+  "model": "resources.resource",
+  "pk": 18,
+  "fields": {
+    "title": "HTML5 Data Visualization",
+    "slug": "html5-data-visualization",
+    "owner": 1,
+    "main_tag": 14,
+    "resource_format": 1,
+    "link": "https://www.packtpub.com/packt/free-ebook/html5-data-visualization-cookbook",
+    "image": "resources/resources/HTML5_Data_Visualization.jpg",
+    "description": "Get a complete grounding in the exciting visual world of Canvas and HTML5 using this recipe-packed cookbook. Learn to create charts and graphs, draw complex shapes, add interactivity, work with Google maps, and much more.\r\n\r\n* Build common charts through step-by-step recipes\r\n* Add interactivity to Canvas elements and create your own JavaScript animation engine\r\n* Discover many fantastic charting solutions and learn how to deal with their capabilities and how to change them as well\r\n* Learn how to work with Google Maps, Google Charts, and Google Docs API",
+    "views": 1,
+    "clicks": 1,
+    "marked_broken": 0,
+    "marked_spam": 0,
+    "active": true,
+    "create_at": "2017-03-01T16:17:00.293Z",
+    "update_at": "2017-03-05T04:29:34.751Z",
+    "categories": [
+      5
+    ],
+    "tags": [
+      14
+    ],
+    "languages": [
+      2
+    ]
+  }
+},
+{
+  "model": "resources.resource",
+  "pk": 19,
+  "fields": {
+    "title": "Exploring ES2016 and ES2017",
+    "slug": "exploring-es2016-and-es2017",
+    "owner": 1,
+    "main_tag": 7,
+    "resource_format": 1,
+    "link": "http://exploringjs.com/es2016-es2017.html",
+    "image": "resources/resources/Exploring_ES2016_and_ES2017.jpg",
+    "description": "* Covers the latest versions of JavaScript as they are created.\r\n* Is a book for people who already know JavaScript.",
+    "views": 1,
+    "clicks": 1,
+    "marked_broken": 0,
+    "marked_spam": 0,
+    "active": true,
+    "create_at": "2017-03-01T16:20:15.597Z",
+    "update_at": "2017-03-05T04:30:00.252Z",
+    "categories": [
+      2,
+      5
+    ],
+    "tags": [
+      7
+    ],
+    "languages": [
+      2
+    ]
+  }
+},
+{
+  "model": "resources.resource",
+  "pk": 20,
+  "fields": {
+    "title": "Mastering JavaScript High Performance",
+    "slug": "mastering-javascript-high-performance",
+    "owner": 1,
+    "main_tag": 7,
+    "resource_format": 1,
+    "link": "https://www.packtpub.com/packt/free-ebook/javascript-high-performance",
+    "image": "resources/resources/Mastering_JavaScript_High_Performance_0.jpg",
+    "description": "Studying JavaScript performance in depth will make you capable of tackling the complex and important tasks required to solve performance issues. With this full-length free eBook, discover how to optimize your JavaScript for both mobile and web applications.\r\n\r\n* Create your own build system for JavaScript projects using Node.js and GulpJS\r\n* Get to know best performance-focused practices when writing JavaScript code\r\n* Use the DOM more efficiently by optimizing JavaScript with CSS3 animations\r\n* Learn how to unit test JavaScript code using Jasmine",
+    "views": 1,
+    "clicks": 0,
+    "marked_broken": 0,
+    "marked_spam": 0,
+    "active": true,
+    "create_at": "2017-03-01T16:27:02.390Z",
+    "update_at": "2017-03-01T17:35:00.821Z",
+    "categories": [
+      2,
+      5
+    ],
+    "tags": [
+      7
+    ],
+    "languages": [
+      2
+    ]
+  }
+},
+{
+  "model": "resources.resource",
+  "pk": 21,
+  "fields": {
+    "title": "AngularJS Essentials",
+    "slug": "angularjs-essentials",
+    "owner": 1,
+    "main_tag": 1,
+    "resource_format": 1,
+    "link": "https://www.packtpub.com/packt/free-ebook/angularjs-essentials",
+    "image": "resources/resources/AngularJS_Essentials.jpg",
+    "description": "Discover the best practices of the AngularJS framework and its most important concepts such as AngularJS directives, expressions, filters, and modules. This free eBook guides you through the steps of building your very own web application with AngularJS. \r\n\r\n* Create reusable components with directives\r\n* Explore filters to manipulate and transform data\r\n* Discover more about the two-way data binding mechanism\r\n* Automate your project's workflow and learn everything you need to know about unit testing with AngularJS",
+    "views": 1,
+    "clicks": 1,
+    "marked_broken": 0,
+    "marked_spam": 0,
+    "active": true,
+    "create_at": "2017-03-01T16:30:07.688Z",
+    "update_at": "2017-03-05T04:28:54.005Z",
+    "categories": [
+      2,
+      5
+    ],
+    "tags": [
+      1,
+      7
+    ],
+    "languages": [
+      2
+    ]
+  }
+},
+{
+  "model": "resources.resource",
+  "pk": 22,
+  "fields": {
+    "title": "Dynamisez vos sites web avec JavaScript !",
+    "slug": "dynamisez-vos-sites-web-avec-javascript",
+    "owner": 1,
+    "main_tag": 7,
+    "resource_format": 1,
+    "link": "https://openclassrooms.com/courses/dynamisez-vos-sites-web-avec-javascript",
+    "image": "",
+    "description": "Bienvenue \u00e0 toutes et \u00e0 tous,\r\n\r\nQui n'a jamais entendu parler du JavaScript ? Cr\u00e9\u00e9 dans les ann\u00e9es 90 en tant que simple langage de script, JavaScript est d\u00e9sormais un des poids lourds du d\u00e9veloppement Web ! Qui plus est, il se d\u00e9mocratise au sein d'autres environnements comme les serveurs avec le c\u00e9l\u00e8bre Node.js, les applications pour smartphones et tablettes, avec PhoneGap d'Adobe, les applications pour Windows 8, mais aussi les logiciels multiplateformes.\r\n\r\nBref, JavaScript est partout ! Mais avant de se targuer de cr\u00e9er des applications pour serveurs, tablettes et Windows, il faut d'abord apprendre la base et s'int\u00e9resser aux origines : le JavaScript au sein des pages Web. Et \u00e7a tombe bien ; c'est le sujet de ce cours. Chemin faisant, vous apprendrez la structure du langage, \u00e0 manipuler les \u00e9v\u00e9nements, interagir avec les \u00e9l\u00e9ments HTML, dialoguer avec le serveur, faire un syst\u00e8me d'envoi d'images, faire un peu de dessin et des animations, et bien d'autres choses!\r\n\r\nCe cours va principalement aborder l'usage du JavaScript dans l'environnement d'un navigateur Web. Il est donc de rigueur que vous soyez \u00e0 l'aise avec le CSS mais surtout le HTML. Le PHP est un plus, mais vous n'en aurez r\u00e9ellement besoin que lorsque nous aborderons la partie d\u00e9di\u00e9e \u00e0 l'AJAX, qui traite des communications entre le JavaScript et un serveur.\r\n\r\nVoici quelques exemples de ce qui est r\u00e9alisable gr\u00e2ce au JavaScript:\r\n\r\n* Un syst\u00e8me de chat, comme celui de Facebook\r\n* Une suggestion lors de la frappe dans un champ de texte, comme lors d'une recherche avec Google\r\n* Un lecteur de vid\u00e9os ou de musiques, aussi puissant que celui de Youtube, gr\u00e2ce aux balises <video> et <audio>\r\n* Des jeux exploitants la balise <canvas> comme Torus, un Tetris en 3D\r\n* La mod\u00e9lisation 3D d'une Lamborghini affich\u00e9e gr\u00e2ce \u00e0 l'API WebGL et \u00e0 la biblioth\u00e8que Three.js\r\n* Et bien d'autres choses!\r\n\r\nSur ce, bonne lecture!",
+    "views": 1,
+    "clicks": 0,
+    "marked_broken": 0,
+    "marked_spam": 0,
+    "active": true,
+    "create_at": "2017-03-01T16:40:09.279Z",
+    "update_at": "2017-03-01T17:34:28.190Z",
+    "categories": [
+      2,
+      5
+    ],
+    "tags": [
+      7
+    ],
+    "languages": [
+      7
+    ]
+  }
+},
+{
+  "model": "resources.resource",
+  "pk": 23,
+  "fields": {
+    "title": "Hard Rock CoffeeScript",
+    "slug": "hard-rock-coffeescript",
+    "owner": 1,
+    "main_tag": 24,
+    "resource_format": 1,
+    "link": "http://alchaplinsky.pro/hard-rock-coffeescript/",
+    "image": "resources/resources/hard_rock.jpg",
+    "description": "CoffeeScript is a little language that compiles to JavaScript created by Jeremy Ashkenas. This is an evolution of JavaScript that hides its bad parts and exposes the good parts. It's syntax is inspired by Ruby and Python and brings many features from these two languages.\r\n\r\nWhy is CoffeeScript better than writing pure JavaScript? First of all CoffeeScript allows you to actually write less and do more (yep, exactly like jQuery:smile:). The amount of code that you'll need to write reduces significantly \u2014 you're geeting rid of curly brackets, semicolons and you are getting lots of syntactic sugar. Moreover it adds usefull features like classes and inheritance which have not yet arrived natively to JavaScript.\r\n\r\nBut still, **coffee** code compiles to **JavaScript** so in order to write programs in CoffeeScript you need to know JavaScript. It is impossible to write well sctutured and good working scripts without understanding basics of JavaScript like closures or prototypical model. Knowledge of design patterns in JavaScript will be also usefull as CoffeeScript is using some patterns like **Module pattern, Prototype**.\r\n\r\n## JavaScript Lint\r\n\r\nJavaScript Lint is a JavaScript code quality tool, and running your programs through it is a great way of improving code quality and best practices. The project was based on a similar tool called JSLint. Check out JSLint's site for a great list of issues that it checks for, including global variables, missing semicolons and weak equality comparisons.\r\n\r\nThe good news is that CoffeeScript already 'lints' all of its output, so CoffeeScript generated JavaScript is already JavaScript Lint compatible",
+    "views": 1,
+    "clicks": 1,
+    "marked_broken": 0,
+    "marked_spam": 0,
+    "active": true,
+    "create_at": "2017-03-01T17:45:29.695Z",
+    "update_at": "2017-03-05T04:29:19.462Z",
+    "categories": [
+      2,
+      5
+    ],
+    "tags": [
+      24,
+      7
+    ],
+    "languages": [
+      2
+    ]
+  }
+},
+{
+  "model": "resources.resource",
+  "pk": 24,
+  "fields": {
+    "title": "Understanding ECMAScript 6",
+    "slug": "understanding-ecmascript-6",
+    "owner": 1,
+    "main_tag": 7,
+    "resource_format": 1,
+    "link": "https://leanpub.com/understandinges6/read/",
+    "image": "resources/resources/Understanding_ECMAScript_6.png",
+    "description": "The JavaScript core language features are defined in a standard called ECMA-262. The language defined in this standard is called ECMAScript. What you know as JavaScript in browsers and Node.js is actually a superset of ECMAScript. Browsers and Node.js add more functionality through additional objects and methods, but the core of the language remains as defined in ECMAScript. The ongoing development of ECMA-262 is vital to the success of JavaScript as a whole, and this book covers the changes brought about by the most recent major update to the language: ECMAScript 6.",
+    "views": 1,
+    "clicks": 1,
+    "marked_broken": 0,
+    "marked_spam": 0,
+    "active": true,
+    "create_at": "2017-03-01T17:49:14.891Z",
+    "update_at": "2017-03-05T04:29:50.031Z",
+    "categories": [
+      2,
+      5
+    ],
+    "tags": [
+      7
+    ],
+    "languages": [
+      2
+    ]
+  }
+},
+{
+  "model": "resources.resource",
+  "pk": 25,
+  "fields": {
+    "title": "JavaScript The Right Way",
+    "slug": "javascript-the-right-way",
+    "owner": 1,
+    "main_tag": 7,
+    "resource_format": 1,
+    "link": "http://jstherightway.org/",
+    "image": "",
+    "description": "This is a guide intended to introduce new developers to JavaScript and help experienced developers learn more about its best practices.\r\n\r\nDespite the name, this guide doesn't necessarily mean \"the only way\" to do JavaScript.\r\n\r\nWe just gather all the articles, tips, and tricks from top developers and put it here. Since it comes from exceptional folks, we could say that it is \"the right way\", or the best way to do so.",
+    "views": 1,
+    "clicks": 1,
+    "marked_broken": 0,
+    "marked_spam": 0,
+    "active": true,
+    "create_at": "2017-03-01T17:50:42.182Z",
+    "update_at": "2017-03-05T04:29:32.192Z",
+    "categories": [
+      2,
+      5
+    ],
+    "tags": [
+      7
+    ],
+    "languages": [
+      3
+    ]
+  }
+},
+{
+  "model": "resources.resource",
+  "pk": 26,
+  "fields": {
+    "title": "What You Need to Know about JavaScript",
+    "slug": "what-you-need-to-know-about-javascript",
+    "owner": 1,
+    "main_tag": 7,
+    "resource_format": 1,
+    "link": "https://www.packtpub.com/packt/free-ebook/what-you-need-know-about-javascript2",
+    "image": "resources/resources/What_You_Need_to_Know_about_JavaScript.jpg",
+    "description": "Discover everything a beginner needs to know about the world of JavaScript with this free eBook. From the absolute basics of JS syntax to combining ECMAScript 6 and Visual Studio Code this primer is the perfect resource for a JavaScript Master-in-the-Making!\r\n\r\n## What You Will Learn\r\n\r\n* Learn to write JavaScript code from scratch\r\n* Understand the syntax and parts that make up every JS app in existence\r\n* Build your first ever complete JS application\r\n* Discover how to test your apps for bugs and more\r\n* Broaden your horizons and get the perfect starting platform to JS development",
+    "views": 3,
+    "clicks": 0,
+    "marked_broken": 0,
+    "marked_spam": 0,
+    "active": true,
+    "create_at": "2017-03-01T17:53:21.136Z",
+    "update_at": "2017-03-01T17:53:21.136Z",
+    "categories": [
+      2,
+      5
+    ],
+    "tags": [
+      7
+    ],
+    "languages": [
+      2
+    ]
+  }
+},
+{
+  "model": "resources.resource",
+  "pk": 27,
+  "fields": {
+    "title": "CoffeeScript Cookbook",
+    "slug": "coffeescript-cookbook",
+    "owner": 1,
+    "main_tag": 24,
+    "resource_format": 1,
+    "link": "https://coffeescript-cookbook.github.io/",
+    "image": "",
+    "description": "CoffeeScript recipes for the community by the community.",
+    "views": 1,
+    "clicks": 1,
+    "marked_broken": 0,
+    "marked_spam": 0,
+    "active": true,
+    "create_at": "2017-03-01T17:55:24.094Z",
+    "update_at": "2017-03-05T04:29:01.647Z",
+    "categories": [
+      2,
+      5
+    ],
+    "tags": [
+      24,
+      7
+    ],
+    "languages": [
+      2
+    ]
+  }
+},
+{
+  "model": "resources.resource",
+  "pk": 28,
+  "fields": {
+    "title": "The Little Book on CoffeeScript",
+    "slug": "the-little-book-on-coffeescript",
+    "owner": 1,
+    "main_tag": 24,
+    "resource_format": 1,
+    "link": "http://arcturo.github.io/library/coffeescript/index.html",
+    "image": "resources/resources/The_Little_Book_on_CoffeeScript.gif",
+    "description": "This concise book shows JavaScript developers how to build superb web applications with CoffeeScript, the remarkable language that\u2019s gaining considerable interest. Through example code, this guide demonstrates how CoffeeScript abstracts JavaScript, providing syntactical sugar and preventing many common errors. You\u2019ll learn CoffeeScript\u2019s syntax and idioms step by step, from basic variables and functions to complex comprehensions and classes.\r\n\r\nWritten by Alex MacCaw, author of JavaScript Web Applications (O\u2019Reilly), with contributions from CoffeeScript creator Jeremy Ashkenas, this book quickly teaches you best practices for using this language\u2014not just on the client side, but for server-side applications as well. It\u2019s time to take a ride with the little language that could.\r\n\r\n* Discover how CoffeeScript\u2019s syntax differs from JavaScript\r\n* Learn about features such as array comprehensions, destructuring assignments, and classes\r\n* Explore CoffeeScript idioms and compare them to their JavaScript counterparts\r\n* Compile CoffeeScript files in static sites with the Cake build system\r\n* Use CommonJS modules to structure and deploy CoffeeScript client-side applications\r\n* Examine JavaScript\u2019s bad parts\u2014including features CoffeeScript was able to fix",
+    "views": 1,
+    "clicks": 1,
+    "marked_broken": 0,
+    "marked_spam": 0,
+    "active": true,
+    "create_at": "2017-03-01T17:58:12.842Z",
+    "update_at": "2017-03-05T04:30:20.038Z",
+    "categories": [
+      2,
+      5
+    ],
+    "tags": [
+      24,
+      7
+    ],
+    "languages": [
+      2
+    ]
+  }
+},
+{
+  "model": "resources.resource",
+  "pk": 29,
+  "fields": {
+    "title": "Mostly adequate guide to FP (in javascript)",
+    "slug": "mostly-adequate-guide-to-fp-in-javascript",
+    "owner": 1,
+    "main_tag": 7,
+    "resource_format": 1,
+    "link": "https://github.com/MostlyAdequate/mostly-adequate-guide",
+    "image": "resources/resources/mostly-adequate-guide.png",
+    "description": "This is a book on the functional paradigm in general. We'll use the world's most popular functional programming language: JavaScript. Some may feel this is a poor choice as it's against the grain of the current culture which, at the moment, feels predominately imperative. However, I believe it is the best way to learn FP for several reasons:\r\n\r\n* **You likely use it every day at work.**\r\n\r\n    This makes it possible to practice and apply your acquired knowledge each day on real world programs rather than pet projects on nights and weekends in an esoteric FP language.\r\n\r\n* **We don't have to learn everything up front to start writing programs.**\r\n\r\n    In a pure functional language, you cannot log a variable or read a DOM node without using monads. Here we can cheat a little as we learn to purify our codebase. It's also easier to get started in this language since it's mixed paradigm and you can fall back on your current practices while there are gaps in your knowledge.\r\n\r\n* **The language is fully capable of writing top notch functional code.**\r\n\r\n    We have all the features we need to mimic a language like Scala or Haskell with the help of a tiny library or two. Object-oriented programming currently dominates the industry, but it's clearly awkward in JavaScript. It's akin to camping off of a highway or tap dancing in galoshes. We have to bind all over the place lest this change out from under us, we don't have classes (yet), we have various work arounds for the quirky behavior when the new keyword is forgotten, private members are only available via closures. To a lot of us, FP feels more natural anyways.\r\n\r\nThat said, typed functional languages will, without a doubt, be the best place to code in the style presented by this book. JavaScript will be our means of learning a paradigm, where you apply it is up to you. Luckily, the interfaces are mathematical and, as such, ubiquitous. You'll find yourself at home with swiftz, scalaz, haskell, purescript, and other mathematically inclined environments.",
+    "views": 1,
+    "clicks": 0,
+    "marked_broken": 0,
+    "marked_spam": 0,
+    "active": true,
+    "create_at": "2017-03-01T18:03:17.664Z",
+    "update_at": "2017-03-01T18:03:17.664Z",
+    "categories": [
+      2,
+      5
+    ],
+    "tags": [
+      7
+    ],
+    "languages": [
+      3
+    ]
+  }
+},
+{
+  "model": "resources.resource",
+  "pk": 30,
+  "fields": {
+    "title": "Learning JavaScript Design Patterns",
+    "slug": "learning-javascript-design-patterns",
+    "owner": 1,
+    "main_tag": 7,
+    "resource_format": 1,
+    "link": "https://addyosmani.com/resources/essentialjsdesignpatterns/book/",
+    "image": "resources/resources/Learning_JavaScript_Design_Patterns.jpg",
+    "description": "**Preface**\r\n\r\nDesign patterns are reusable solutions to commonly occurring problems in software design. They are both exciting and a fascinating topic to explore in any programming language.\r\n\r\nOne reason for this is that they help us build upon the combined experience of many developers that came before us and ensure we structure our code in an optimized way, meeting the needs of problems we're attempting to solve.\r\n\r\nDesign patterns also provide us a common vocabulary to describe solutions. This can be significantly simpler than describing syntax and semantics when we're attempting to convey a way of structuring a solution in code form to others.\r\n\r\nIn this book we will explore applying both classical and modern design patterns to the JavaScript programming language.\r\n\r\n## Target Audience\r\n\r\nThis book is targeted at professional developers wishing to improve their knowledge of design patterns and how they can be applied to the JavaScript programming language.\r\n\r\nSome of the concepts covered (closures, prototypal inheritance) will assume a level of basic prior knowledge and understanding. If you find yourself needing to read further about these topics, a list of suggested titles is provided for convenience.\r\n\r\nIf you would like to learn how to write beautiful, structured and organized code, I believe this is the book for you.",
+    "views": 1,
+    "clicks": 1,
+    "marked_broken": 0,
+    "marked_spam": 0,
+    "active": true,
+    "create_at": "2017-03-01T18:06:23.407Z",
+    "update_at": "2017-03-06T17:50:23.731Z",
+    "categories": [
+      2,
+      5
+    ],
+    "tags": [
+      7
+    ],
+    "languages": [
+      2
+    ]
+  }
+},
+{
+  "model": "resources.resource",
+  "pk": 31,
+  "fields": {
+    "title": "Mastering Node",
+    "slug": "mastering-node",
+    "owner": 1,
+    "main_tag": 18,
+    "resource_format": 1,
+    "link": "https://github.com/visionmedia/masteringnode/",
+    "image": "",
+    "description": "Mastering node is an open source eBook by node hackers for node hackers. I started this as a side project and realized that I don't have time :) so go nuts, download it, build it, fork it, extend it and share it. If you come up with something you wish to contribute back, send me a pull request.",
+    "views": 1,
+    "clicks": 1,
+    "marked_broken": 0,
+    "marked_spam": 0,
+    "active": true,
+    "create_at": "2017-03-01T18:20:55.140Z",
+    "update_at": "2017-03-05T04:28:10.760Z",
+    "categories": [
+      2
+    ],
+    "tags": [
+      7,
+      18
+    ],
+    "languages": [
+      2
+    ]
+  }
+},
+{
+  "model": "resources.resource",
+  "pk": 32,
+  "fields": {
+    "title": "JavaScript Garden",
+    "slug": "javascript-garden",
+    "owner": 1,
+    "main_tag": 7,
+    "resource_format": 1,
+    "link": "https://github.com/BonsaiDen/JavaScript-Garden",
+    "image": "",
+    "description": "JavaScript Garden is a growing collection of documentation about the most quirky parts of the JavaScript programming language. It gives advice to avoid common mistakes and subtle bugs, as well as performance issues and bad practices, that non-expert JavaScript programmers may encounter on their endeavours into the depths of the language.\r\n\r\nJavaScript Garden does not aim to teach you JavaScript. Former knowledge of the language is strongly recommended in order to understand the topics covered in this guide. In order to learn the basics of the language, please head over to the excellent [guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide) on the Mozilla Developer Network.",
+    "views": 1,
+    "clicks": 1,
+    "marked_broken": 0,
+    "marked_spam": 0,
+    "active": true,
+    "create_at": "2017-03-01T18:23:41.491Z",
+    "update_at": "2017-03-05T04:28:33.658Z",
+    "categories": [
+      2,
+      5
+    ],
+    "tags": [
+      7
+    ],
+    "languages": [
+      3
+    ]
+  }
+},
+{
+  "model": "resources.resource",
+  "pk": 33,
+  "fields": {
+    "title": "JavaScript For Cats",
+    "slug": "javascript-for-cats",
+    "owner": 1,
+    "main_tag": 7,
+    "resource_format": 1,
+    "link": "http://jsforcats.com/",
+    "image": "resources/resources/substack-cats.png",
+    "description": "**An introduction for new programmers**\r\n\r\n**So easy your human companion could do it too!**\r\n\r\nJavaScript is a programming language or, in other words, a means by which a computer is instructed to do things. Just the same as one controls humans with hisses and meows, one controls computers with statements written in a programming language. All web browsers understand JavaScript and you can take advantage of that to make web pages do crazy things!\r\n\r\nJavaScript started as a way to make web pages more interactive. Nowadays JavaScript runs in more places than just web browsers \u2014 it runs on web servers, phones and even robots! This page will teach you some JavaScript basics so that you can get up and running in no time*.\r\n\r\n* Actual time: more than none. Probably an hour or two. Also since you are a cat you are less likely to run and more likely to lay around in the sun",
+    "views": 1,
+    "clicks": 1,
+    "marked_broken": 0,
+    "marked_spam": 0,
+    "active": true,
+    "create_at": "2017-03-01T18:26:25.781Z",
+    "update_at": "2017-03-05T04:28:41.297Z",
+    "categories": [
+      2,
+      5
+    ],
+    "tags": [
+      7
+    ],
+    "languages": [
+      2
+    ]
+  }
+},
+{
+  "model": "resources.resource",
+  "pk": 34,
+  "fields": {
+    "title": "SurviveJS - Webpack",
+    "slug": "survivejs-webpack",
+    "owner": 1,
+    "main_tag": 25,
+    "resource_format": 1,
+    "link": "https://survivejs.com/webpack/introduction/",
+    "image": "",
+    "description": "Webpack simplifies web development by solving a fundamental problem - the problem of bundling. It takes in various assets, such as JavaScript, CSS, and HTML, and then transforms these assets into a format that's easy to consume through a browser\r\n\r\nBy doing this well, it takes away significant amount of pain from web development.The purpose of this...",
+    "views": 1,
+    "clicks": 1,
+    "marked_broken": 0,
+    "marked_spam": 0,
+    "active": true,
+    "create_at": "2017-03-01T18:34:03.520Z",
+    "update_at": "2017-03-05T04:28:20.942Z",
+    "categories": [
+      2,
+      5
+    ],
+    "tags": [
+      7,
+      25
+    ],
+    "languages": [
+      2
+    ]
+  }
+},
+{
+  "model": "resources.resource",
+  "pk": 35,
+  "fields": {
+    "title": "SurviveJS - React",
+    "slug": "survivejs-react",
+    "owner": 1,
+    "main_tag": 26,
+    "resource_format": 1,
+    "link": "https://survivejs.com/react/introduction/",
+    "image": "",
+    "description": "**SurviveJS - React** shows you how to build a simple Kanban using React. The idea is that if you can build a simple application, you can probably build something more complex after that. The first application is always the hardest and that's where this book comes in.\r\n\r\nIn addition to fundamental React knowledge, you will pick up design techniques as...",
+    "views": 3,
+    "clicks": 1,
+    "marked_broken": 0,
+    "marked_spam": 0,
+    "active": true,
+    "create_at": "2017-03-01T18:38:31.812Z",
+    "update_at": "2017-03-05T04:28:15.850Z",
+    "categories": [
+      2,
+      5
+    ],
+    "tags": [
+      7,
+      26
+    ],
+    "languages": [
+      2
+    ]
+  }
+},
+{
+  "model": "resources.resource",
+  "pk": 36,
+  "fields": {
+    "title": "AngularJS Directives in Traction",
+    "slug": "angularjs-directives-in-traction",
+    "owner": 1,
+    "main_tag": 1,
+    "resource_format": 1,
+    "link": "https://codef0rmer.gitbooks.io/angularjs-directives-in-traction-the-book/",
+    "image": "",
+    "description": "AngularJS is a super-heroic JavaScript Framework that makes writing single page applications a breeze. It allows you to expand HTML vocabulary by creating custom tags with a help of directive definition object. AngularJS bundled with a set of directives like ngRepeat, ngModel, ngView which make it really easy to build an application but many a times the existing directives fell short considering the need and complexity you are dealing with. And you face the problem head-on when it comes to build directives from ground ups. This book teaches you to extend AngularJS by writing custom directives and motivates to understand the purpose of testing by facilitating Test Driven Development through out the book.\r\n\r\n**AngularJS Directives in Traction** helps you understand how built-in directives work and teaches you to build custom directives on your own. Ultimately, Angular Directives will be the magic revealed for you.",
+    "views": 1,
+    "clicks": 1,
+    "marked_broken": 0,
+    "marked_spam": 0,
+    "active": true,
+    "create_at": "2017-03-01T18:40:19.028Z",
+    "update_at": "2017-03-06T08:45:23.475Z",
+    "categories": [
+      2,
+      5
+    ],
+    "tags": [
+      1,
+      7
+    ],
+    "languages": [
+      2
+    ]
+  }
+},
+{
+  "model": "resources.resource",
+  "pk": 37,
+  "fields": {
+    "title": "Single page apps in depth",
+    "slug": "single-page-apps-in-depth",
+    "owner": 1,
+    "main_tag": 7,
+    "resource_format": 1,
+    "link": "http://singlepageappbook.com/",
+    "image": "",
+    "description": "This free book is what I wanted when I started working with single page apps. It's not an API reference on a particular framework, rather, the focus is on discussing patterns, implementation choices and decent practices.\r\n\r\nI'm taking a \"code and concepts\" approach to the topic - the best way to learn how to use something is to understand how it is implemented. My ambition here is to decompose the problem of writing a web app, take a fresh look at it and hopefully make better decisions the next time you make one.",
+    "views": 1,
+    "clicks": 1,
+    "marked_broken": 0,
+    "marked_spam": 0,
+    "active": true,
+    "create_at": "2017-03-01T18:44:37.125Z",
+    "update_at": "2017-03-05T04:29:42.398Z",
+    "categories": [
+      2,
+      5
+    ],
+    "tags": [
+      7
+    ],
+    "languages": [
+      2
+    ]
+  }
+},
+{
+  "model": "resources.resource",
+  "pk": 38,
+  "fields": {
+    "title": "Book on Building Front-End Web Apps with Plain JavaScript",
+    "slug": "book-on-building-front-end-web-apps-with-plain-javascript",
+    "owner": 1,
+    "main_tag": 7,
+    "resource_format": 1,
+    "link": "http://web-engineering.info/JsFrontendApp-Book",
+    "image": "resources/resources/Book_on_Building_Front-End_.png",
+    "description": "This book shows how to build front-end web applications with plain JavaScript, not using any (third-party) framework or library. A front-end web application can be provided by any web server, but it is executed on the user's computer device (smartphone, tablet or notebook), and not on the remote web server. Typically, but not necessarily, a front-end web application is a single-user application, which is not shared with other users.\r\n\r\nThe focus of the book are general information management concepts and techniques concerning\r\n\r\n* Integrity constraints and data validation,\r\n* Enumerations and enumeration attributes\r\n* Unidirectional and bidirectional associations between object types,\r\n* Subtyping and inheritance in class hierarchies.\r\n\r\nThe book can be used both by\r\n\r\n\r\n* Experienced software developers coming from classical object-oriented (OO) programming (with C++/Java/C# etc.) and by\r\n* JavaScript developers.\r\n\r\nThe first group of people may use the book for learning JavaScript. For both groups the book shows how to implement basic OO concepts with plain JavaScript (such as enumerations, associations and class hierarchies) and how to build complete front-end web apps with plain JavaScript, without submitting to the special opinions imposed by frameworks such as jQuery and others.\r\n\r\nThe book comes with the complete JavaScript code of six example apps (with 8658 lines of code) that you can directly run from our web server. It is an open question if the book happens to come with more lines of code than lines of text...",
+    "views": 1,
+    "clicks": 0,
+    "marked_broken": 0,
+    "marked_spam": 0,
+    "active": true,
+    "create_at": "2017-03-01T18:48:45.004Z",
+    "update_at": "2017-03-01T18:48:45.004Z",
+    "categories": [
+      2,
+      5
+    ],
+    "tags": [
+      7
+    ],
+    "languages": [
+      2
+    ]
+  }
+},
+{
+  "model": "resources.resource",
+  "pk": 40,
+  "fields": {
+    "title": "Dive Into HTML5",
+    "slug": "dive-into-html5",
+    "owner": 1,
+    "main_tag": 14,
+    "resource_format": 1,
+    "link": "http://diveintohtml5.info/index.html",
+    "image": "resources/resources/Dive_Into_HTML5.jpg",
+    "description": "ive Into HTML5 elaborates on a hand-picked selection of features from the [HTML5](http://www.whatwg.org/html5) specification and other fine standards. We encourage you to [buy the printed work](http://www.amazon.com/HTML5-Up-Running-Mark-Pilgrim/dp/0596806027) \u2014 Mark Pilgrim\u2019s artfully titled \u201cHTML5: Up & Running\u201d \u2014 published on paper by O\u2019Reilly, under the Google Press imprint. Your kind and sincere [feedback is always welcome](http://diveintohtml5.info/about.html), and this work shall remain online under the [CC-BY-3.0 license](http://creativecommons.org/licenses/by/3.0/).\r\n\r\nThis particular edition of Dive Into HTML5 is advanced by the [diveintomark team](http://github.com/diveintomark?tab=members). We work hard to add and update content, links, APIs, and actively maintain this fine resource; refreshing and reflecting the relevant and current state of HTML5, just as Mark Pilgrim did during his tenure. We attribute this work in the manner specified by Mark, and we make modifications to the site's content. We do not in any way suggest that he endorses us or our use of his work. We hope you do.",
+    "views": 1,
+    "clicks": 1,
+    "marked_broken": 0,
+    "marked_spam": 0,
+    "active": true,
+    "create_at": "2017-03-01T20:59:32.891Z",
+    "update_at": "2017-03-05T04:28:13.313Z",
+    "categories": [
+      5
+    ],
+    "tags": [
+      14
+    ],
+    "languages": [
+      2
+    ]
+  }
+},
+{
+  "model": "resources.resource",
+  "pk": 41,
+  "fields": {
+    "title": "D3 Tips and Tricks v3.x",
+    "slug": "d3-tips-and-tricks-v3x",
+    "owner": 1,
+    "main_tag": 27,
+    "resource_format": 1,
+    "link": "https://leanpub.com/D3-Tips-and-Tricks/read",
+    "image": "resources/resources/d3_js.png",
+    "description": "Over 600 pages of tips and tricks for using d3.js, one of the leading data visualization tools for the web. It's aimed at getting you started and moving you forward. Includes over 50 downloadable code examples. You can download for FREE or donate to encourage further development if you wish :-).",
+    "views": 1,
+    "clicks": 1,
+    "marked_broken": 0,
+    "marked_spam": 0,
+    "active": true,
+    "create_at": "2017-03-01T21:08:55.246Z",
+    "update_at": "2017-03-05T04:29:16.889Z",
+    "categories": [
+      2,
+      5
+    ],
+    "tags": [
+      27,
+      7
+    ],
+    "languages": [
+      2
+    ]
+  }
+},
+{
+  "model": "resources.resource",
+  "pk": 42,
+  "fields": {
+    "title": "Exploring ES6",
+    "slug": "exploring-es6",
+    "owner": 1,
+    "main_tag": 7,
+    "resource_format": 1,
+    "link": "http://exploringjs.com/es6/",
+    "image": "resources/resources/Exploring_ES6.jpg",
+    "description": "You are reading a book about ECMAScript 6 (ES6), a new version of JavaScript. It\u2019s great that we can finally use that version, which had a long and eventful past: It was first conceived as ECMAScript 4, a successor to ECMAScript 3 (whose release was in December 1999). In July 2008, plans changed and the next versions of JavaScript were to be first a small incremental release (which became ES5) and then a larger, more powerful release. The latter had the code name Harmony and part of it became ES6.\r\n\r\nECMAScript 5 was standardized in December 2009. I first heard and blogged about ECMAScript 6 in January 2011, when it was still called Harmony. The original plan was to finish ES6 in 2013, but things took longer and it was standardized in June 2015. (A more detailed account of ES6\u2019s history is given in the next chapter.)\r\n\r\nWith a few minor exceptions, I am happy how ECMAScript 6 turned out. This book describes my experiences with, and my research of, its features. Similarly to ES6, it took a long time to finish \u2013 in a way, I started writing it in early 2011. Like my previous book \u201cSpeaking JavaScript\u201d, I wrote most of it as a series of blog posts. I like the discussion and feedback that this open process enables, which is why this book is available for free online.\r\n\r\nThis book can be read online for free. If you find it useful, please support it by buying a copy. You\u2019ll get DRM-free PDF, EPUB, MOBI files.\r\n\r\nI hope that reading the book conveys some of the fun I had investigating and playing with ES6.\r\n\r\nAxel Rauschmayer",
+    "views": 1,
+    "clicks": 1,
+    "marked_broken": 0,
+    "marked_spam": 0,
+    "active": true,
+    "create_at": "2017-03-01T21:12:44.292Z",
+    "update_at": "2017-03-03T18:49:49.417Z",
+    "categories": [
+      2,
+      5
+    ],
+    "tags": [
+      7
+    ],
+    "languages": [
+      2
+    ]
+  }
+},
+{
+  "model": "resources.resource",
+  "pk": 43,
+  "fields": {
+    "title": "JavaScript Allong\u00e9",
+    "slug": "javascript-allonge",
+    "owner": 1,
+    "main_tag": 7,
+    "resource_format": 1,
+    "link": "https://leanpub.com/javascriptallongesix/read",
+    "image": "resources/resources/JavaScript_Allonge.jpg",
+    "description": "JavaScript Allong\u00e9 is a first and foremost, a book about programming with functions. It\u2019s written in JavaScript, because JavaScript hits the perfect sweet spot of being both widely used, and of having proper first-class functions with lexical scope. If those terms seem unfamiliar, don\u2019t worry: JavaScript Allong\u00e9 takes great delight in explaining what they mean and why they matter.\r\n\r\nJavaScript Allong\u00e9 begins at the beginning, with values and expressions, and builds from there to discuss types, identity, functions, closures, scopes, collections, iterators, and many more subjects up to working with classes and instances.\r\n\r\nIt also provides recipes for using functions to write software that is simpler, cleaner, and less complicated than alternative approaches that are object-centric or code-centric. JavaScript idioms like function combinators and decorators leverage JavaScript\u2019s power to make code easier to read, modify, debug and refactor.\r\n\r\nJavaScript Allong\u00e9 teaches you how to handle complex code, and it also teaches you how to simplify code without dumbing it down. As a result, JavaScript Allong\u00e9 is a rich read releasing many of JavaScript\u2019s subtleties, much like the Caf\u00e9 Allong\u00e9 beloved by coffee enthusiasts everywhere.",
+    "views": 1,
+    "clicks": 1,
+    "marked_broken": 0,
+    "marked_spam": 0,
+    "active": true,
+    "create_at": "2017-03-01T21:18:08.531Z",
+    "update_at": "2017-03-05T04:28:36.205Z",
+    "categories": [
+      2,
+      5
+    ],
+    "tags": [
+      7
+    ],
+    "languages": [
+      2
+    ]
+  }
+},
+{
+  "model": "resources.resource",
+  "pk": 44,
+  "fields": {
+    "title": "A guide to the basics of jQuery",
+    "slug": "a-guide-to-the-basics-of-jquery",
+    "owner": 1,
+    "main_tag": 15,
+    "resource_format": 1,
+    "link": "http://jqfundamentals.com/",
+    "image": "",
+    "description": "jQuery Fundamentals is designed to get you comfortable working through common problems you'll be called upon to solve using jQuery. To get the most out of this site, you'll want to read the content and try the various interactive examples. Each chapter will cover a concept and give you a chance to try example code related to the concept.\r\n\r\nWe highly recommend using this site with the Chrome browser or another browser that supports modern JavaScript features and includes good developer tools.",
+    "views": 1,
+    "clicks": 1,
+    "marked_broken": 0,
+    "marked_spam": 0,
+    "active": true,
+    "create_at": "2017-03-01T21:20:23.749Z",
+    "update_at": "2017-03-05T04:30:18.905Z",
+    "categories": [
+      2,
+      5
+    ],
+    "tags": [
+      7,
+      15
+    ],
+    "languages": [
+      2
+    ]
+  }
+},
+{
+  "model": "resources.resource",
+  "pk": 45,
+  "fields": {
+    "title": "Felix's Node.js Guide",
+    "slug": "felixs-nodejs-guide",
+    "owner": 1,
+    "main_tag": 18,
+    "resource_format": 1,
+    "link": "http://nodeguide.com/",
+    "image": "",
+    "description": "## About this guide\r\n\r\nHi, I am [Felix Geisend\u00f6rfer](http://twitter.com/felixge), an early [node.js](http://nodejs.org/) core contributor and co-founder of [transloadit.com](http://transloadit.com/).\r\n\r\nOver the past few months I have given a lot of [talks](http://www.slideshare.net/the_undefined/presentations) and done a lot of [consulting](http://debuggable.com/) on using node.js.\r\n\r\nSince I found myself repeating a lot of things over and over, I decided to use some of my recent vacation to start this opinionated and unofficial guide to help people getting started in node.js.",
+    "views": 3,
+    "clicks": 1,
+    "marked_broken": 0,
+    "marked_spam": 0,
+    "active": true,
+    "create_at": "2017-03-01T21:23:33.807Z",
+    "update_at": "2017-03-03T18:46:17.223Z",
+    "categories": [
+      2
+    ],
+    "tags": [
+      7,
+      18
+    ],
+    "languages": [
+      2
+    ]
+  }
+},
+{
+  "model": "resources.resource",
+  "pk": 46,
+  "fields": {
+    "title": "Programming JavaScript Applications",
+    "slug": "programming-javascript-applications",
+    "owner": 1,
+    "main_tag": 7,
+    "resource_format": 1,
+    "link": "http://chimera.labs.oreilly.com/books/1234000000262",
+    "image": "resources/resources/Programming_JavaScript_Applications.jpg",
+    "description": "Take advantage of JavaScript\u2019s power to build robust web-scale or enterprise applications that are easy to extend and maintain. By applying the design patterns outlined in this practical book, experienced JavaScript developers will learn how to write flexible and resilient code that\u2019s easier\u2014yes, easier\u2014to work with as your code base grows.\r\n\r\nJavaScript may be the most essential web programming language, but in the real world, JavaScript applications often break when you make changes. With this book, author Eric Elliott shows you how to add client- and server-side features to a large JavaScript application without negatively affecting the rest of your code.\r\n\r\n* Examine the anatomy of a large-scale JavaScript application\r\n* Build modern web apps with the capabilities of desktop applications\r\n* Learn best practices for code organization, modularity, and reuse\r\n* Separate your application into different layers of responsibility\r\n* Build efficient, self-describing hypermedia APIs with Node.js\r\n* Test, integrate, and deploy software updates in rapid cycles\r\n* Control resource access with user authentication and authorization\r\n* Expand your application\u2019s reach through internationalization",
+    "views": 3,
+    "clicks": 1,
+    "marked_broken": 0,
+    "marked_spam": 0,
+    "active": true,
+    "create_at": "2017-03-01T21:26:29.787Z",
+    "update_at": "2017-03-03T18:46:38.595Z",
+    "categories": [
+      2,
+      5
+    ],
+    "tags": [
+      7
+    ],
+    "languages": [
+      2
+    ]
+  }
+},
+{
+  "model": "resources.resource",
+  "pk": 47,
+  "fields": {
+    "title": "Javascript Challenges",
+    "slug": "javascript-challenges",
+    "owner": 1,
+    "main_tag": 7,
+    "resource_format": 1,
+    "link": "https://github.com/tcorral/javascript-challenges-book",
+    "image": "",
+    "description": "This book will challenge you to learn and understand the most obscure and tricky parts of Javascript.\r\n\r\nIn order to perform the best that you can I recommend you not to cheat taking a look at solutions before you suggest one.\r\n\r\nThis book can be used as a learning resource for Javascript training if you want, but please send a tweet recommending us to other people.\r\n\r\nI hope you enjoy this book because this is the purpose of this book.",
+    "views": 5,
+    "clicks": 1,
+    "marked_broken": 0,
+    "marked_spam": 0,
+    "active": true,
+    "create_at": "2017-03-01T21:29:34.978Z",
+    "update_at": "2017-03-03T18:46:19.298Z",
+    "categories": [
+      2,
+      5
+    ],
+    "tags": [
+      7
+    ],
+    "languages": [
+      2
+    ]
+  }
+},
+{
+  "model": "resources.resource",
+  "pk": 48,
+  "fields": {
+    "title": "Developing Backbone.js Applications",
+    "slug": "developing-backbonejs-applications",
+    "owner": 1,
+    "main_tag": 28,
+    "resource_format": 1,
+    "link": "https://addyosmani.com/backbone-fundamentals/",
+    "image": "resources/resources/Developing_Backbone.js_Applications.jpg",
+    "description": "If you want to build your site\u2019s frontend with the single-page application (SPA) model, this hands-on book shows you how to get the job done with Backbone.js. You\u2019ll learn how to create structured JavaScript applications, using Backbone\u2019s own flavor of model-view-controller (MVC) architecture.\r\n\r\nStart with the basics of MVC, SPA, and Backbone, then get your hands dirty building sample applications\u2014a simple Todo list app, a RESTful book library app, and a modular app with Backbone and RequireJS. Author Addy Osmani, an engineer for Google\u2019s Chrome team, also demonstrates advanced uses of the framework.\r\n\r\n* Learn how Backbone.js brings MVC benefits to the client-side\r\n* Write code that can be easily read, structured, and extended\r\n* Work with the Backbone.Marionette and Thorax extension frameworks\r\n* Solve common problems you\u2019ll encounter when using Backbone.js\r\n* Organize your code into modules with AMD and RequireJS\r\n* Paginate data for your Collections with the Backbone.Paginator plugin\r\n* Bootstrap a new Backbone.js application with boilerplate code\r\n* Use Backbone with jQuery Mobile and resolve routing problems between the two\r\n* Unit-test your Backbone apps with Jasmine, QUnit, and SinonJS",
+    "views": 4,
+    "clicks": 1,
+    "marked_broken": 0,
+    "marked_spam": 0,
+    "active": true,
+    "create_at": "2017-03-01T21:33:26.773Z",
+    "update_at": "2017-03-03T18:46:34.379Z",
+    "categories": [
+      2,
+      5
+    ],
+    "tags": [
+      28,
+      7
+    ],
+    "languages": [
+      2
+    ]
+  }
+},
+{
+  "model": "resources.resource",
+  "pk": 49,
+  "fields": {
+    "title": "Node: Up and Running",
+    "slug": "node-up-and-running",
+    "owner": 1,
+    "main_tag": 18,
+    "resource_format": 1,
+    "link": "http://chimera.labs.oreilly.com/books/1234000001808/index.html",
+    "image": "resources/resources/Node_Up_and_Running.gif",
+    "description": "This book introduces you to Node, the new web development framework written in JavaScript. You'll learn hands-on how Node makes life easier for experienced JavaScript developers: not only can you work on the front end and back end in the same language, you'll also have more flexibility in choosing how to divide application logic between client and server.\r\n\r\nWritten by a core contributor to the framework, Node: Up and Running shows you how Node scales up to support large numbers of simultaneous connections across multiple servers, and scales down to let you create quick one-off applications with minimal infrastructure. Built on the V8 JavaScript engine that runs Google Chrome, Node is already winning the hearts and minds of many companies, including Google and Yahoo! This book shows you why.\r\n\r\n* Understand Node's event-loop architecture, non-blocking I/O, and event-driven programming\r\n* Discover how Node supports a variety of database and data storage tools\r\n* Learn best practices for writing easy-to-maintain code for Node\r\n* Get concrete examples of how to use the various Node APIs in practice\r\n* Take advantage of the book\u2019s complete API reference",
+    "views": 3,
+    "clicks": 1,
+    "marked_broken": 0,
+    "marked_spam": 0,
+    "active": true,
+    "create_at": "2017-03-01T21:37:47.214Z",
+    "update_at": "2017-03-03T18:45:48.237Z",
+    "categories": [
+      2
+    ],
+    "tags": [
+      7,
+      18
+    ],
+    "languages": [
+      2
+    ]
+  }
+},
+{
+  "model": "resources.resource",
+  "pk": 50,
+  "fields": {
+    "title": "Recipes with Angular.js",
+    "slug": "recipes-with-angularjs",
+    "owner": 1,
+    "main_tag": 1,
+    "resource_format": 1,
+    "link": "https://leanpub.com/recipes-with-angular-js/read",
+    "image": "resources/resources/Recipes_with_Angular.png",
+    "description": "Angular.js is an open-source Javascript MVC (Model-View-Controller) framework developed by Google. It gives Javascript developers a highly structured approach to developing rich browser-based applications which, leads to very high productivity.\r\n\r\nIf you are using Angular.js, or considering it, this cookbook provides easy-to-follow recipes for issues you are likely to face. Each recipe solves a specific problem and provides a solution and in-depth discussion of it.",
+    "views": 3,
+    "clicks": 1,
+    "marked_broken": 0,
+    "marked_spam": 0,
+    "active": true,
+    "create_at": "2017-03-01T21:41:05.467Z",
+    "update_at": "2017-03-03T18:46:21.384Z",
+    "categories": [
+      2,
+      5
+    ],
+    "tags": [
+      1,
+      7
+    ],
+    "languages": [
+      2
+    ]
+  }
+},
+{
+  "model": "resources.resource",
+  "pk": 51,
+  "fields": {
+    "title": "Speaking JavaScript",
+    "slug": "speaking-javascript",
+    "owner": 1,
+    "main_tag": 7,
+    "resource_format": 1,
+    "link": "http://speakingjs.com/es5/",
+    "image": "resources/resources/Speaking_JavaScript.jpg",
+    "description": "This book has been written for programmers, by a programmer. In order to understand it, you should already know object-oriented programming, for example, via a mainstream programming language such as Java, PHP, C++, Python, Ruby, Objective-C, Swift, C#, or Perl.\r\n\r\nThus, the book\u2019s target audience is programmers who want to learn JavaScript quickly and properly, and JavaScript programmers who want to deepen their skills and/or look up specific topics.\r\n\r\nSpeaking JavaScript has four parts:\r\n\r\n* **JavaScript Quick Start:** Learn a safe subset of JavaScript in less than 30 pages.\r\n* **Background:** When, why, and how was JavaScript created? How is it related to other programming languages? What were the important steps that got us to where we are today?\r\n* **JavaScript in Depth:** This part is more of a reference: look for a topic that you are interested in, jump in, and explore. I still tried to make it fun to read.\r\n* **Tips, Tools, and Libraries:** This part gives tips for using JavaScript: best practices, advanced techniques, and learning resources. It also describes a few important tools and libraries.",
+    "views": 3,
+    "clicks": 1,
+    "marked_broken": 0,
+    "marked_spam": 0,
+    "active": true,
+    "create_at": "2017-03-01T21:44:31.384Z",
+    "update_at": "2017-03-05T04:33:08.892Z",
+    "categories": [
+      2,
+      5
+    ],
+    "tags": [
+      7
+    ],
+    "languages": [
+      2
+    ]
+  }
+},
+{
+  "model": "resources.resource",
+  "pk": 52,
+  "fields": {
+    "title": "Mozilla  JavaScript Guide",
+    "slug": "mozilla-javascript-guide",
+    "owner": 1,
+    "main_tag": 7,
+    "resource_format": 1,
+    "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide",
+    "image": "",
+    "description": "The JavaScript Guide shows you how to use [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) and gives an overview of the language. If you need exhaustive information about a language feature, have a look at the [JavaScript reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference).",
+    "views": 3,
+    "clicks": 1,
+    "marked_broken": 0,
+    "marked_spam": 0,
+    "active": true,
+    "create_at": "2017-03-01T21:46:55.547Z",
+    "update_at": "2017-03-05T04:33:14.333Z",
+    "categories": [
+      2,
+      5
+    ],
+    "tags": [
+      7
+    ],
+    "languages": [
+      3
+    ]
+  }
+},
+{
+  "model": "resources.resource",
+  "pk": 53,
+  "fields": {
+    "title": "Bootstrap - Responsive Web Development",
+    "slug": "bootstrap-responsive-web-development",
+    "owner": 1,
+    "main_tag": 8,
+    "resource_format": 1,
+    "link": "https://github.com/whyisjake/bootstrap",
+    "image": "resources/resources/Bootstrap-Responsive_Web_Development.png",
+    "description": "Discover how easy it is to design killer interfaces and responsive websites with the Bootstrap framework. This practical book gets you started building pages with Bootstrap\u2019s HTML/CSS-based tools and design templates right away. You\u2019ll also learn how to extend your app with interactive features, using its suite of jQuery plugins\u2014often without writing a single line of code.\r\n\r\nDeveloped by Twitter and available free from GitHub, Bootstrap supports responsive design by dynamically adjusting your web page layout. With just a basic knowledge of HTML, CSS, and JavaScript, you can build apps that work equally well on desktop screens, smartphones, and tablets. This book shows you how.\r\n\r\n* Become familiar with Bootstrap\u2019s file structure, grid systems, and container layouts\r\n* Learn HTML elements for typography, code, tables, forms, buttons, images, and icons\r\n* Design interfaces and other web elements, such as navigation, breadcrumbs, and custom modal windows\r\n* Use jQuery plugins for features such as revolving slideshows, tabbable interfaces, and dropdown menus\r\n* Modify everything from column count to typography colors with the LESS stylesheet language",
+    "views": 3,
+    "clicks": 1,
+    "marked_broken": 0,
+    "marked_spam": 0,
+    "active": true,
+    "create_at": "2017-03-01T21:50:15.228Z",
+    "update_at": "2017-03-05T04:33:34.384Z",
+    "categories": [
+      5
+    ],
+    "tags": [
+      8,
+      9
+    ],
+    "languages": [
+      2
+    ]
+  }
+},
+{
+  "model": "resources.resource",
+  "pk": 54,
+  "fields": {
+    "title": "HTML Canvas Deep Dive",
+    "slug": "html-canvas-deep-dive",
+    "owner": 1,
+    "main_tag": 14,
+    "resource_format": 1,
+    "link": "http://joshondesign.com/p/books/canvasdeepdive/toc.html",
+    "image": "",
+    "description": "Canvas is a 2D drawing API recently added to HTML and supported by most browsers (even Internet Explorer 9 beta). Canvas allows you to draw anything you want directly in the web browser without the use of plugins like Flash or Java. With its deceptively simple API, Canvas can revolutionize how we build web applications for all devices, not just desktops.",
+    "views": 4,
+    "clicks": 1,
+    "marked_broken": 0,
+    "marked_spam": 0,
+    "active": true,
+    "create_at": "2017-03-01T21:51:48.365Z",
+    "update_at": "2017-03-05T04:33:10.701Z",
+    "categories": [
+      5
+    ],
+    "tags": [
+      14
+    ],
+    "languages": [
+      2
+    ]
+  }
+},
+{
+  "model": "resources.resource",
+  "pk": 55,
+  "fields": {
+    "title": "Design Patterns - Explained simply",
+    "slug": "design-patterns-explained-simply",
+    "owner": 1,
+    "main_tag": 29,
+    "resource_format": 1,
+    "link": "https://sourcemaking.com/design_patterns",
+    "image": "resources/resources/DesignPatterns-cover.png",
+    "description": "In software engineering, a design pattern is a general repeatable solution to a commonly occurring problem in software design. A design pattern isn't a finished design that can be transformed directly into code. It is a description or template for how to solve a problem that can be used in many different situations. \r\n\r\n## Uses of Design Patterns\r\n\r\nDesign patterns can speed up the development process by providing tested, proven development paradigms. Effective software design requires considering issues that may not become visible until later in the implementation. Reusing design patterns helps to prevent subtle issues that can cause major problems and improves code readability for coders and architects familiar with the patterns.\r\n\r\nOften, people only understand how to apply certain software design techniques to certain problems. These techniques are difficult to apply to a broader range of problems. Design patterns provide general solutions, documented in a format that doesn't require specifics tied to a particular problem.\r\n\r\nIn addition, patterns allow developers to communicate using well-known, well understood names for software interactions. Common design patterns can be improved over time, making them more robust than ad-hoc designs.",
+    "views": 5,
+    "clicks": 1,
+    "marked_broken": 0,
+    "marked_spam": 0,
+    "active": true,
+    "create_at": "2017-03-02T08:02:16.094Z",
+    "update_at": "2017-03-05T04:33:27.011Z",
+    "categories": [
+      2,
+      6
+    ],
+    "tags": [
+      29
+    ],
+    "languages": [
+      2
+    ]
+  }
+},
+{
+  "model": "resources.resource",
+  "pk": 56,
+  "fields": {
+    "title": "Bootstrap 3, el manual oficial - LibrosWeb",
+    "slug": "bootstrap-3-el-manual-oficial-librosweb",
+    "owner": 1,
+    "main_tag": 8,
+    "resource_format": 1,
+    "link": "http://librosweb.es/libro/bootstrap_3/",
+    "image": "",
+    "description": "Manual oficial de [Bootstrap 3](http://getbootstrap.com/) traducido al espa\u00f1ol por Javier Eguiluz en [LibrosWeb.es](http://librosweb.es(lobrosweb.es)",
+    "views": 3,
+    "clicks": 1,
+    "marked_broken": 0,
+    "marked_spam": 0,
+    "active": true,
+    "create_at": "2017-03-02T08:16:58.899Z",
+    "update_at": "2017-03-05T04:33:36.061Z",
+    "categories": [
+      5
+    ],
+    "tags": [
+      8,
+      9
+    ],
+    "languages": [
+      1
+    ]
+  }
+},
+{
+  "model": "resources.resource",
+  "pk": 57,
+  "fields": {
+    "title": "Sass, el manual oficial - LibrosWeb",
+    "slug": "sass-el-manual-oficial-librosweb",
+    "owner": 1,
+    "main_tag": 31,
+    "resource_format": 1,
+    "link": "http://librosweb.es/libro/sass/",
+    "image": "",
+    "description": "Manual oficial de [Sass](http://sass-lang.com/) traducido al espa\u00f1ol por Javier Eguiluz en [LibrosWeb.es](http://librosweb.es(lobrosweb.es)",
+    "views": 3,
+    "clicks": 1,
+    "marked_broken": 0,
+    "marked_spam": 0,
+    "active": true,
+    "create_at": "2017-03-02T08:21:02.239Z",
+    "update_at": "2017-03-05T04:33:23.389Z",
+    "categories": [
+      5
+    ],
+    "tags": [
+      9,
+      31
+    ],
+    "languages": [
+      1
+    ]
+  }
+},
+{
+  "model": "resources.resource",
+  "pk": 58,
+  "fields": {
+    "title": "Introducci\u00f3n a XHTML - LibrosWeb",
+    "slug": "introduccion-a-xhtml-librosweb",
+    "owner": 1,
+    "main_tag": 14,
+    "resource_format": 1,
+    "link": "http://librosweb.es/libro/xhtml/",
+    "image": "",
+    "description": "Libro de XHTML por Javier Eguiluz en [LibrosWeb.es](http://librosweb.es(lobrosweb.es)",
+    "views": 8,
+    "clicks": 1,
+    "marked_broken": 0,
+    "marked_spam": 0,
+    "active": true,
+    "create_at": "2017-03-02T08:23:09.479Z",
+    "update_at": "2017-03-05T04:33:21.582Z",
+    "categories": [
+      5
+    ],
+    "tags": [
+      14
+    ],
+    "languages": [
+      1
+    ]
+  }
+},
+{
+  "model": "resources.resource",
+  "pk": 59,
+  "fields": {
+    "title": "Introducci\u00f3n a CSS - LibrosWeb",
+    "slug": "introduccion-a-css-librosweb",
+    "owner": 1,
+    "main_tag": 9,
+    "resource_format": 1,
+    "link": "http://librosweb.es/libro/css/",
+    "image": "",
+    "description": "Libro de CSS por Javier Eguiluz en [LibrosWeb.es](http://librosweb.es(lobrosweb.es)",
+    "views": 3,
+    "clicks": 1,
+    "marked_broken": 0,
+    "marked_spam": 0,
+    "active": true,
+    "create_at": "2017-03-02T15:58:41.911Z",
+    "update_at": "2017-03-05T04:33:17.953Z",
+    "categories": [
+      5
+    ],
+    "tags": [
+      9
+    ],
+    "languages": [
+      1
+    ]
+  }
+},
+{
+  "model": "resources.resource",
+  "pk": 60,
+  "fields": {
+    "title": "Introducci\u00f3n a JavaScript - LibrosWeb",
+    "slug": "introduccion-a-javascript-librosweb",
+    "owner": 1,
+    "main_tag": 7,
+    "resource_format": 1,
+    "link": "http://librosweb.es/libro/javascript/",
+    "image": "",
+    "description": "Libro Introducci\u00f3n a JavaScript por Javier Eguiluz en [LibrosWeb.es](http://librosweb.es(lobrosweb.es)",
+    "views": 6,
+    "clicks": 1,
+    "marked_broken": 0,
+    "marked_spam": 0,
+    "active": true,
+    "create_at": "2017-03-02T16:00:40.818Z",
+    "update_at": "2017-03-05T02:41:16.161Z",
+    "categories": [
+      2,
+      5
+    ],
+    "tags": [
+      7
+    ],
+    "languages": [
+      1
+    ]
+  }
+},
+{
+  "model": "resources.resource",
+  "pk": 61,
+  "fields": {
+    "title": "Fundamentos de jQuery - LibrosWeb",
+    "slug": "fundamentos-de-jquery-librosweb",
+    "owner": 1,
+    "main_tag": 15,
+    "resource_format": 1,
+    "link": "http://librosweb.es/libro/fundamentos_jquery/",
+    "image": "",
+    "description": "Libro de jQuery de Rebecca Murphey traducido por Leandro D'Onofrio en [LibrosWeb.es](http://librosweb.es(lobrosweb.es)",
+    "views": 3,
+    "clicks": 1,
+    "marked_broken": 0,
+    "marked_spam": 0,
+    "active": true,
+    "create_at": "2017-03-02T16:04:02.299Z",
+    "update_at": "2017-03-05T04:31:24.713Z",
+    "categories": [
+      2,
+      5
+    ],
+    "tags": [
+      7,
+      15
+    ],
+    "languages": [
+      1
+    ]
+  }
+},
+{
+  "model": "resources.resource",
+  "pk": 62,
+  "fields": {
+    "title": "Python para principiantes - LibrosWeb",
+    "slug": "python-para-principiantes-librosweb",
+    "owner": 1,
+    "main_tag": 6,
+    "resource_format": 1,
+    "link": "http://librosweb.es/libro/python/",
+    "image": "",
+    "description": "Libro Python de Eugenia Bahit en [LibrosWeb.es](http://librosweb.es(lobrosweb.es)",
+    "views": 3,
+    "clicks": 1,
+    "marked_broken": 0,
+    "marked_spam": 0,
+    "active": true,
+    "create_at": "2017-03-02T16:06:42.765Z",
+    "update_at": "2017-03-05T04:31:27.415Z",
+    "categories": [
+      2
+    ],
+    "tags": [
+      6
+    ],
+    "languages": [
+      1
+    ]
+  }
+},
+{
+  "model": "resources.resource",
+  "pk": 63,
+  "fields": {
+    "title": "Pro Git 2nd ed. Edition",
+    "slug": "pro-git-2nd-ed-edition",
+    "owner": 1,
+    "main_tag": 11,
+    "resource_format": 1,
+    "link": "https://git-scm.com/book/en/v2",
+    "image": "resources/resources/progit2.png",
+    "description": "The entire Pro Git book, written by Scott Chacon and Ben Straub and published by Apress, is available here. All content is licensed under the [Creative Commons Attribution Non Commercial Share Alike 3.0 license](https://creativecommons.org/licenses/by-nc-sa/3.0/).",
+    "views": 4,
+    "clicks": 1,
+    "marked_broken": 0,
+    "marked_spam": 0,
+    "active": true,
+    "create_at": "2017-03-02T16:20:16.752Z",
+    "update_at": "2017-03-05T04:31:22.905Z",
+    "categories": [
+      2
+    ],
+    "tags": [
+      11
+    ],
+    "languages": [
+      3
+    ]
+  }
+},
+{
+  "model": "resources.resource",
+  "pk": 64,
+  "fields": {
+    "title": "Django Getting started (Official)",
+    "slug": "django-getting-started-official",
+    "owner": 1,
+    "main_tag": 3,
+    "resource_format": 1,
+    "link": "https://docs.djangoproject.com/en/dev/intro/",
+    "image": "",
+    "description": "New to Django? Or to Web development in general? Well, you came to the right place: read this material to quickly get up and running.\r\n\r\nOfficial Django Tutorial.",
+    "views": 3,
+    "clicks": 1,
+    "marked_broken": 0,
+    "marked_spam": 0,
+    "active": true,
+    "create_at": "2017-03-02T16:25:03.607Z",
+    "update_at": "2017-03-05T04:16:12.467Z",
+    "categories": [
+      2,
+      5
+    ],
+    "tags": [
+      3,
+      6
+    ],
+    "languages": [
+      3
+    ]
+  }
+},
+{
+  "model": "resources.resource",
+  "pk": 65,
+  "fields": {
+    "title": "An Introduction to Programming in Go",
+    "slug": "an-introduction-to-programming-in-go",
+    "owner": 1,
+    "main_tag": 32,
+    "resource_format": 1,
+    "link": "http://www.golang-book.com/books/intro",
+    "image": "resources/resources/AnIntroductiontoProgramminginGo.png",
+    "description": "Computer programming is the art, craft and science of writing programs which define how computers operate. This book will teach you how to write computer programs using a programming language designed by Google named Go.\r\n\r\nGo is a general purpose programming language with advanced features and a clean syntax. Because of its wide availability on a variety of platforms, its robust well-documented common library, and its focus on good software engineering principles, Go is an ideal language to learn as your first programming language.\r\n\r\nThe process we use to write software using Go (and most programming languages) is fairly straightforward:\r\n\r\n* Gather requirements\r\n* Find a solution\r\n* Write source code to implement the solution\r\n* Compile the source code into an executable\r\n* Run and test the program to make sure it works\r\n\r\nThis process is iterative (meaning its done many times) and the steps usually overlap. But before we write our first program in Go there are a few prerequisite concepts we need to understand.",
+    "views": 4,
+    "clicks": 1,
+    "marked_broken": 0,
+    "marked_spam": 0,
+    "active": true,
+    "create_at": "2017-03-02T18:10:34.975Z",
+    "update_at": "2017-03-05T04:31:30.995Z",
+    "categories": [
+      2
+    ],
+    "tags": [
+      32
+    ],
+    "languages": [
+      2
+    ]
+  }
+},
+{
+  "model": "resources.resource",
+  "pk": 66,
+  "fields": {
+    "title": "Go Bootcamp",
+    "slug": "go-bootcamp",
+    "owner": 1,
+    "main_tag": 32,
+    "resource_format": 1,
+    "link": "http://www.golangbootcamp.com/",
+    "image": "resources/resources/GoBootcamp.png",
+    "description": "**Go Bootcamp**\r\n\r\nEverything you need to know to get started with Go.\r\n\r\n**Matt Aimonetti**",
+    "views": 4,
+    "clicks": 1,
+    "marked_broken": 0,
+    "marked_spam": 0,
+    "active": true,
+    "create_at": "2017-03-02T18:37:13.841Z",
+    "update_at": "2017-03-05T04:31:18.516Z",
+    "categories": [
+      2
+    ],
+    "tags": [
+      32
+    ],
+    "languages": [
+      2
+    ]
+  }
+},
+{
+  "model": "resources.resource",
+  "pk": 67,
+  "fields": {
+    "title": "The Little Go Book",
+    "slug": "the-little-go-book",
+    "owner": 1,
+    "main_tag": 32,
+    "resource_format": 1,
+    "link": "http://openmymind.net/The-Little-Go-Book/",
+    "image": "resources/resources/TheLittleGoBook.png",
+    "description": "The Little Go Book is a free introduction to Google's Go programming language. It's aimed at developers who might not be quite comfortable with the idea of pointers and static typing. It's longer than the other Little books, but hopefully still captures that little feeling.",
+    "views": 7,
+    "clicks": 1,
+    "marked_broken": 0,
+    "marked_spam": 0,
+    "active": true,
+    "create_at": "2017-03-02T18:49:10.793Z",
+    "update_at": "2017-03-05T04:31:21.991Z",
+    "categories": [
+      2
+    ],
+    "tags": [
+      32
+    ],
+    "languages": [
+      2
+    ]
+  }
+},
+{
+  "model": "resources.resource",
+  "pk": 68,
+  "fields": {
+    "title": "Webapps in Go the anti textbook",
+    "slug": "webapps-in-go-the-anti-textbook",
+    "owner": 1,
+    "main_tag": 32,
+    "resource_format": 1,
+    "link": "https://github.com/thewhitetulip/web-dev-golang-anti-textbook",
+    "image": "resources/resources/WebappsinGo.jpg",
+    "description": "This is an easy to understand example based tutorial aimed at those who know a little of Go and nothing of webdev and want to learn how to write a webserver in Go. You will create a to do list application as you advance the chapters.\r\n\r\nPlease use the `front end` folder in the `code` folder to get the index.html of the Tasks project and work on it while reading this tutorial.",
+    "views": 4,
+    "clicks": 1,
+    "marked_broken": 0,
+    "marked_spam": 0,
+    "active": true,
+    "create_at": "2017-03-02T19:20:34.853Z",
+    "update_at": "2017-03-05T04:31:26.042Z",
+    "categories": [
+      2
+    ],
+    "tags": [
+      32
+    ],
+    "languages": [
+      2
+    ]
+  }
+},
+{
+  "model": "resources.resource",
+  "pk": 69,
+  "fields": {
+    "title": "Flask Mega-Tutorial - Miguel Grinberg",
+    "slug": "flask-mega-tutorial-miguel-grinberg",
+    "owner": 1,
+    "main_tag": 33,
+    "resource_format": 1,
+    "link": "https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world",
+    "image": "",
+    "description": "The application I'm going to develop as part of this tutorial is a decently featured microblogging server that I decided to call microblog. Pretty creative, I know.\r\n\r\nThese are some of the topics I will cover as we make progress with this project:\r\n\r\n* User management, including managing logins, sessions, user roles, profiles and user avatars.\r\n* Database management, including migration handling.\r\n* Web form support, including field validation.\r\n* Pagination of long lists of items.\r\n* Full text search.\r\n* Email notifications to users.\r\n* HTML templates.\r\n* Support for multiple languages.\r\n* Caching and other performance optimizations.\r\n* Debugging techniques for development and production servers.\r\n* Installation on a production server.\r\n\r\nSo as you see, I'm going pretty much for the whole thing. I hope this application, when finished, will serve as a sort of template for writing other web applications.",
+    "views": 4,
+    "clicks": 1,
+    "marked_broken": 0,
+    "marked_spam": 0,
+    "active": true,
+    "create_at": "2017-03-03T10:19:18.160Z",
+    "update_at": "2017-03-05T04:27:19.887Z",
+    "categories": [
+      2,
+      5
+    ],
+    "tags": [
+      33,
+      6
+    ],
+    "languages": [
+      2
+    ]
+  }
+},
+{
+  "model": "resources.resource",
+  "pk": 70,
+  "fields": {
+    "title": "Flask Workshop - Miguel Grinberg - PyCon 2015",
+    "slug": "flask-workshop-miguel-grinberg-pycon-2015",
+    "owner": 1,
+    "main_tag": 33,
+    "resource_format": 2,
+    "link": "https://www.youtube.com/watch?v=DIcpEg77gdE",
+    "image": "",
+    "description": "Flask is a web framework for Python based on Werkzeug, Jinja 2 and good intentions. It is considered a micro-framework, but don't get the \"\"micro\"\" part fool you; Flask can do everything others can do, many times in a simpler, leaner way. In this tutorial session we will build a web application together. Bring your laptop and your questions!\r\n\r\nSlides can be found at: [https://speakerdeck.com/pycon2015](https://speakerdeck.com/pycon2015) and [https://github.com/PyCon/2015-slides](https://github.com/PyCon/2015-slides)\"",
+    "views": 4,
+    "clicks": 1,
+    "marked_broken": 0,
+    "marked_spam": 0,
+    "active": true,
+    "create_at": "2017-03-03T10:28:44.861Z",
+    "update_at": "2017-03-03T17:09:13.073Z",
+    "categories": [
+      2,
+      5
+    ],
+    "tags": [
+      33,
+      6
+    ],
+    "languages": [
+      2
+    ]
+  }
+},
+{
+  "model": "resources.resource",
+  "pk": 71,
+  "fields": {
+    "title": "Curso B\u00e1sico de Gimp - frMoisesfr",
+    "slug": "curso-basico-de-gimp-frmoisesfr",
+    "owner": 1,
+    "main_tag": 34,
+    "resource_format": 2,
+    "link": "https://www.youtube.com/playlist?list=PLug2BNqcHKuKXzAI8ypuFO7wlGLNVov3p",
+    "image": "",
+    "description": "Este es un curso b\u00e1sico de Gimp, empezando desde cero. Y recorriendo aspectos b\u00e1sicos como son las capas, la interfaz del programa, filtros, canales, etc. Todo ello lo ir\u00e9 enfocando desde una gran cantidad de pr\u00e1cticas guiadas que adem\u00e1s sean \u00fatiles para vuestro trabajo diario.",
+    "views": 5,
+    "clicks": 1,
+    "marked_broken": 0,
+    "marked_spam": 0,
+    "active": true,
+    "create_at": "2017-03-03T22:11:37.055Z",
+    "update_at": "2017-03-05T04:40:57.911Z",
+    "categories": [
+      1,
+      3
+    ],
+    "tags": [
+      34
+    ],
+    "languages": [
+      1
+    ]
+  }
+},
+{
+  "model": "resources.resource",
+  "pk": 72,
+  "fields": {
+    "title": "High Performance Python (from Training at EuroPython 2011) Release 0.2",
+    "slug": "high-performance-python-from-training-at-europython-2011-release-02",
+    "owner": 1,
+    "main_tag": 6,
+    "resource_format": 1,
+    "link": "http://ianozsvald.com/HighPerformancePythonfromTrainingatEuroPython2011_v0.2.pdf",
+    "image": "",
+    "description": "I ran a 4 hour tutorial on High Performance Python at EuroPython 2011. I\u2019d like to see the training go to more people\r\nso I\u2019ve written this guide. This is based on the official tutorial with some additions, I\u2019m happy to accept updates.\r\nThe slides for tutorial are linked on the front page of this document.\r\nIf you\u2019d like some background on programming for parallelised CPUs then the Economist has a nice overview article\r\nentitled \u201cParallel Bars\u201d (June 2nd 2011): [http://www.economist.com/node/18750706](http://www.economist.com/node/18750706).  It doesn\u2019t mention CUDA and\r\nOpenCL but the comment thread has some useful discussion. GvR gets a name-check in the article.\r\nI\u2019ll also give myself a quick plug - I run an Artificial Intelligence consultancy (http://MorConsulting.com) and rather\r\nenjoy training with Python.\r\nI\u2019d like to note that this report is a summary of work over many weeks preparing for EuroPython.  I didn\u2019t perform\r\nstatistically valid tests, I did however run the timings many times and can vouch for their stability.  The goal isn\u2019t to\r\nsuggest that there is \u201cone best way\u201d to do things - I\u2019m showing you several journeys that takes different routes to faster\r\nexecution times for this problem.\r\nIf you\u2019re curious to see how the stock CPython interpreter compares to other languages like C and JavaScript then see\r\nthis benchmark: [http://shootout.alioth.debian.org/u32/which-programming-languages-are-fastest.php](http://shootout.alioth.debian.org/u32/which-programming-languages-are-fastest.php) - you\u2019ll note that\r\nit does rather poorly (up to 100* slower than C!). It also compares poorly against JavaScript V8 which is dynamically\r\ntyped and interpreted - much like CPython.  Playing with comparisons against the JavaScript V8 examples got me\r\nstarted on this tutorial.\r\nTo see how CPython, PyPy, ShedSkin, IronPython and Jython compare to other languages (including C and V8) see\r\nthis benchmark: [http://attractivechaos.github.com/plb/](http://attractivechaos.github.com/plb/) - as shown we can make Python run to 2-6* slower than C with\r\nlittle effort, and the gap with C is shrinking all the time.  The flipside of course is that developing with Python is far\r\nfaster than developing with C!\r\n\r\n**License**\r\n\r\n* Creative Commons By Attribution\r\n(and if you meet me and like this report, I\u2019d happily accept a beer)* Link to: http://ianozsvald.com/2011/07/24/high-performance-python-tutorial-v0-2-from-europython-2011\r\n\r\n**Author Web Site**\r\n\r\n[http://ianozsvald.com/](http://ianozsvald.com/)",
+    "views": 3,
+    "clicks": 1,
+    "marked_broken": 0,
+    "marked_spam": 0,
+    "active": true,
+    "create_at": "2017-03-05T10:43:24.766Z",
+    "update_at": "2017-03-05T12:01:11.320Z",
+    "categories": [
+      2
+    ],
+    "tags": [
+      6
+    ],
+    "languages": [
+      2
+    ]
+  }
+},
+{
+  "model": "resources.resource",
+  "pk": 73,
+  "fields": {
+    "title": "Automate the Boring Stuff with Python",
+    "slug": "automate-the-boring-stuff-with-python",
+    "owner": 1,
+    "main_tag": 6,
+    "resource_format": 1,
+    "link": "https://automatetheboringstuff.com/",
+    "image": "resources/resources/automate_cover_medium.png",
+    "description": "Practical programming for total beginners. Written by Al Sweigart.\r\nFree to read under a [Creative Commons license](https://creativecommons.org/licenses/by-nc-sa/3.0/).\r\n\r\nIf you've ever spent hours renaming files or updating hundreds of spreadsheet cells, you know how tedious tasks like these can be. But what if you could have your computer do them for you?\r\n\r\nIn Automate the Boring Stuff with Python, you'll learn how to use Python to write programs that do in minutes what would take you hours to do by hand-no prior programming experience required. Once you've mastered the basics of programming, you'll create Python programs that effortlessly perform useful and impressive feats of automation to:\r\n\r\n* Search for text in a file or across multiple files\r\n* Create, update, move, and rename files and folders\r\n* Search the Web and download online content\r\n* Update and format data in Excel spreadsheets of any size\r\n* Split, merge, watermark, and encrypt PDFs\r\n* Send reminder emails and text notifications\r\n* Fill out online forms\r\n\r\nStep-by-step instructions walk you through each program, and practice projects at the end of each chapter challenge you to improve those programs and use your newfound skills to automate similar tasks.\r\n\r\nDon't spend your time doing work a well-trained monkey could do. Even if you've never written a line of code, you can make your computer do the grunt work. Learn how in Automate the Boring Stuff with Python.\r\n\r\nNote: The programs in this book are written to run on Python 3.",
+    "views": 4,
+    "clicks": 1,
+    "marked_broken": 0,
+    "marked_spam": 0,
+    "active": true,
+    "create_at": "2017-03-05T10:49:27.345Z",
+    "update_at": "2017-03-05T12:01:39.362Z",
+    "categories": [
+      2
+    ],
+    "tags": [
+      6
+    ],
+    "languages": [
+      2
+    ]
+  }
+},
+{
+  "model": "resources.resource",
+  "pk": 74,
+  "fields": {
+    "title": "How to Think Like a Computer Scientist: Interactive Edition",
+    "slug": "how-to-think-like-a-computer-scientist-interactive-edition",
+    "owner": 1,
+    "main_tag": 6,
+    "resource_format": 1,
+    "link": "http://interactivepython.org/runestone/static/thinkcspy/index.html",
+    "image": "",
+    "description": "This project began with the original How to Think Like a Computer Scientist text by Jeffrey Elkner, Peter Wentworth, Allen B. Downey, Chris Meyers, and Dario Mitchell. Since 2011 Brad Miller, David Ranum, Barbara Ericson, Mark Guzdial, and many others have built on the text making it interactive.\r\n\r\nProgramming is not a \"spectator sport\". It is something you do, something you participate in. It would make sense, then, that the book you use to learn programming should allow you to be active. That is our goal.\r\n\r\nThis book is meant to provide you with an interactive experience as you learn to program in Python. You can read the text, watch videos, and write and execute Python code. In addition to simply executing code, there is a unique feature called 'codelens' that allows you to control the flow of execution in order to gain a better understanding of how the program works.\r\n\r\n**GitHub** [https://github.com/RunestoneInteractive/thinkcspy](https://github.com/RunestoneInteractive/thinkcspy)",
+    "views": 4,
+    "clicks": 1,
+    "marked_broken": 0,
+    "marked_spam": 0,
+    "active": true,
+    "create_at": "2017-03-05T10:57:02.541Z",
+    "update_at": "2017-03-05T12:02:52.004Z",
+    "categories": [
+      2
+    ],
+    "tags": [
+      6
+    ],
+    "languages": [
+      2
+    ]
+  }
+},
+{
+  "model": "resources.resource",
+  "pk": 75,
+  "fields": {
+    "title": "Programming Computer Vision with Python",
+    "slug": "programming-computer-vision-with-python",
+    "owner": 1,
+    "main_tag": 6,
+    "resource_format": 1,
+    "link": "http://programmingcomputervision.com/",
+    "image": "resources/resources/PCVPython.gif",
+    "description": "If you want a basic understanding of computer vision\u2019s underlying theory and algorithms, this hands-on introduction is the ideal place to start. You\u2019ll learn techniques for object recognition, 3D reconstruction, stereo imaging, augmented reality, and other computer vision applications as you follow clear examples written in Python.\r\n\r\nProgramming Computer Vision with Python explains computer vision in broad terms that won\u2019t bog you down in theory. You get complete code samples with explanations on how to reproduce and build upon each example, along with exercises to help you apply what you\u2019ve learned. This book is ideal for students, researchers, and enthusiasts with basic programming and standard mathematical skills.\r\n\r\n* Learn techniques used in robot navigation, medical image analysis, and other computer vision applications\r\n* Work with image mappings and transforms, such as texture warping and panorama creation\r\n* Compute 3D reconstructions from several images of the same scene\r\n* Organize images based on similarity or content, using clustering methods\r\n* Build efficient image retrieval techniques to search for images based on visual content\r\n* Use algorithms to classify image content and recognize objects\r\n* Access the popular OpenCV library through a Python interface",
+    "views": 3,
+    "clicks": 1,
+    "marked_broken": 0,
+    "marked_spam": 0,
+    "active": true,
+    "create_at": "2017-03-05T11:01:22.594Z",
+    "update_at": "2017-03-05T12:02:20.702Z",
+    "categories": [
+      2
+    ],
+    "tags": [
+      6
+    ],
+    "languages": [
+      2
+    ]
+  }
+},
+{
+  "model": "resources.resource",
+  "pk": 76,
+  "fields": {
+    "title": "How to  Make Mistakes  in Python",
+    "slug": "how-to-make-mistakes-in-python",
+    "owner": 1,
+    "main_tag": 6,
+    "resource_format": 1,
+    "link": "http://www.oreilly.com/programming/free/how-to-make-mistakes-in-python.csp",
+    "image": "resources/resources/htmmp.gif",
+    "description": "Even the best programmers make mistakes, and experienced programmer Mike Pirnat has made his share during 15+ years with Python. Some have been simple and silly; others were embarrassing and downright costly. In this O\u2019Reilly report, he dissects some of his most memorable blunders, peeling them back layer-by-layer to reveal just what went wrong.\r\n\r\nFor example, you could install every third-party package that looks interesting and end up with a tangled mess where nothing works right. Or you could write a test that manages to break the build. Mike\u2019s done both and so much more. By avoiding these missteps, you\u2019ll be free to make truly significant mistakes\u2014the ones that advance the art of programming.\r\n\r\n* Setup: the ills of an incautiously prepared environment\r\n* Silly things: trivial mistakes that waste a disproportionate amount of energy\r\n* Style: poor stylistic decisions that impede readability\r\n* Structure: assembling code in ways that make change more difficult\r\n* Surprises: those shocking mysteries that only time can turn from OMG to LOL\r\n\r\nCode examples are in Python 2, but still relevant for Python 3.",
+    "views": 4,
+    "clicks": 1,
+    "marked_broken": 0,
+    "marked_spam": 0,
+    "active": true,
+    "create_at": "2017-03-05T11:25:24.046Z",
+    "update_at": "2017-03-05T12:01:29.987Z",
+    "categories": [
+      2
+    ],
+    "tags": [
+      6
+    ],
+    "languages": [
+      2
+    ]
+  }
+},
+{
+  "model": "resources.resource",
+  "pk": 77,
+  "fields": {
+    "title": "Think Python 2nd Edition by Allen B. Downey",
+    "slug": "think-python-2nd-edition-by-allen-b-downey",
+    "owner": 1,
+    "main_tag": 6,
+    "resource_format": 1,
+    "link": "http://greenteapress.com/wp/think-python-2e/",
+    "image": "resources/resources/think_python2_medium.jpg",
+    "description": "Think Python is an introduction to Python programming for beginners. It starts with basic concepts of programming, and is carefully designed to define all terms when they are first used and to develop each new concept in a logical progression. Larger pieces, like recursion and object-oriented programming are divided into a sequence of smaller steps and introduced over the course of several chapters.\r\n\r\n* We\u2019ve upgraded to Python 3: All examples in the book are now Python 3, and the supporting code has been updated to run in both Python 2 and 3.\r\n* We\u2019ve removed the roadblocks: Based on reader feedback, we know where people had problems, so we\u2019ve fixed or removed the pain points.\r\n* Python in the browser: For beginners, one of the challenges of getting started is installing Python. For readers who don\u2019t want to install Python right away, we provide instructions for running Python in a browser using PythonAnywhere, a free online programming environment.\r\n* More Python goodies: We\u2019ve added a chapter to cover some powerful Python features that didn\u2019t make it into the first edition, including list comprehensions and additional data structures.\r\n\r\nThink Python 2e is a Free Book. It is available under the [Creative Commons Attribution-NonCommercial 3.0 Unported License](http://creativecommons.org/licenses/by-nc/3.0/), which means that you are free to copy, distribute, and modify it, as long as you attribute the work and don\u2019t use it for commercial purposes.",
+    "views": 5,
+    "clicks": 1,
+    "marked_broken": 0,
+    "marked_spam": 0,
+    "active": true,
+    "create_at": "2017-03-05T11:32:30.081Z",
+    "update_at": "2017-03-05T12:02:33.222Z",
+    "categories": [
+      2
+    ],
+    "tags": [
+      6
+    ],
+    "languages": [
+      2
+    ]
+  }
+},
+{
+  "model": "resources.resource",
+  "pk": 78,
+  "fields": {
+    "title": "Think Java 6nd Edition",
+    "slug": "think-java-6nd-edition",
+    "owner": 1,
+    "main_tag": 37,
+    "resource_format": 1,
+    "link": "http://greenteapress.com/wp/think-java/",
+    "image": "resources/resources/think_java_cover.jpg",
+    "description": "Think Java is an introduction to computer science and programming intended for people with little or no experience. We start with the most basic concepts and are careful to define all terms when they are first used. The book presents each new idea in a logical progression. Larger topics, like recursion and object-oriented programming, are divided into smaller examples and introduced over the course of several chapters.\r\n\r\nThis book is intended for students preparing for the AP Computer Science A Exam.  [Here is a PDF document with the Topic Outline for the exam and the corresponding sections of Think Java](http://greenteapress.com/wp/wp-content/uploads/2016/01/AP.pdf).\r\n\r\nHere are the guiding principles that make the book the way it is:\r\n\r\n* One concept at a time. We break down topics that give beginners trouble into a series of small steps, so that they can exercise each new concept in isolation before continuing.\r\n* Balance of Java and concepts. The book is not primarily about Java; it uses code examples to demonstrate computer science. Most chapters start with language features and end with concepts.\r\n* Conciseness. An important goal of the book is to be small enough so that students can read and understand the entire text in a one-semester college or AP course.\r\n* Emphasis on vocabulary. We try to introduce the minimum number of terms and define them carefully when they are first used. We also organize them in glossaries at the end of each chapter.\r\n* Program development. There are many strategies for writing programs, including bottom-up, top-down, and others. We demonstrate multiple program development techniques, allowing readers to choose methods that work best for them.\r\n* Multiple learning curves. To write a program, you have to understand the algorithm, know the programming language, and be able to debug errors. We discuss these and other aspects throughout the book, and include an appendix that summarizes our advice.\r\n\r\nThink Java is a free textbook available under the [Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License](http://creativecommons.org/licenses/by-nc-sa/3.0/). Readers are free to copy and distribute the text; they are also free to modify it, which allows them to adapt the book to different needs, and to help develop new material. [The LaTeX source for this book is in this repository](https://github.com/AllenDowney/ThinkJava).",
+    "views": 5,
+    "clicks": 1,
+    "marked_broken": 0,
+    "marked_spam": 0,
+    "active": true,
+    "create_at": "2017-03-05T11:37:57.312Z",
+    "update_at": "2017-03-05T12:01:55.682Z",
+    "categories": [
+      2
+    ],
+    "tags": [
+      37
+    ],
+    "languages": [
+      2
+    ]
+  }
+},
+{
+  "model": "resources.resource",
+  "pk": 79,
+  "fields": {
+    "title": "Think DSP",
+    "slug": "think-dsp",
+    "owner": 1,
+    "main_tag": 6,
+    "resource_format": 1,
+    "link": "http://greenteapress.com/wp/think-dsp/",
+    "image": "resources/resources/think_dsp_cover.jpg",
+    "description": "Think DSP is an introduction to Digital Signal Processing in Python.\r\n\r\nThe premise of this book (and the other books in the Think X series) is that if you know how to program, you can use that skill to learn other things. I am writing this book because I think the conventional approach to digital signal processing is backward: most books (and the classes that use them) present the material bottom-up, starting with mathematical abstractions like phasors.\r\n\r\nWith a programming-based approach, I can go top-down, which means I can present the most important ideas right away. By the end of the first chapter, you can decompose a sound into its harmonics, modify the harmonics, and generate new sounds.\r\n\r\nThink DSP is a Free Book. It is available under the [Creative Commons Attribution-NonCommercial 3.0 Unported License](http://creativecommons.org/licenses/by-nc/3.0/), which means that you are free to copy, distribute, and modify it, as long as you attribute the work and don\u2019t use it for commercial purposes.",
+    "views": 4,
+    "clicks": 1,
+    "marked_broken": 0,
+    "marked_spam": 0,
+    "active": true,
+    "create_at": "2017-03-05T11:40:38.721Z",
+    "update_at": "2017-03-05T12:01:21.009Z",
+    "categories": [
+      2
+    ],
+    "tags": [
+      6
+    ],
+    "languages": [
+      2
+    ]
+  }
+},
+{
+  "model": "resources.resource",
+  "pk": 80,
+  "fields": {
+    "title": "Think Complexity",
+    "slug": "think-complexity",
+    "owner": 1,
+    "main_tag": 6,
+    "resource_format": 1,
+    "link": "http://greenteapress.com/complexity/",
+    "image": "resources/resources/think_complexity_cover.png",
+    "description": "This book is about complexity science, data structures and algorithms, intermediate programming in Python, and the philosophy of science:\r\n\r\n* Data structures and algorithms: A data structure is a collection that contains data elements organized in a way that supports particular operations. For example, a dictionary organizes key-value pairs in a way that provides fast mapping from keys to values, but mapping from values to keys is generally slower.\r\n\r\n* An alorithm is a mechanical process for performing a computation. Designing efficient programs often involves the co-evolution of data structures and the algorithms that use them. For example, the first few chapters are about graphs, a data structure that is a good implementation of a graph---nested dictionaries---and several graph algorithms that use this data structure.\r\n\r\n* Python programming: This book picks up where [Think Python](http://greenteapress.com/thinkpython/index.html) leaves off. I assume that you have read that book or have equivalent knowledge of Python. As always, I will try to emphasize fundmental ideas that apply to programming in many languages, but along the way you will learn some useful features that are specific to Python.\r\n* Computational modeling: A model is a simplified description of a system that is useful for simulation or analysis. Computational models are designed to take advantage of cheap, fast computation.\r\n* Philosophy of science: The models and results in this book raise a number of questions relevant to the philosophy of science, including the nature of scientific laws, theory choice, realism and instrumentalism, holism and reductionism, and Bayesian epistemology. \r\n\r\nThis book focuses on discrete models, which include graphs, cellular automata, and agent-based models. They are often characterized by structure, rules and transitions rather than by equations. They tend to be more abstract than continuous models; in some cases there is no direct correspondence between the model and a physical system.\r\n\r\nComplexity science is an interdisciplinary field---at the intersection of mathematics, computer science and physics---that focuses on these kinds of models. That's what this book is about.\r\nFree books!\r\n\r\nThis book is under the [Creative Commons Attribution-NonCommercial 3.0 Unported License](http://creativecommons.org/licenses/by-nc/3.0/), which means that you are free to copy, distribute, and modify it, as long as you attribute the work and don't use it for commercial purposes.\r\n\r\nDownload the LaTeX source code (with figures and a Makefile) in a [zip file](http://greenteapress.com/complexity/complexity.tex.zip).",
+    "views": 5,
+    "clicks": 1,
+    "marked_broken": 0,
+    "marked_spam": 0,
+    "active": true,
+    "create_at": "2017-03-05T11:46:11.614Z",
+    "update_at": "2017-03-05T12:01:43.085Z",
+    "categories": [
+      2
+    ],
+    "tags": [
+      6
+    ],
+    "languages": [
+      2
+    ]
+  }
+},
+{
+  "model": "resources.resource",
+  "pk": 81,
+  "fields": {
+    "title": "Django Design Patterns - agiliq",
+    "slug": "django-design-patterns-agiliq",
+    "owner": 1,
+    "main_tag": 3,
+    "resource_format": 1,
+    "link": "http://agiliq.com/books/djangodesignpatterns/",
+    "image": "",
+    "description": "This is a collection of patterns which we have found occurring commonly with Django. All of these either make collaboration easier, coding simpler or code more maintainable. None of them are design patterns in the sense of GoF design patterns. We call them design patterns as none other seem closer or more convenient.\r\n\r\nThese are guidelines, which need to be overridden (very commonly, in some cases). Use your judgement when using them. As PEP8 says, \u201cFoolish consistency is the hobgoblin of small minds.\u201d",
+    "views": 4,
+    "clicks": 1,
+    "marked_broken": 0,
+    "marked_spam": 0,
+    "active": true,
+    "create_at": "2017-03-05T11:49:39.822Z",
+    "update_at": "2017-03-05T12:02:08.198Z",
+    "categories": [
+      2,
+      5
+    ],
+    "tags": [
+      3,
+      6
+    ],
+    "languages": [
+      2
+    ]
+  }
+},
+{
+  "model": "resources.resource",
+  "pk": 82,
+  "fields": {
+    "title": "Djen of django\u2019s",
+    "slug": "djen-of-djangos",
+    "owner": 1,
+    "main_tag": 3,
+    "resource_format": 1,
+    "link": "http://agiliq.com/books/djenofdjango/",
+    "image": "",
+    "description": "A Django book for people with intermediate level Django skills.\r\n\r\nInspired by James Bennett's Practical Django projects.",
+    "views": 7,
+    "clicks": 1,
+    "marked_broken": 0,
+    "marked_spam": 0,
+    "active": true,
+    "create_at": "2017-03-05T11:53:36.051Z",
+    "update_at": "2017-03-06T22:56:08.002Z",
+    "categories": [
+      2,
+      5
+    ],
+    "tags": [
+      3,
+      6
+    ],
+    "languages": [
+      2
+    ]
+  }
+},
+{
+  "model": "resources.resource",
+  "pk": 83,
+  "fields": {
+    "title": "Cours de Python - Universit\u00e9 Paris Diderot",
+    "slug": "cours-de-python-universite-paris-diderot",
+    "owner": 1,
+    "main_tag": 6,
+    "resource_format": 1,
+    "link": "http://www.dsimb.inserm.fr/~fuchs/python/",
+    "image": "",
+    "description": "Bienvenue au cours de Python !\r\n\r\nCe cours a \u00e9t\u00e9 con\u00e7u \u00e0 l'origine pour les \u00e9tudiants d\u00e9butants en programmation Python des fili\u00e8res biologie et biochimie de l'[Universit\u00e9 Paris Diderot - Paris 7](http://www.univ-paris-diderot.fr/) ; et plus sp\u00e9cialement pour les \u00e9tudiants du master Biologie Informatique.\r\n\r\nCe cours est bas\u00e9 sur la version 2.7 de Python, version que l'on trouve par d\u00e9faut dans les distributions Linux actuelles (comme Ubuntu 16.04). Le cours sera mis \u00e0 jour vers la version 3.x de Python dans les prochains mois (d\u00e8s que Python 3 sera le standard dans les distributions Linux). Nous avons ajout\u00e9 un paragraphe dans l'introduction traitant des principales diff\u00e9rences entre Python 2 et Python 3 .\r\n\r\nSi vous relevez des erreurs \u00e0 la lecture de ce document, merci de nous les signaler.",
+    "views": 4,
+    "clicks": 1,
+    "marked_broken": 0,
+    "marked_spam": 0,
+    "active": true,
+    "create_at": "2017-03-05T11:58:57.434Z",
+    "update_at": "2017-03-06T23:01:17.800Z",
+    "categories": [
+      2
+    ],
+    "tags": [
+      6
+    ],
+    "languages": [
+      7
+    ]
+  }
+},
+{
+  "model": "resources.resource",
+  "pk": 84,
+  "fields": {
+    "title": "web2py Complete Reference Manual, 6th Edition",
+    "slug": "web2py-complete-reference-manual-6th-edition",
+    "owner": 1,
+    "main_tag": 39,
+    "resource_format": 1,
+    "link": "http://www.web2py.com/book",
+    "image": "",
+    "description": "I believe that the ability to easily build high quality web applications is of critical importance for the growth of a free and open society. This prevents the biggest players from monopolizing the flow of information.\r\n\r\nHence I started the web2py project in 2007, primarily as a teaching tool with the goal of making web development easier, faster, and more secure. Over time, it has managed to win the affection of thousands of knowledgeable users and hundreds of developers. Our collective effort has created one of the most full-featured Open Source Web Frameworks for enterprise web development.\r\n\r\nAs a result, in 2011, web2py won the Bossie Award for best Open Source Development Software, and in 2012 it won the Technology of the Year award from InfoWorld.\r\n\r\nAs you will learn in the following pages, web2py tries to lower the barrier of entry to web development by focusing on three main goals:\r\n\r\nEase of use. This means reducing the learning and deployment time as well as development and maintenance costs. This is why web2py is a full-stack framework without dependencies. It requires no installation and has no configuration files. Everything works out of the box, including a web server, database and a web-based IDE that gives access to all the main features. The API includes just 12 core objects, which are easy to work with and memorize. It can interoperate with most web servers, databases and all Python libraries.\r\n\r\nRapid development. Every function of web2py has a default behavior (which can be overridden). For example, as soon as you have specified your data models, you will have access to a web-based database administration panel. Also, web2py automatically generates forms for your data and it allows you to easily expose the data in HTML, XML, JSON, RSS, etc. web2py provides some high level widgets such as the wiki and the grid to rapidly build complex applications.\r\n\r\nSecurity. The web2py Database Abstraction Layer (DAL) eliminates SQL Injections. The template language prevents Cross Site Scripting vulnerabilities. The forms generated by web2py provide field validation and block Cross Site Request Forgeries. Passwords are always stored hashed. Sessions are stored server-side by default to prevent Cookie Tampering. Session cookies are UUID to prevent Session Hijacking.\r\n\r\nweb2py is built from the user perspective and is constantly being optimized internally to become faster and leaner, whilst always maintaining backwards compatibility.\r\n\r\nweb2py provides its users with the generous freedoms of the LGPL open source licence. If you benefit from it, I hope you will feel encouraged to pay it forward by contributing back to society in whatever form you choose.",
+    "views": 4,
+    "clicks": 1,
+    "marked_broken": 0,
+    "marked_spam": 0,
+    "active": true,
+    "create_at": "2017-03-05T12:05:59.667Z",
+    "update_at": "2017-03-06T12:46:15.243Z",
+    "categories": [
+      2,
+      5
+    ],
+    "tags": [
+      6,
+      39
+    ],
+    "languages": [
+      2
+    ]
+  }
+},
+{
+  "model": "resources.resource",
+  "pk": 85,
+  "fields": {
+    "title": "Explore Flask - Robert Picard",
+    "slug": "explore-flask-robert-picard",
+    "owner": 1,
+    "main_tag": 33,
+    "resource_format": 1,
+    "link": "https://exploreflask.com/en/latest/",
+    "image": "",
+    "description": "Explore Flask is a book about best practices and patterns for developing web applications with [Flask](http://flask.pocoo.org/). The book was funded by 426 backers [on Kickstarter](https://www.kickstarter.com/projects/1223051718/practical-flask-book-project) in July 2013.\r\n\r\nI finally released the book, after spending almost a year working on it. Almost immediately I was tired of managing distribution and limiting the book\u2019s audience by putting it behind a paywall. I didn\u2019t write a book to run a business, I wrote it to put some helpful content out there and help grow the Flask community.\r\n\r\nIn June of 2014, soon after finishing the book, I reformatted it for the web and released it here for free. No payment or donation or anything required. Just enjoy!",
+    "views": 5,
+    "clicks": 1,
+    "marked_broken": 0,
+    "marked_spam": 0,
+    "active": true,
+    "create_at": "2017-03-05T12:08:54.795Z",
+    "update_at": "2017-03-06T22:56:21.097Z",
+    "categories": [
+      2
+    ],
+    "tags": [
+      33,
+      6
+    ],
+    "languages": [
+      2
+    ]
+  }
+},
+{
+  "model": "resources.resource",
+  "pk": 86,
+  "fields": {
+    "title": "Think Stats",
+    "slug": "think-stats",
+    "owner": 1,
+    "main_tag": 6,
+    "resource_format": 1,
+    "link": "http://greenteapress.com/thinkstats/",
+    "image": "resources/resources/think_stats_comp.png",
+    "description": "Think Stats is an introduction to Probability and Statistics for Python programmers.\r\n\r\n* Think Stats emphasizes simple techniques you can use to explore real data sets and answer interesting questions. The book presents a case study using data from the National Institutes of Health. Readers are encouraged to work on a project with real datasets.\r\n* If you have basic skills in Python, you can use them to learn concepts in probability and statistics. Think Stats is based on a Python library for probability distributions (PMFs and CDFs). Many of the exercises use short programs to run experiments and help readers develop understanding.\r\n* Most introductory books don't cover Bayesian statistics, but Think Stats is based on the idea that Bayesian methods are too important to postpone. By taking advantage of the PMF and CDF libraries, it is possible for beginners to learn the concepts and solve challenging problems. \r\n\r\nThis book is under the [Creative Commons Attribution-NonCommercial 3.0 Unported License](http://creativecommons.org/licenses/by-nc/3.0/), which means that you are free to copy, distribute, and modify it, as long as you attribute the work and don't use it for commercial purposes.",
+    "views": 3,
+    "clicks": 1,
+    "marked_broken": 0,
+    "marked_spam": 0,
+    "active": true,
+    "create_at": "2017-03-05T14:58:46.993Z",
+    "update_at": "2017-03-06T23:01:21.495Z",
+    "categories": [
+      2
+    ],
+    "tags": [
+      6
+    ],
+    "languages": [
+      2
+    ]
+  }
+},
+{
+  "model": "resources.resource",
+  "pk": 87,
+  "fields": {
+    "title": "Supporting Python 3",
+    "slug": "supporting-python-3",
+    "owner": 1,
+    "main_tag": 6,
+    "resource_format": 1,
+    "link": "http://python3porting.com/",
+    "image": "resources/resources/supportingpython3.jpeg",
+    "description": "**Supporting Python 3** doesn\u2019t have to be daunting. This book guides you through the process of adding Python 3 support, from choosing a strategy to solving your distribution issues. Using plenty of code examples, it guides you across the hurdles and shows you the new Python features.\r\n\r\n**2016-10-23: The first release of the community version!**\r\n\r\nAfter almost a year of delay, the community version of the book is finally here! The book has been renamed to \u201cSupporting Python 3\u201d to signal both that something happened to the book, and to signal that it\u2019s no longer a question of porting.\r\n\r\nAnother change is that this site will be rebuilt on a nightly basis, so it\u2019s always the latest version. I have also retired the paper version completely. If you want to sponsor a print run of the paper book, contact me! They make good giveaways for Python conferences!",
+    "views": 3,
+    "clicks": 1,
+    "marked_broken": 0,
+    "marked_spam": 0,
+    "active": true,
+    "create_at": "2017-03-05T15:07:06.509Z",
+    "update_at": "2017-03-06T23:01:29.328Z",
+    "categories": [
+      2
+    ],
+    "tags": [
+      6
+    ],
+    "languages": [
+      2
+    ]
+  }
+},
+{
+  "model": "resources.resource",
+  "pk": 88,
+  "fields": {
+    "title": "Welcome to Python for you and me",
+    "slug": "welcome-to-python-for-you-and-me",
+    "owner": 1,
+    "main_tag": 6,
+    "resource_format": 1,
+    "link": "http://pymbook.readthedocs.io/en/latest/",
+    "image": "",
+    "description": "This is a simple book to learn Python programming language, it is for the programmers who are new to Python.",
+    "views": 3,
+    "clicks": 1,
+    "marked_broken": 0,
+    "marked_spam": 0,
+    "active": true,
+    "create_at": "2017-03-05T15:09:14.193Z",
+    "update_at": "2017-03-06T22:56:29.005Z",
+    "categories": [
+      2
+    ],
+    "tags": [
+      6
+    ],
+    "languages": [
+      2
+    ]
+  }
+},
+{
+  "model": "resources.resource",
+  "pk": 89,
+  "fields": {
+    "title": "Google's Python Class",
+    "slug": "googles-python-class",
+    "owner": 1,
+    "main_tag": 6,
+    "resource_format": 1,
+    "link": "https://developers.google.com/edu/python/",
+    "image": "",
+    "description": "Welcome to Google's Python Class -- this is a free class for people with a little bit of programming experience who want to learn Python. The class includes written materials, lecture videos, and lots of code exercises to practice Python coding. These materials are used within Google to introduce Python to people who have just a little programming experience. The first exercises work on basic Python concepts like strings and lists, building up to the later exercises which are full programs dealing with text files, processes, and http connections. The class is geared for people who have a little bit of programming experience in some language, enough to know what a \"variable\" or \"if statement\" is. Beyond that, you do not need to be an expert programmer to use this material.\r\n\r\nTo get started, the Python sections are linked at the left -- [Python Set Up](https://developers.google.com/edu/python/set-up) to get Python installed on your machine, [Python Introduction](https://developers.google.com/edu/python/introduction) for an introduction to the language, and then [Python Strings](https://developers.google.com/edu/python/strings) starts the coding material, leading to the first exercise. The end of each written section includes a link to the code exercise for that section's material. The lecture videos parallel the written materials, introducing Python, then strings, then first exercises, and so on. At Google, all this material makes up an intensive 2-day class, so the videos are organized as the day-1 and day-2 sections.\r\n\r\nThis material was created by [Nick Parlante](http://www-cs-faculty.stanford.edu/%7enick/) working in the engEDU group at Google. Special thanks for the help from my Google colleagues John Cox, Steve Glassman, Piotr Kaminksi, and Antoine Picard. And finally thanks to Google and my director Maggie Johnson for the enlightened generosity to put these materials out on the internet for free under the [Creative Commons Attribution 2.5](http://creativecommons.org/licenses/by/2.5/) license -- share and enjoy!",
+    "views": 4,
+    "clicks": 1,
+    "marked_broken": 0,
+    "marked_spam": 0,
+    "active": true,
+    "create_at": "2017-03-05T15:13:03.282Z",
+    "update_at": "2017-03-06T12:41:19.542Z",
+    "categories": [
+      2
+    ],
+    "tags": [
+      6
+    ],
+    "languages": [
+      2
+    ]
+  }
+},
+{
+  "model": "resources.resource",
+  "pk": 90,
+  "fields": {
+    "title": "Problem Solving with Algorithms and Data Structures using Python",
+    "slug": "problem-solving-with-algorithms-and-data-structures-using-python",
+    "owner": 1,
+    "main_tag": 6,
+    "resource_format": 1,
+    "link": "http://interactivepython.org/runestone/static/pythonds/index.html",
+    "image": "resources/resources/PythonDScover.jpg",
+    "description": "**Objectives**\r\n\r\n* To review the ideas of computer science, programming, and problem-solving.\r\n* To understand abstraction and the role it plays in the problem-solving process.\r\n* To understand and implement the notion of an abstract data type.\r\n* To review the Python programming language.",
+    "views": 4,
+    "clicks": 1,
+    "marked_broken": 0,
+    "marked_spam": 0,
+    "active": true,
+    "create_at": "2017-03-05T15:17:23.924Z",
+    "update_at": "2017-03-06T12:42:51.933Z",
+    "categories": [
+      2
+    ],
+    "tags": [
+      6
+    ],
+    "languages": [
+      2
+    ]
+  }
+},
+{
+  "model": "resources.resource",
+  "pk": 91,
+  "fields": {
+    "title": "Natural Language Processing with Python",
+    "slug": "natural-language-processing-with-python",
+    "owner": 1,
+    "main_tag": 6,
+    "resource_format": 1,
+    "link": "http://www.nltk.org/book/",
+    "image": "resources/resources/NaturalLanguageProcessingwithPython.gif",
+    "description": "This is a book about Natural Language Processing. By \"natural language\" we mean a language that is used for everyday communication by humans; languages like English, Hindi or Portuguese. In contrast to artificial languages such as programming languages and mathematical notations, natural languages have evolved as they pass from generation to generation, and are hard to pin down with explicit rules. We will take Natural Language Processing \u2014 or NLP for short \u2014 in a wide sense to cover any kind of computer manipulation of natural language. At one extreme, it could be as simple as counting word frequencies to compare different writing styles. At the other extreme, NLP involves \"understanding\" complete human utterances, at least to the extent of being able to give useful responses to them.\r\n\r\nTechnologies based on NLP are becoming increasingly widespread. For example, phones and handheld computers support predictive text and handwriting recognition; web search engines give access to information locked up in unstructured text; machine translation allows us to retrieve texts written in Chinese and read them in Spanish; text analysis enables us to detect sentiment in tweets and blogs. By providing more natural human-machine interfaces, and more sophisticated access to stored information, language processing has come to play a central role in the multilingual information society.\r\n\r\nThis book provides a highly accessible introduction to the field of NLP. It can be used for individual study or as the textbook for a course on natural language processing or computational linguistics, or as a supplement to courses in artificial intelligence, text mining, or corpus linguistics. The book is intensely practical, containing hundreds of fully-worked examples and graded exercises.\r\n\r\nThe book is based on the Python programming language together with an open source library called the Natural Language Toolkit (NLTK). NLTK includes extensive software, data, and documentation, all freely downloadable from http://nltk.org/. Distributions are provided for Windows, Macintosh and Unix platforms. We strongly encourage you to download Python and NLTK, and try out the examples and exercises along the way.",
+    "views": 3,
+    "clicks": 1,
+    "marked_broken": 0,
+    "marked_spam": 0,
+    "active": true,
+    "create_at": "2017-03-05T15:19:38.271Z",
+    "update_at": "2017-03-06T12:42:25.633Z",
+    "categories": [
+      2
+    ],
+    "tags": [
+      6
+    ],
+    "languages": [
+      2
+    ]
+  }
+},
+{
+  "model": "resources.resource",
+  "pk": 92,
+  "fields": {
+    "title": "Functional Programming in Python",
+    "slug": "functional-programming-in-python",
+    "owner": 1,
+    "main_tag": 6,
+    "resource_format": 1,
+    "link": "http://www.oreilly.com/programming/free/functional-programming-python.csp",
+    "image": "resources/resources/FunctionalProgramminginPython.gif",
+    "description": "Python is not a functional programming language, but it is a multi-paradigm language that makes functional programming easy to perform, and easy to mix with other programming styles. In this paper, David Mertz, a director of Python Software Foundation, examines the functional aspects of the language and points out which options work well and which ones you should generally decline.\r\n\r\nMertz describes ways to avoid Python\u2019s imperative-style flow control, the nuances of callable functions, how to work lazily with iterators, and the use of higher-order functions. He also lists several third-party Python libraries useful for functional programming.\r\n\r\nTopics include:\r\n\r\n* Using encapsulation and other means to describe \"what\" a data collection consists of, rather than \"how\" to construct a data collection\r\n* Creating callables with named functions, lambdas, closures, methods of classes, and multiple dispatch\r\n* Using Python\u2019s iterator protocol to accomplish the same effect as a lazy data structure\r\n* Creating higher-order functions that take functions as arguments and/or produce a function as a result",
+    "views": 5,
+    "clicks": 1,
+    "marked_broken": 0,
+    "marked_spam": 0,
+    "active": true,
+    "create_at": "2017-03-05T15:22:53.796Z",
+    "update_at": "2017-03-06T12:42:05.913Z",
+    "categories": [
+      2
+    ],
+    "tags": [
+      6
+    ],
+    "languages": [
+      2
+    ]
+  }
+},
+{
+  "model": "resources.resource",
+  "pk": 93,
+  "fields": {
+    "title": "Tutorial Flask - Official",
+    "slug": "tutorial-flask-official",
+    "owner": 1,
+    "main_tag": 33,
+    "resource_format": 1,
+    "link": "http://flask.pocoo.org/docs/tutorial/",
+    "image": "",
+    "description": "You want to develop an application with Python and Flask? Here you have the chance to learn by example. In this tutorial, we will create a simple microblogging application. It only supports one user that can create text-only entries and there are no feeds or comments, but it still features everything you need to get started. We will use Flask and SQLite as a database (which comes out of the box with Python) so there is nothing else you need.",
+    "views": 3,
+    "clicks": 1,
+    "marked_broken": 0,
+    "marked_spam": 0,
+    "active": true,
+    "create_at": "2017-03-05T15:25:07.219Z",
+    "update_at": "2017-03-06T12:41:32.269Z",
+    "categories": [
+      2,
+      5
+    ],
+    "tags": [
+      6
+    ],
+    "languages": [
+      2
+    ]
+  }
+},
+{
+  "model": "resources.resource",
+  "pk": 94,
+  "fields": {
+    "title": "Dive Into Python 3",
+    "slug": "dive-into-python-3",
+    "owner": 1,
+    "main_tag": 6,
+    "resource_format": 1,
+    "link": "http://www.diveintopython3.net/",
+    "image": "resources/resources/diveintopython3.jpg",
+    "description": "Dive Into Python 3 covers Python 3 and its differences from Python 2. Compared to [Dive Into Python](http://diveintopython.net/), it\u2019s about 20% revised and 80% new material. The book is now complete, but [feedback is always welcome](http://www.diveintopython3.net/about.html).",
+    "views": 4,
+    "clicks": 1,
+    "marked_broken": 0,
+    "marked_spam": 0,
+    "active": true,
+    "create_at": "2017-03-05T15:29:46.483Z",
+    "update_at": "2017-03-06T12:41:12.842Z",
+    "categories": [
+      2
+    ],
+    "tags": [
+      6
+    ],
+    "languages": [
+      2
+    ]
+  }
+},
+{
+  "model": "resources.resource",
+  "pk": 95,
+  "fields": {
+    "title": "Python para todos",
+    "slug": "python-para-todos",
+    "owner": 1,
+    "main_tag": 6,
+    "resource_format": 1,
+    "link": "http://mundogeek.net/tutorial-python/",
+    "image": "resources/resources/tutorial-python.jpg",
+    "description": "'Python para todos' es un libro sobre programaci\u00f3n en Python escrito por Ra\u00fal Gonz\u00e1lez Duque. Se trata de un tutorial de Python adecuado para todos los niveles y que puedes descargar totalmente gratis.\r\n\r\nEl tutorial de Python 'Python para todos' se distribuye bajo licencia Creative Commons Reconocimiento 2.5 Espa\u00f1a, lo que supone que puedes distribuirlo, modificarlo, traducirlo a otros idiomas, ... siempre que indiques el autor original, preferiblemente con un enlace a esta web: [Tutorial de Python Python para todos](http://mundogeek.net/tutorial-python)\r\n\r\nEl libro cuenta con 160 p\u00e1ginas en las que se tratan los siguientes temas:\r\n\r\n* Tipos b\u00e1sicos\r\n* Control de flujo\r\n* Funciones\r\n* Orientaci\u00f3n a objetos\r\n* Programaci\u00f3n funcional\r\n* Excepciones\r\n* M\u00f3dulos y paquetes\r\n* Entrada / Salida\r\n* Expresiones regulares\r\n* Sockets\r\n* Interacci\u00f3n con webs\r\n* Threads\r\n* Serializaci\u00f3n de objetos\r\n* Bases de datos\r\n* Documentaci\u00f3n\r\n* Pruebas\r\n* Distribuir aplicaciones Python",
+    "views": 4,
+    "clicks": 1,
+    "marked_broken": 0,
+    "marked_spam": 0,
+    "active": true,
+    "create_at": "2017-03-05T15:34:35.864Z",
+    "update_at": "2017-03-06T12:41:16.465Z",
+    "categories": [
+      2
+    ],
+    "tags": [
+      6
+    ],
+    "languages": [
+      1
+    ]
+  }
+},
+{
+  "model": "resources.resource",
+  "pk": 96,
+  "fields": {
+    "title": "Picking a Python Version: A Manifesto",
+    "slug": "picking-a-python-version-a-manifesto",
+    "owner": 1,
+    "main_tag": 6,
+    "resource_format": 1,
+    "link": "http://www.oreilly.com/programming/free/from-future-import-python.csp",
+    "image": "resources/resources/Picking_Python_Version_Manifesto.gif",
+    "description": "This report guides you through the implicit decision tree of choosing what Python version, implementation, and distribution is best suited for you. It weighs and discusses the merits of each of these choices, and briefly discusses the reasons each option exists.",
+    "views": 4,
+    "clicks": 1,
+    "marked_broken": 0,
+    "marked_spam": 0,
+    "active": true,
+    "create_at": "2017-03-05T15:39:25.108Z",
+    "update_at": "2017-03-06T12:42:19.066Z",
+    "categories": [
+      2
+    ],
+    "tags": [
+      6
+    ],
+    "languages": [
+      2
+    ]
+  }
+},
+{
+  "model": "resources.resource",
+  "pk": 97,
+  "fields": {
+    "title": "Learn Python the Hard Way",
+    "slug": "learn-python-the-hard-way",
+    "owner": 1,
+    "main_tag": 6,
+    "resource_format": 1,
+    "link": "https://learnpythonthehardway.org/book/",
+    "image": "resources/resources/lpthw.jpg",
+    "description": "This simple book is meant to get you started in programming. The title says it's the hard way to learn to write code but it's actually not. It's only the \"hard\" way because it uses a technique called instruction. Instruction is where I tell you to do a sequence of controlled exercises designed to build a skill through repetition. This technique works very well with beginners who know nothing and need to acquire basic skills before they can understand more complex topics. It's used in everything from martial arts to music to even basic math and reading skills.\r\n\r\nThis book instructs you in Python by slowly building and establishing skills through techniques like practice and memorization, then applying them to increasingly difficult problems. By the end of the book you will have the tools needed to begin learning more complex programming topics. I like to tell people that my book gives you your \"programming black belt.\" What this means is that you know the basics well enough to now start learning programming.\r\n\r\nIf you work hard, take your time, and build these skills, you will learn to code.",
+    "views": 10,
+    "clicks": 2,
+    "marked_broken": 0,
+    "marked_spam": 0,
+    "active": true,
+    "create_at": "2017-03-05T15:46:09.736Z",
+    "update_at": "2017-03-07T14:47:48.520Z",
+    "categories": [
+      2
+    ],
+    "tags": [
+      6
+    ],
+    "languages": [
+      2
+    ]
+  }
+},
+{
+  "model": "resources.resource",
+  "pk": 98,
+  "fields": {
+    "title": "Learn Ruby the Hard Way",
+    "slug": "learn-ruby-the-hard-way",
+    "owner": 1,
+    "main_tag": 19,
+    "resource_format": 1,
+    "link": "https://learnrubythehardway.org/book/",
+    "image": "resources/resources/lrthw.jpg",
+    "description": "This simple book is meant to get you started in programming. The title says it's the hard way to learn to write code but it's actually not. It's only the \"hard\" way because it uses a technique called instruction. Instruction is where I tell you to do a sequence of controlled exercises designed to build a skill through repetition. This technique works very well with beginners who know nothing and need to acquire basic skills before they can understand more complex topics. It's used in everything from martial arts to music to even basic math and reading skills.\r\n\r\nThis book instructs you in Ruby by slowly building and establishing skills through techniques like practice and memorization, then applying them to increasingly difficult problems. By the end of the book you will have the tools needed to begin learning more complex programming topics. I like to tell people that my book gives you your \"programming black belt.\" What this means is that you know the basics well enough to now start learning programming.\r\n\r\nIf you work hard, take your time, and build these skills, you will learn to code.",
+    "views": 10,
+    "clicks": 1,
+    "marked_broken": 0,
+    "marked_spam": 0,
+    "active": true,
+    "create_at": "2017-03-05T15:49:29.633Z",
+    "update_at": "2017-03-06T12:41:29.029Z",
+    "categories": [
+      2
+    ],
+    "tags": [
+      19
+    ],
+    "languages": [
+      2
+    ]
+  }
+},
+{
+  "model": "resources.resource",
+  "pk": 99,
+  "fields": {
+    "title": "Vue.js V2 Guide - (Official)",
+    "slug": "vuejs-v2-guide-official",
+    "owner": 1,
+    "main_tag": 35,
+    "resource_format": 1,
+    "link": "https://vuejs.org/v2/guide/",
+    "image": "",
+    "description": "**What is Vue.js?**\r\n\r\nVue (pronounced /vju\u02d0/, like view) is a progressive framework for building user interfaces. Unlike other monolithic frameworks, Vue is designed from the ground up to be incrementally adoptable. The core library is focused on the view layer only, and is very easy to pick up and integrate with other libraries or existing projects. On the other hand, Vue is also perfectly capable of powering sophisticated Single-Page Applications when used in combination with [modern tooling](https://vuejs.org/v2/guide/single-file-components.html) and [supporting libraries](https://github.com/vuejs/awesome-vue#libraries--plugins).\r\n\r\nIf you are an experienced frontend developer and want to know how Vue compares to other libraries/frameworks, check out the [Comparison with Other Frameworks](https://vuejs.org/v2/guide/comparison.html).",
+    "views": 9,
+    "clicks": 1,
+    "marked_broken": 0,
+    "marked_spam": 0,
+    "active": true,
+    "create_at": "2017-03-06T15:18:16.399Z",
+    "update_at": "2017-03-06T18:10:59.732Z",
+    "categories": [
+      2,
+      5
+    ],
+    "tags": [
+      7,
+      35
+    ],
+    "languages": [
+      3
+    ]
+  }
+},
+{
+  "model": "resources.resource",
+  "pk": 100,
+  "fields": {
+    "title": "The Vast World of Vue.js 0.12 - Laracasts",
+    "slug": "the-vast-world-of-vuejs-012-laracasts",
+    "owner": 1,
+    "main_tag": 35,
+    "resource_format": 2,
+    "link": "https://laracasts.com/series/learning-vuejs",
+    "image": "",
+    "description": "Vue.js is the best JavaScript framework that you've likely never heard of. We've already covered React here at Laracasts, so let's move on to something else - something far more simple, many might say. Intrigued?",
+    "views": 7,
+    "clicks": 1,
+    "marked_broken": 0,
+    "marked_spam": 0,
+    "active": true,
+    "create_at": "2017-03-06T15:23:25.423Z",
+    "update_at": "2017-03-06T18:11:49.756Z",
+    "categories": [
+      2,
+      5
+    ],
+    "tags": [
+      7,
+      35
+    ],
+    "languages": [
+      2
+    ]
+  }
+},
+{
+  "model": "resources.resource",
+  "pk": 101,
+  "fields": {
+    "title": "Learn Vue 2: Step By Step - Laracasts",
+    "slug": "learn-vue-2-step-by-step-laracasts",
+    "owner": 1,
+    "main_tag": 35,
+    "resource_format": 2,
+    "link": "https://laracasts.com/series/learn-vue-2-step-by-step",
+    "image": "",
+    "description": "Vue is easily one of the most exciting additions to the front-end world in many years. With its intuitive API, and the fact that it can be applied to any type of application, it's no wonder why folks have gravitated to it as much as they have.\r\n\r\nIf you'd like to jump on board, let me show you, step by step, exactly what you need to know. It's the best way to learn Vue!",
+    "views": 9,
+    "clicks": 1,
+    "marked_broken": 0,
+    "marked_spam": 0,
+    "active": true,
+    "create_at": "2017-03-06T15:24:37.127Z",
+    "update_at": "2017-03-06T18:11:41.895Z",
+    "categories": [
+      2,
+      5
+    ],
+    "tags": [
+      7,
+      35
+    ],
+    "languages": [
+      2
+    ]
+  }
+},
+{
+  "model": "resources.resource",
+  "pk": 102,
+  "fields": {
+    "title": "An Introduction into Vue.js: Building an Example App",
+    "slug": "an-introduction-into-vuejs-building-an-example-app",
+    "owner": 1,
+    "main_tag": 35,
+    "resource_format": 2,
+    "link": "https://www.youtube.com/watch?v=Oqs3Iuid8-8",
+    "image": "",
+    "description": "Today we're going to go over Vue.js\r\n\r\nThis presentation was recorded during a Lunch and Learn in our offices.\r\n\r\nVue.js is a JavaScript framework that aims to compete with the likes of Angular, Polymer, React, Ember and Riot (among others).\r\n\r\nIf you liked this overview feel free to download the repository and play with what was built. Project is driven by Laravel 5.1 and uses gulp + browserify to manage the JavaScript dependencies.\r\n\r\nRepository: [https://bitbucket.org/alex_sterling/vue.js-demonstration](https://bitbucket.org/alex_sterling/vue.js-demonstration)\r\n\r\nBig thanks to Jeffrey Way at Laracasts for his series on Vue.js. It was enlightening and helped spur on this experiment.",
+    "views": 7,
+    "clicks": 1,
+    "marked_broken": 0,
+    "marked_spam": 0,
+    "active": true,
+    "create_at": "2017-03-06T15:28:46.443Z",
+    "update_at": "2017-03-06T18:12:36.922Z",
+    "categories": [
+      2,
+      5
+    ],
+    "tags": [
+      7,
+      35
+    ],
+    "languages": [
+      2
+    ]
+  }
+},
+{
+  "model": "resources.resource",
+  "pk": 103,
+  "fields": {
+    "title": "Vue.js Fundamentals - DevMarketer",
+    "slug": "vuejs-fundamentals-devmarketer",
+    "owner": 1,
+    "main_tag": 35,
+    "resource_format": 2,
+    "link": "https://www.youtube.com/playlist?list=PLwAKR305CRO_1yAao-8aZiQnBqJeyng4O",
+    "image": "resources/resources/fundamentals_vuejs.jpg",
+    "description": "Learn Vue.js 2.0 with this tutorial series. The series starts off with the basics and how to get started with Vue.js and then moving into more advanced functionality. Then we will make a full project using Vue.js and finally make a larger project where we tie Vue into the backend of a larger framework like Laravel.",
+    "views": 8,
+    "clicks": 1,
+    "marked_broken": 0,
+    "marked_spam": 0,
+    "active": true,
+    "create_at": "2017-03-06T15:34:38.082Z",
+    "update_at": "2017-03-06T18:11:12.037Z",
+    "categories": [
+      2,
+      5
+    ],
+    "tags": [
+      7,
+      35
+    ],
+    "languages": [
+      2
+    ]
+  }
+},
+{
+  "model": "resources.resource",
+  "pk": 104,
+  "fields": {
+    "title": "Getting up and Running with the Vue.js 2.0 Framework",
+    "slug": "getting-up-and-running-with-the-vuejs-20-framework",
+    "owner": 1,
+    "main_tag": 35,
+    "resource_format": 1,
+    "link": "https://www.sitepoint.com/up-and-running-vue-js-2-0/",
+    "image": "",
+    "description": "Vue.js 2.0 sports excellent performance stats, a relatively small payload (the bundled runtime version of Vue weighs in at 16kb once minified and gzipped), along with updates to companion libraries like vue-router and vuex, the state management library for Vue. There\u2019s far too much to cover in just one article, but keep an eye out for a later article where we\u2019ll look more closely at some of the libraries that couple nicely with the core framework.",
+    "views": 6,
+    "clicks": 1,
+    "marked_broken": 0,
+    "marked_spam": 0,
+    "active": true,
+    "create_at": "2017-03-06T15:38:18.753Z",
+    "update_at": "2017-03-06T18:12:29.097Z",
+    "categories": [
+      2,
+      5
+    ],
+    "tags": [
+      7,
+      35
+    ],
+    "languages": [
+      2
+    ]
+  }
+},
+{
+  "model": "resources.resource",
+  "pk": 105,
+  "fields": {
+    "title": "Laravel 5.4 From Scratch - Laracasts",
+    "slug": "laravel-54-from-scratch-laracasts",
+    "owner": 1,
+    "main_tag": 36,
+    "resource_format": 2,
+    "link": "https://laracasts.com/series/laravel-from-scratch-2017",
+    "image": "",
+    "description": "Each year, the Laracasts \"Laravel From Scratch\" series is refreshed to reflect the latest iteration of the framework. This is the 2017 edition, which uses version 5.4 of the framework.\r\n\r\nAre you hoping to level up your toolset? You've come to the right place. This series will take you from installing Laravel, all the way up to mastering the essentials of the framework.",
+    "views": 5,
+    "clicks": 1,
+    "marked_broken": 0,
+    "marked_spam": 0,
+    "active": true,
+    "create_at": "2017-03-06T15:40:10.476Z",
+    "update_at": "2017-03-06T18:11:26.151Z",
+    "categories": [
+      2,
+      5
+    ],
+    "tags": [
+      36,
+      5
+    ],
+    "languages": [
+      2
+    ]
+  }
+},
+{
+  "model": "resources.resource",
+  "pk": 106,
+  "fields": {
+    "title": "jQuery Trickshots by Tutorialzine",
+    "slug": "jquery-trickshots-by-tutorialzine",
+    "owner": 1,
+    "main_tag": 15,
+    "resource_format": 1,
+    "link": "http://tutorialzine.com/books/jquery-trickshots/",
+    "image": "resources/resources/e1372753615300.jpg",
+    "description": "In this book, you will find 100 advanced jQuery techniques that we have developed over the years as JavaScript programmers and authors for Tutorialzine, presented as easy to understand tips.\r\n\r\nIf you are an experienced jQuery developer, or a beginner just starting out with JavaScript, this book is for you. You will learn neat tricks, find out about awesome plugins, and discover how to use (and abuse) our favorite library to your advantage.\r\n\r\nThe book is **free for all our newsletter subscribers**. It\u2019s a sweet deal \u2013 you get [one email per week](http://tutorialzine.com/newsletter/w/hjf763xsVAZlLVS892vTEra6xA) full of cool new libraries, articles, tips and more from the world of web development, **and** you get our book!\r\n\r\n**Download it for FREE by joining our (tutorialzine) newsletter**\r\n\r\nYou will get the book in PDF, ePub and Kindle formats, together with 100 HTML & JS examples!",
+    "views": 8,
+    "clicks": 1,
+    "marked_broken": 0,
+    "marked_spam": 0,
+    "active": true,
+    "create_at": "2017-03-06T16:23:49.215Z",
+    "update_at": "2017-03-06T18:11:18.224Z",
+    "categories": [
+      2,
+      5
+    ],
+    "tags": [
+      7,
+      15
+    ],
+    "languages": [
+      2
+    ]
+  }
+},
+{
+  "model": "resources.resource",
+  "pk": 107,
+  "fields": {
+    "title": "Curso de Django - Jesus Conde",
+    "slug": "curso-de-django-jesus-conde",
+    "owner": 1,
+    "main_tag": 3,
+    "resource_format": 2,
+    "link": "https://www.youtube.com/playlist?list=PLEtcGQaT56cg3A3r-TNoc-PyVeOuAMB4x",
+    "image": "resources/resources/curso_django_jc.jpg",
+    "description": "Vidiotutoriales de Jesus Conde en YouTube\r\n\r\n* Curso de Django. \u00bfQu\u00e9 es y c\u00f3mo instalarlo?\t\t\r\n* Curso de Django. An\u00e1lisis de un Proyecto Django.\r\n* Curso de Django. Bases de Datos.\t\t\r\n* Curso de Django. Creaci\u00f3n y uso de Modelos.\r\n* Curso de Django. Uso de la API Database.\t\t\r\n* Curso de Django. URLconf y Views\r\n* Curso de Django. A\u00f1adir datos a Views desde Base Datos.\t\t\r\n* Curso de Django. Views, Exceptions y Shortcuts.\r\n* Curso de Django. Uso de Templates.\t\t\r\n* Curso de Django. Crear segunda Template.\r\n* Curso de Django. Imports y herencias en templates.\t\t\r\n* Curso de Django. El sitio de administraci\u00f3n de Django.\r\n* Curso de Django. Personalizar Panel de Administraci\u00f3n.\t\t\r\n* Curso de Django. Uso de formularios.\r\n* Curso de Django. Persistir datos de formularios.\t\t\r\n* Curso de Django. Uso de ModelForm\r\n* Curso de Django. Crear p\u00e1gina para editar preguntas.\t\t\r\n* Curso de Django. Personalizar estilos formulario.\r\n* Curso de Django. Crear Sistema de Login.\t\t\r\n* Curso de Django. Crear p\u00e1gina de inicio.\r\n* Curso de Django. Restringir acceso a p\u00e1ginas.",
+    "views": 1,
+    "clicks": 0,
+    "marked_broken": 0,
+    "marked_spam": 0,
+    "active": true,
+    "create_at": "2017-03-07T07:28:16.470Z",
+    "update_at": "2017-03-07T07:56:07.662Z",
+    "categories": [
+      2,
+      5
+    ],
+    "tags": [
+      3,
+      6
+    ],
+    "languages": [
+      1
+    ]
+  }
+},
+{
+  "model": "resources.resource",
+  "pk": 108,
+  "fields": {
+    "title": "Probar Django 1.9 - Karlita",
+    "slug": "probar-django-19-karlita",
+    "owner": 1,
+    "main_tag": 3,
+    "resource_format": 2,
+    "link": "https://www.youtube.com/playlist?list=PLUAh0xzkWmoudbGvyUzTTUcPhOPgqVhhd",
+    "image": "resources/resources/probar_django_1_9.jpg",
+    "description": "Curso de Django 1.9 de Karlita en YouTube\r\n\r\n* Recorrido Visual de Probar Django 1.9 (un resumen del curso)\r\n* Probar Django 1.9 - 1 de 33 - Bienvenida y virtualenv\r\n* Probar Django 1.9 - 2 de 33 - Instalar Django en Virtualenv\r\n* Probar Django 1.9 - 3 de 33 - Empezar Proyecto Nuevo + Ejecutar Servidor (web)\r\n* Probar Django 1.9 - 4 de 33 - Primera Migraci\u00f3n\r\n* Probar Django 1.9 - 5 de 33 - Crear un Superusuario + Introducci\u00f3n a la Interfaz Administrativa\r\n* Probar Django 1.9 - 6 de 33 - Editor de Texto Sublime Text y Primera Aplicaci\u00f3n\r\n* Probar Django 1.9 - 7 de 33 - Primer Modelo\r\n* Probar Django 1.9 - 8 de 33 - Registrar Modelo en Admin.py\r\n* Probar Django 1.9 - 9 de 33 - Modelo en la Interfaz Administrativa\r\n* Probar Django 1.9 - 10 de 33 - Primera Vista + Configuraci\u00f3n de URL\r\n* Probar Django 1.9 - 11 de 33 - Templates (plantillas)\r\n* Probar Django 1.9 - 12 de 33 - Django Forms I (crear un formulario en forms.py)\r\n* Probar Django 1.9 - 13 de 33 - Django Forms II (forms en una vista)\r\n* Probar Django 1.9 - 14 de 33 - Forms III (render forms en templates, method & action)\r\n* Probar Django 1.9 - 15 de 33 - Django Forms IV (forms en una vista con validaciones)\r\n* Probar Django 1.9 - 16 de 33 - Django Forms V (forms en una vista con validaciones)\r\n* Probar Django 1.9 - 17 de 33 - Model Forms I\r\n* Probar Django 1.9 - 18 de 33 - Model Forms II (model form en admin)\r\n* Probar Django 1.9 - 19 de 33 - Model Forms III (validaciones personalizadas 1)\r\n* Probar Django 1.9 - 20 de 33 - Model Forms IV (validaciones personalizadas)\r\n* Probar Django 1.9 - 21 de 33 - Model Forms V (validaciones personalizadas 3)\r\n* Probar Django 1.9 - 22 de 33 - Contexto en Vistas y Plantillas (templates)\r\n* Probar Django 1.9 - 23 de 33 - Model Form en una Vista\r\n* Probar Django 1.9 - 24 de 33 - Contexto en las Vistas (view context, string substitution)\r\n* Probar Django 1.9 - 25 de 33 - Template Inheritance (herencias con plantillas)\r\n* Probar Django 1.9 - 26 de 33 - Template Inheritance & Blocks (bloques de contenido)\r\n* Probar Django 1.9 - 27 de 33 - Configuraci\u00f3n de URL para Templates I\r\n* Probar Django 1.9 - 28 de 33 - Configuraci\u00f3n de URL para Templates II\r\n* Probar Django 1.9 - 29 de 33 - Desarrollo vs. Producci\u00f3n (lanzar tu proyecto)\r\n* Probar Django 1.9 - 30 de 33 - Static Files I (archivos est\u00e1ticos)\r\n* Probar Django 1.9 - 31 de 33 - Static Files II (archivos est\u00e1ticos)\r\n* Probar Django 1.9 - 32 de 33 - Static Files III (subir archivos)\r\n* Probar Django 1.9 - 33 de 33 - QuerySets (querying la base de datos)",
+    "views": 1,
+    "clicks": 0,
+    "marked_broken": 0,
+    "marked_spam": 0,
+    "active": true,
+    "create_at": "2017-03-07T07:41:59.987Z",
+    "update_at": "2017-03-07T07:50:07.716Z",
+    "categories": [
+      2,
+      5
+    ],
+    "tags": [
+      3,
+      6
+    ],
+    "languages": [
+      1
+    ]
+  }
+},
+{
+  "model": "resources.resource",
+  "pk": 109,
+  "fields": {
+    "title": "Probar Django 1.10 | Crear una Aplicaci\u00f3n Web - Karlita",
+    "slug": "probar-django-110-crear-una-aplicacion-web-karlita",
+    "owner": 1,
+    "main_tag": 3,
+    "resource_format": 2,
+    "link": "https://www.youtube.com/playlist?list=PLUAh0xzkWmosSdqTjxg9yHG3Q3J4PQB5X",
+    "image": "resources/resources/probar_django_1_10.jpg",
+    "description": "Curso de Django 1.10 de Karlita en YouTube\r\n\r\n* Empezar Proyecto Nuevo\r\n* Primera Migraci\u00f3n + Editor de Texto\t\t\r\n* Crear Superusuarios + Administraci\u00f3n de Django\r\n* Primera Aplicaci\u00f3n de Django\t\t\r\n* Primer Modelo\r\n* Crear Objetos en Python Shell + Registrar Modelo en el Admin\t\t\r\n* Personalizar Modelo en el Admin\r\n* Primera Vista\t\t\r\n* Configuraci\u00f3n de las Plantillas en el Proyecto\r\n* Primer Formulario\t\t\r\n* Formulario en la Vista\r\n* M\u00e9todo HTTP 'Post' en el Formulario\t\t\r\n* Validaciones\r\n* Guardar Datos del Formulario Usando Modelo\t\t\r\n* Model Form\r\n* Validaciones en el Model Form\t\t\r\n* Contexto en Vistas + Contexto en Plantillas\r\n* Model Form en la Vista\t\t\r\n* Formulario Custom para Contacto\r\n* Configurar Email para tu P\u00e1gina Web\t\t\r\n* Configuraci\u00f3n de los Archivos Est\u00e1ticos\r\n* Configurando Bootstrap para tu Proyecto\t\t\r\n* Herencia con Plantillas: Include Tag + Blocks\r\n* Django Crispy Forms\t\t\r\n* Darle Estilo a tu Proyecto I\r\n* Darle Estilo a tu Proyecto II: CSS custom\t\t\r\n* Nombres de URLs para Navegaci\u00f3n\r\n* Darle Estilo a tu Proyecto III\t\t\r\n* Django Registration Redux I\r\n* Django Registration Redux II\t\t\r\n* Cambiar URL Redirect Depu\u00e9s de Login\r\n* Autenticaci\u00f3n para Enlaces en la Barra de Navegaci\u00f3n\t\t\r\n* Formulario de Login en la Navbar\r\n* Personalizar CSS: Jumbotron & Navbar\t\t\r\n* Incrustar Video de YouTube en el Jumbotron\r\n* Fontawesome (utilizar iconos molones en tu proyecto)\t\t\r\n* Contenido para Usuarios Autenticados\r\n* Introducci\u00f3n B\u00e1sica a Querysets*",
+    "views": 1,
+    "clicks": 0,
+    "marked_broken": 0,
+    "marked_spam": 0,
+    "active": true,
+    "create_at": "2017-03-07T07:53:26.649Z",
+    "update_at": "2017-03-07T07:53:26.649Z",
+    "categories": [
+      2,
+      5
+    ],
+    "tags": [
+      3,
+      6
+    ],
+    "languages": [
+      1
+    ]
+  }
+},
+{
+  "model": "resources.resource",
+  "pk": 110,
+  "fields": {
+    "title": "Aprender Class Based Views de Django - Karlita",
+    "slug": "aprender-class-based-views-de-django-karlita",
+    "owner": 1,
+    "main_tag": 3,
+    "resource_format": 2,
+    "link": "https://www.youtube.com/playlist?list=PLUAh0xzkWmot5sk5hQ1miMIVZlFd9OTbN",
+    "image": "resources/resources/karlita_django_cbv.jpg",
+    "description": "Aprender Class Based Views de Django 1.10 de Karlita en YouTube\r\n\r\n* Bienvenidos\r\n* Introducci\u00f3n\r\n* Template View\r\n* Template View (subclass & overrides)\r\n* Detail View\r\n* List View\r\n* Create View\r\n* Update View\r\n* Delete View\r\n* Staff Member Required Mixin",
+    "views": 0,
+    "clicks": 0,
+    "marked_broken": 0,
+    "marked_spam": 0,
+    "active": true,
+    "create_at": "2017-03-07T07:59:57.493Z",
+    "update_at": "2017-03-07T08:01:30.722Z",
+    "categories": [
+      2,
+      5
+    ],
+    "tags": [
+      3,
+      6
+    ],
+    "languages": [
+      1
+    ]
+  }
+},
+{
+  "model": "resources.resource",
+  "pk": 111,
+  "fields": {
+    "title": "Try Django 1.8 - codingforentrepreneurs",
+    "slug": "try-django-18-codingforentrepreneurs",
+    "owner": 1,
+    "main_tag": 3,
+    "resource_format": 2,
+    "link": "https://www.codingforentrepreneurs.com/projects/try-django-18/",
+    "image": "resources/resources/try_django_18_share.png",
+    "description": "The Try Django series has been developed to indroduce Django to new developers. In this series, we explore the Django version 1.8 while building an MVP Landing Page just like what exists on [http://TryDjango.com/](http://TryDjango.com/)",
+    "views": 0,
+    "clicks": 0,
+    "marked_broken": 0,
+    "marked_spam": 0,
+    "active": true,
+    "create_at": "2017-03-07T08:17:46.142Z",
+    "update_at": "2017-03-07T08:17:46.142Z",
+    "categories": [
+      2,
+      5
+    ],
+    "tags": [
+      3,
+      6
+    ],
+    "languages": [
+      2
+    ]
+  }
+},
+{
+  "model": "resources.resource",
+  "pk": 112,
+  "fields": {
+    "title": "Try Django 1.9 - codingforentrepreneurs",
+    "slug": "try-django-19-codingforentrepreneurs",
+    "owner": 1,
+    "main_tag": 3,
+    "resource_format": 2,
+    "link": "https://www.codingforentrepreneurs.com/projects/try-django-19/",
+    "image": "resources/resources/try_django_19_share.png",
+    "description": "Try Django 1.9 is an introduction to Django version 1.9 by creating a simple, yet robust, Django blog. This series covers a variety of Django basics as well as Django 1.9 specific material.",
+    "views": 2,
+    "clicks": 0,
+    "marked_broken": 0,
+    "marked_spam": 0,
+    "active": true,
+    "create_at": "2017-03-07T08:20:28.866Z",
+    "update_at": "2017-03-07T08:20:28.866Z",
+    "categories": [
+      2,
+      5
+    ],
+    "tags": [
+      3,
+      6
+    ],
+    "languages": [
+      2
+    ]
+  }
+},
+{
+  "model": "resources.resource",
+  "pk": 113,
+  "fields": {
+    "title": "Try Django 1.10 - codingforentrepreneurs",
+    "slug": "try-django-110-codingforentrepreneurs",
+    "owner": 1,
+    "main_tag": 3,
+    "resource_format": 2,
+    "link": "https://www.codingforentrepreneurs.com/projects/try-django-110/",
+    "image": "resources/resources/try_django_110_share.png",
+    "description": "Create a URL shortening service in Try Django 1.10 which is an introduction to Django version 1.10. This series covers a variety of Django basics as well as Django 1.10 specific material.",
+    "views": 4,
+    "clicks": 1,
+    "marked_broken": 0,
+    "marked_spam": 0,
+    "active": true,
+    "create_at": "2017-03-07T08:23:39.716Z",
+    "update_at": "2017-03-07T09:35:33.180Z",
+    "categories": [
+      2,
+      5
+    ],
+    "tags": [
+      3,
+      6
+    ],
+    "languages": [
+      2
+    ]
+  }
+},
+{
+  "model": "resources.resource",
+  "pk": 114,
+  "fields": {
+    "title": "Blog API with Django Rest Framework - codingforentrepreneurs",
+    "slug": "blog-api-with-django-rest-framework-codingforentrepreneurs",
+    "owner": 1,
+    "main_tag": 3,
+    "resource_format": 2,
+    "link": "https://www.codingforentrepreneurs.com/projects/blog-api-django-rest-framework/",
+    "image": "resources/resources/blog_api_cfe_share.png",
+    "description": "Create a RESTful API service for the blog we created in Try Django 1.9 and Advancing the Blog.",
+    "views": 1,
+    "clicks": 0,
+    "marked_broken": 0,
+    "marked_spam": 0,
+    "active": true,
+    "create_at": "2017-03-07T08:29:40.437Z",
+    "update_at": "2017-03-07T09:36:06.377Z",
+    "categories": [
+      2,
+      5
+    ],
+    "tags": [
+      3,
+      6
+    ],
+    "languages": [
+      2
+    ]
+  }
+},
+{
+  "model": "resources.resource",
+  "pk": 115,
+  "fields": {
+    "title": "Python Django Tutorials - mikesdjangotutorials",
+    "slug": "python-django-tutorials-mikesdjangotutorials",
+    "owner": 1,
+    "main_tag": 3,
+    "resource_format": 2,
+    "link": "https://www.mikesdjangotutorials.co.uk/series/free-python-django-tutorials/",
+    "image": "",
+    "description": "This is whole 11+ hours of FREE tutorials to get you started learning to develop Django web apps\r\n\r\n**Python Django tutorial 1 installing easy_install, virtualenv & django**\r\n\r\nThis first tutorial takes you through installing easy_install, virtualenv & django to get you started in developing with python on the web\r\n\r\n**Python Django Tutorial 2 new 1.7+ migrations**\r\n\r\nCovers setting your database and then using manage.py to integrate data models for use in your websites\r\n\r\n**Python Django tutorial 3 views, simple urls and basic templates**\r\n\r\nThis tutorial covers the concept of views and urls and shows simple examples of how to implement them.\r\n\r\n**Python Django tutorial 4a How to Set the home or default page**\r\n\r\nHow to set your default/main/home page when you start your new project!\r\n\r\n**Python Django tutorial 4b advanced views and urls**\r\n\r\nThis tutorial covers how to package you urls with you apps and include into your project as well as passing values in your urls through to your views and ending up in your template pages\r\n\r\n**Python Django tutorial 5 - The built in Admin interface**\r\n\r\nThis tutorial covers setting up and using the django admin to easily edit and control your sites content and data\r\n\r\n**Python Django tutorial 6 - Django Template language**\r\n\r\nThis tutorial covers the basics of displaying variable and using looping and flow control. Also included is template inheritance and content blocks.\r\n\r\n**Python Django tutorial 7 - static files**\r\n\r\nThis tutorial covers configuring settings.py to server static files such as images, css & javascript and how to use the 'static' template tag to prepend the your sites url and static files url to any static file reference in your templates\r\n\r\n**Python Django tutorial 8 - cookies and sessions**\r\n\r\nthis tutorial gives you the basics of setting and getting values from a cookie or session variable and show how they can be passed in urls and template variables\r\n\r\n**Python Django tutorial 9 - users login and logout**\r\n\r\nThis tutorial takes you through setting up and defining how a user can login and log out using the built in Django auth modules\r\n\r\n**Python Django tutorial 10 - user registration basics**\r\n\r\nThis tutorial builds on the last user authentication tutorial to show how users can register themselves in the Django user management system.\r\n\r\n**Python Django tutorial 11 - Extending the registration form**\r\n\r\nThis tutorial takes the registration page a step forward in complexity and demonstrates how to add new fields to the form\r\n\r\n**Python Django tutorial 12 - Creating forms for database models**\r\n\r\nThis tutorial shows how to connect web forms to your database models for easy use in your web apps\r\n\r\n**Python Django tutorial 13 - updating database records**\r\n\r\nThis tutorial now features sound! sorry to anyone who already viewed this and found no sound!\r\nWhat you'll learn\r\n\r\n* This covers how to update database records using the urls, view and models frameworks\r\n\r\n\r\n**Python Django tutorial 14 - file uploading and updating database schema**\r\n\r\nThis tutorial mainly covers how to upload files using the framework but also briefly shows how to export data and update you database schema\r\n\r\n**Python Django tutorial 15 - Ajax search feature**\r\n\r\nThis tutorial covers the basics of including javascript files into you pages and using jquery to pass ajax requests to a restful endpoint made with django\r\n\r\n**Python Django tutorial 16 - Web services with TastyPie !**\r\n\r\nThis covers the basics of installing and using the TastyPie python module with Django to provide a basic searchable web service which return either JSON or XML\r\n\r\n**Python Django tutorial 17 database migrations and updating schema using south**\r\n\r\nThis tutorial covers the basics of using South to manage changes in your database schema and data while working with the Django framework\r\n\r\n**Python Django tutorial 18 - Logging**\r\n\r\nThis tutorial shows how to setup and use logging to help make debugging local or remote applications easy!\r\n\r\n**Python Django tutorial 19 - Using the Form Wizard**\r\n\r\nThis tutorial shows you how to use the Forms Wizard to collect information from the user over multiple pages\r\n\r\n**Python Django tutorial 20 - Extending the User model with a user profile**\r\n\r\nThis tutorial shows how to extend the User model with a user profile model making it easy to extend the user information past the default set of fields\r\n\r\n**Python Django Tutorial 21 - Full text search with haystack and whoosh**\r\n\r\nThis tutorial covers how to setup and use haystack with the whoosh backend to implement text search on your django based website\r\n\r\n**Python Django Tutorial 22 - Sending messages to the user**\r\n\r\nThis tutorial covers how to use the built in messages system to send feedback to the user after an action is trigger via the web\r\n\r\n**Python Django Tutorial 23 - filtering data by user and sending notifications**\r\n\r\nThis tutorial covers filtering data from models so that only the associated user can see it. In addition this covers how to implement a internal notification system.\r\n\r\n**Python Django Tutorial 24 - Reusing apps and using twitter bootstrap**\r\n\r\nThis tutorial shows how to re-use modules you've already created and also how to style you sites using twitter bootstrap for easy cross platform website compatibility\r\n\r\n**Python Django Tutorial 25 - Custom user model and email authentication**\r\n\r\nThis tutorial covers how to customise the default user model to use email instead of a username",
+    "views": 2,
+    "clicks": 0,
+    "marked_broken": 0,
+    "marked_spam": 0,
+    "active": true,
+    "create_at": "2017-03-07T09:47:07.953Z",
+    "update_at": "2017-03-07T09:47:28.215Z",
+    "categories": [
+      2,
+      5
+    ],
+    "tags": [
+      3,
+      6
+    ],
+    "languages": [
+      2
+    ]
+  }
+}
+]

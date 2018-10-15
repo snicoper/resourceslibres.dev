@@ -1,0 +1,9 @@
+[
+{
+  "model": "favorites.favorite",
+  "pk": 1,
+  "fields": {
+    "resources": []
+  }
+}
+]

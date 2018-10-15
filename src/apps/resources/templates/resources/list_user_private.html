@@ -1,0 +1,161 @@
+{# Muestra la lista de recursos a un usuario (privado), solo muestra sus recursos para administrarlos. #}
+{% extends "base.html" %}
+{% load resources_tags %}
+
+{% block meta_description %}Administrar recursos de {{ user.username }}{% endblock meta_description %}
+{% block head_title %}- Administrar recursos de {{ user.username }}{% endblock head_title %}
+
+{% block page_title %}
+  <section class="jumbotron">
+    <section class="container">
+      <h1>Mis resursos</h1>
+    </section>
+  </section>
+{% endblock page_title %}
+
+{% block content %}
+  <section class="container">
+    <section class="row d-flex">
+      <div class="col-lg-3 flex-last flex-lg-first">
+        {% include "accounts/_sidenav.html" %}
+        {% resources_private_owner_sidenav user %}
+      </div>
+
+      <div class="col-lg-9">
+        {% for resource in resource_list %}
+          <div class="media mb-4">
+            <img class="d-flex mr-3 hidden-sm-down"
+                 src="{{ MEDIA_URL }}{{ resource.get_image }}"
+                 alt="{{ resource.title }}"
+                 width="100px"
+            >
+
+            <div class="media-body">
+              <div class="d-flex justify-content-start">
+                {% if resource.active %}
+                  <h5 class="mr-auto"><a href="{% url 'resources:details' resource.slug %}">{{ resource.title }}</a></h5>
+                  <i class="material-icons text-success" data-toggle="tooltip" title="Este recurso esta activo">
+                    check_circle
+                  </i>
+                {% else %}
+                  <h5 class="mr-auto">{{ resource.title }}</h5>
+                  <i class="material-icons text-danger" data-toggle="tooltip" title="Este recurso esta pendiente de aprobación">
+                    error
+                  </i>
+                {% endif %}
+              </div>
+
+              <table class="table table-sm">
+                <tbody>
+                  <tr>
+                    <td>
+                      <i class="material-icons">schedule</i> Fecha publicación
+                    </td>
+                    <td class="text-value">{{ resource.create_at|date:'SHORT_DATE_FORMAT' }}</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <i class="material-icons">schedule</i> Ultima actualización
+                    </td>
+                    <td class="text-value">{{ resource.update_at|date:'SHORT_DATE_FORMAT' }}</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <i class="material-icons">remove_red_eye</i> Visto
+                    </td>
+                    <td class="text-value">{{ resource.views }}</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <i class="material-icons">open_in_new</i> Enlaces visitados
+                    </td>
+                    <td class="text-value">{{ resource.clicks }}</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <i class="material-icons">favorite</i> Añadido a favoritos
+                    </td>
+                    <td class="text-value">{{ resource.favorites_resource.count }}</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <i class="material-icons">comment</i> Numero de comentarios
+                    </td>
+                    <td class="text-value">
+                      {% include "_disqus_num_comments.html" with resource=resource %}
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <i class="material-icons">flag</i> Enlace marcado roto
+                    </td>
+                    <td class="resouces-broken-count text-value">
+                      {{ resource.marked_broken }}
+                      {% if resource.marked_broken %}
+                        <a class="owner-broken-soluciona cursor-pointer"
+                           data-toggle="tooltip"
+                           title="Marcar como solucionado"
+                           data-resource-url="{% url 'resources:api_clear_broken_resource' resource.pk %}"
+                           data-message-success="Se ha marcado como solucionado"
+                        >
+                          <i class="material-icons text-success">done</i>
+                        </a>
+                      {% endif %}
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><i class="material-icons">star</i> Puntuación</td>
+                    <td class="text-value">
+                      <span class="text-right">
+                        {% include "resources/_rating_stars.html" with resource=resource readonly='1' %}
+                      </span>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <div class="bg-faded p-2 d-flex justify-content-start">
+                <div class="mr-auto">
+                  {% for category in resource.categories.all %}
+                    <span class="badge badge-default">{{ category.title }}</span>
+                  {% endfor %}
+
+                  {% for tag in resource.tags.all %}
+                    <span class="badge badge-default">{{ tag.title }}</span>
+                  {% endfor %}
+                </div>
+
+                <div>
+                  {% if resource.active %}
+                    <a href="{% url 'resources:info' resource.slug %}"
+                       data-toggle="tooltip"
+                       title="Ver información del recurso"
+                    >
+                      <i class="material-icons text-muted">info</i>
+                    </a>
+                  {% endif %}
+                  <a href="{% url 'resources:update' resource.slug %}"
+                     data-toggle="tooltip"
+                     title="Editar"
+                  >
+                    <i class="material-icons text-muted">edit</i>
+                  </a>
+                  <a href="{% url 'resources:delete' resource.slug %}"
+                     data-toggle="tooltip"
+                     title="Eliminar"
+                  >
+                    <i class="material-icons text-muted">delete</i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        {% empty %}
+          <h5 class="text-center">No hay recursos para mostrar</h5>
+        {% endfor %}
+      </div>
+    </section>
+
+    {% include "_pagination.html"  %}
+  </section>
+{% endblock content %}

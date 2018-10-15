@@ -1,0 +1,82 @@
+{# Lista de recursos pendientes de aprobación. #}
+{% extends "base.html" %}
+{% load favorites_tags %}
+
+{% block meta_description %}Lista de favoritos{% endblock meta_description %}
+{% block head_title %}- Lista de favoritos{% endblock head_title %}
+
+{% block page_title %}
+  <section class="jumbotron">
+    <section class="container">
+      <h1>Lista de favoritos</h1>
+    </section>
+  </section>
+{% endblock page_title %}
+
+{% block content %}
+  <section class="container">
+    <section class="row d-flex">
+      <div class="col-lg-3 flex-last flex-lg-first">
+        {% include "accounts/_sidenav.html" %}
+        {% sidenav_owner_tags_categories user %}
+      </div>
+
+      <div class="col-lg-9">
+        {% if favorite_list %}
+          {% for resource in favorite_list %}
+            <div class="media">
+              <img class="d-flex mr-3 hidden-sm-down"
+                   src="{{ MEDIA_URL }}{{ resource.get_image }}"
+                   alt="{{ resource.title }}"
+                   width="120px"
+              >
+
+              <div class="media-body">
+                <h5><a href="{% url 'resources:details' resource.slug %}">{{ resource.title }}</a></h5>
+                <hr>
+
+                <ul class="list-unstyled">
+                  <li>
+                    <strong>Publicado:</strong>
+                    <a href="{% url 'accounts:profile_public' resource.owner.slug %}">{{ resource.owner }}</a>
+                  </li>
+                  <li>
+                    <strong>Fecha publicación:</strong>
+                    <small>{{ resource.create_at }}</small>
+                  </li>
+                </ul>
+
+                <div class="bg-faded p-2 d-flex justify-content-end">
+                  <span class="mr-auto">
+                    {% for category in resource.categories.all %}
+                      <span class="badge badge-default">{{ category.title }}</span>
+                    {% endfor %}
+
+                    {% for tag in resource.tags.all %}
+                      <span class="badge badge-default">{{ tag.title }}</span>
+                    {% endfor %}
+                  </span>
+
+                  <span>
+                    <!-- heart favorite -->
+                    {% include "favorites/_heart_favorite.html" with resource=resource %}
+                  </span>
+                </div>
+              </div>
+            </div>
+          {% endfor %}
+
+          <div class="my-4">
+            <a class="btn btn-outline-danger" href="{% url 'favorites:delete_all' %}">
+              Eliminar lista de favoritos
+            </a>
+          </div>
+        {% else %}
+          <h5 class="text-center">No hay recursos para mostrar</h5>
+        {% endif %}
+      </div>
+    </section>
+
+    {% include "_pagination.html"  %}
+  </section>
+{% endblock content %}

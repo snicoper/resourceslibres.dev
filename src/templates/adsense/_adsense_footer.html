@@ -1,0 +1,22 @@
+{# Adsense en footer #}
+
+{% if not debug and not user.is_superuser %}
+  <div class="text-center mt-2">
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <!-- footer resourceslibres -->
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-1079279802884664"
+         data-ad-slot="4246391030"
+         data-ad-format="auto"></ins>
+    <script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+  </div>
+{% else %}
+  {% if debug and ADSENSE_IMAGES_FAKE %}
+    <div class="text-center mt-2">
+      <img src="http://fakeimg.pl/750x100/" style="width: 90%; height: 100px; max-width: 750px;" alt="fake image">
+    </div>
+  {% endif %}
+{% endif %}

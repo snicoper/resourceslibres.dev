@@ -1,0 +1,7 @@
+Desde {{ site_name }}, un visitante ha marcado el recurso "{{ resource_title }}" como posible SPAM.
+
+Para visitar el recurso da al siguiente enlace.
+
+{{ resource_url }}
+
+Gracias, el equipo de {{ site_name }}

@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+
+{% block meta_description %}Añadir recurso{% endblock meta_description %}
+{% block head_title %}- Añadir recurso{% endblock head_title %}
+
+{% block page_title %}
+  <section class="jumbotron">
+    <section class="container">
+      <h1>Añadir recurso</h1>
+    </section>
+  </section>
+{% endblock page_title %}
+
+{% block content %}
+  <section class="container">
+    <section class="row">
+      <div class="col-lg-10 offset-lg-1">
+        {% if not quick_resource %}
+          <div class="alert alert-warning">
+            <strong>¡Importante!</strong> El recurso tendrá que ser aprobado.<br>Si en el formulario
+            ves que faltan opciones para el recurso, por favor selecciona este otro
+            <a href="{% url 'resources:quick_create' %}">formulario</a>.
+          </div>
+        {% else %}
+          <div class="alert alert-info">
+            Inserta la <strong>URL</strong> del recurso y mas tarde creare las categorías, etiquetas
+            necesarias para el recurso y te lo añadire a tu lista de <strong>recursos</strong>.<br>
+            Cuando el proceso finalize recibirás un email de notificación.
+          </div>
+        {% endif %}
+      </div>
+
+      <div class="col-lg-10 offset-lg-1">
+        {% include "resources/_form.html" %}
+      </div>
+    </section>
+  </section>
+{% endblock content %}
+
+{% block scripts %}
+  <script>
+    $('#id_tags').select2();
+    $('#id_categories').select2();
+    $('#id_languages').select2();
+  </script>
+{% endblock scripts %}

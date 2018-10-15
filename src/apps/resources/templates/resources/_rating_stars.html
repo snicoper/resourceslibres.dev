@@ -1,0 +1,31 @@
+{% comment %}
+  Requiere pasarle resource y readonly (opcional).
+  Si readonly se le pasa con cualquier valor, sera de solo lectura,
+  si se omite, se considera que sera editable.
+{% endcomment %}
+{% load resources_tags %}
+
+<!-- rating -->
+<span data-toggle="tooltip" title="{{ resource.ratio|default:'0' }} con {{ resource.ratio_resource.count }} votos">
+  <select class="anuncio-rating-stars"
+          data-value="{{ resource.ratio }}"
+          data-readonly="{% if user.is_authenticated and not readonly %}0{% else %}1{% endif %}"
+          data-url="{% url 'resources:api_rating_resource' resource.pk %}"
+          data-message-text="Tu puntuación"
+          data-message-success="¡Gracias por puntuar!"
+  >
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+  </select>
+
+  {# Solo mostrar la punctuation del usuario si esta en detalles, de lo contrario evitar queries. #}
+  {% if not readonly %}
+    {% get_user_score_for_resource resource as user_score %}
+    <small class="anuncio-user-score text-muted{% if not user_score %} hide{% endif %}">
+      Tu puntuación {{ user_score }} <i class="material-icons">star</i>
+    </small>
+  {% endif %}
+</span><!-- end rating -->

@@ -1,0 +1,67 @@
+{% extends "base.html" %}
+
+{% block meta_description %}Lista de mensajes{% endblock meta_description %}
+{% block head_title %}- Lista de mensajes{% endblock head_title %}
+
+{% block page_title %}
+  <section class="jumbotron">
+    <section class="container">
+      <h1>Lista de mensajes</h1>
+    </section>
+  </section>
+{% endblock page_title %}
+
+{% block content %}
+  <section class="container">
+    <section class="row">
+      <div class="col-lg-3">
+        {% include "accounts/_sidenav.html" %}
+      </div>
+
+      <div class="col-lg-9">
+        {% if message_list %}
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Asunto</th>
+                <th>Email</th>
+                <th>Registrado</th>
+                <th>Leído</th>
+                <th class="text-right">Fecha</th>
+              </tr>
+            </thead>
+            <tbody>
+              {% for message in message_list %}
+                <tr>
+                  <td>
+                    <a href="{% url 'contact:details' pk=message.pk %}">{{ message.subject }}</a>
+                  </td>
+                  <td>{{ message.email }}</td>
+                  <td>
+                    {% if message.is_register %}
+                      <i class="material-icons text-success">check_box</i>
+                    {% else %}
+                      <i class="material-icons text-danger">indeterminate_check_box</i>
+                    {% endif %}
+                  </td>
+                  <td>
+                    {% if message.read %}
+                      <i class="material-icons text-success">check_box</i>
+                    {% else %}
+                      <i class="material-icons text-danger">indeterminate_check_box</i>
+                    {% endif %}
+                  </td>
+                  <td class="text-value">{{ message.create_at|date:"SHORT_DATETIME_FORMAT" }}</td>
+                </tr>
+              {% endfor %}
+            </tbody>
+          </table>
+        {% else %}
+          <h5 class="text-center">No hay mensajes para mostrar</h5>
+        {% endif %}
+      </div>
+    </section>
+
+    {% include "_pagination.html" %}
+  </section>
+{% endblock content %}

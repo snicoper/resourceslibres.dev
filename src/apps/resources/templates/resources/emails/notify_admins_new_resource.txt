@@ -1,0 +1,8 @@
+Se ha creado un nuevo recurso en {{ site_name }}.
+
+Titulo: {{ title }}
+Link del recurso: {{ resource_link }}
+
+Para editar el recurso, visita el siguiente enlace.
+
+{{ link_resource_admin }}

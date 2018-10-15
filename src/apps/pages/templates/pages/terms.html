@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% load utils_tags %}
+
+{% block meta_description %}Terminos y condiciones{% endblock meta_description %}
+{% block head_title %}- Terminos y condiciones{% endblock head_title %}
+
+{% block page_title %}
+  <section class="jumbotron">
+    <section class="container">
+      <h1>Terminos y condiciones</h1>
+    </section>
+  </section>
+{% endblock page_title %}
+
+{% block content %}
+  <section class="container">
+    <section class="row">
+      <div class="col-lg-10 offset-lg-1">
+        {% markdown template_md safe=True %}
+      </div>
+    </section>
+  </section>
+{% endblock content %}

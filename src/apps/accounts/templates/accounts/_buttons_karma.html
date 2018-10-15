@@ -1,0 +1,61 @@
+{% load accounts_tags %}
+
+{% if user.is_authenticated %}
+  {% if user != user_karma %}
+    {% user_has_vote_user_karma user_karma as karma %}
+    {# Desde js controla si ha votado y si es positive o negative para que no pueda repetir. #}
+    <span id="favorite-vote" data-favorite-vote="{{ karma }}"></span>
+
+    <!-- Voto positive -->
+    <a class="btn
+              btn-sm
+              {% if karma == 'positive' %}btn-success text-white{% else %}btn-outline-success{% endif %}
+              cursor-pointer
+              karma-vote-positive"
+       data-message-success="Ha votado un positivo a {{ user_karma.username }}"
+       data-url="{% url 'accounts:api_karma_add_positive' user_karma.pk %}"
+       data-toggle="tooltip"
+       title="Dar voto positivo a {{ user_karma.username }}"
+    >
+      <i class="material-icons">thumb_up</i>
+      <span class="karma-positive-value">{{ user_karma.get_positives }}</span>
+    </a><!-- end Voto positive -->
+
+    <!-- Voto negative -->
+    <a class="btn
+              btn-sm
+              {% if karma == 'negative' %}btn-danger text-white{% else %}btn-outline-danger{% endif %}
+              cursor-pointer
+              karma-vote-negative"
+       data-message-success="Ha votado un negativo a {{ user_karma.username }}"
+       data-url="{% url 'accounts:api_karma_add_negative' user_karma.pk %}"
+       data-toggle="tooltip"
+       title="Dar voto negativo a {{ user_karma.username }}"
+    >
+      <i class="material-icons">thumb_down</i>
+      <span class="karma-negative-value">{{ user_karma.get_negatives }}</span>
+    </a><!-- end Voto negative -->
+  {% else %}
+    {# Mostrar los valores sin opción a votar. #}
+    <a class="btn btn-outline-success btn-sm cursor-pointer">
+      <i class="material-icons">thumb_up</i> {{ user_karma.get_positives }}
+    </a>
+
+    <a class="btn btn-outline-danger btn-sm cursor-pointer">
+      <i class="material-icons">thumb_down</i> {{ user_karma.get_negatives }}
+    </a>
+  {% endif %}
+{% else %}
+  {# Mandar a login y redireccionar a de vuelta. #}
+  <a class="btn btn-outline-success btn-sm cursor-pointer"
+      href="{% url 'authentication:login' %}?next={{ request.get_full_path }}"
+  >
+    <i class="material-icons">thumb_up</i> {{ user_karma.get_positives }}
+  </a>
+
+  <a class="btn btn-outline-danger btn-sm cursor-pointer"
+     href="{% url 'authentication:login' %}?next={{ request.get_full_path }}"
+  >
+    <i class="material-icons">thumb_down</i> {{ user_karma.get_negatives }}
+  </a>
+{% endif %}

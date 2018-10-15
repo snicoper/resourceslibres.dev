@@ -1,0 +1,66 @@
+{% extends "base.html" %}
+
+{% block meta_description %}Búsqueda en recursos{% endblock meta_description %}
+{% block head_title %}- Búsqueda en recursos{% endblock head_title %}
+
+{% block page_title %}
+  <section class="jumbotron">
+    <section class="container">
+      <h1>Búsqueda en recursos</h1>
+    </section>
+  </section>
+{% endblock page_title %}
+
+{% block content %}
+  <section class="container">
+    <section class="row">
+      <div class="col-lg-8 offset-lg-2 mb-4">
+        <form method="get" action="{% url 'search:resources' %}">
+          <div class="input-group">
+            <input id="id_q" class="form-control" type="search" name="q" placeholder="Buscar...">
+            <span class="input-group-btn">
+              <button class="btn btn-primary" type="submit">
+                <i class="material-icons">search</i>
+              </button>
+            </span>
+          </div>
+        </form>
+      </div>
+
+      <div class="col-lg-10 offset-lg-1">
+        {% if query %}
+          {% if page_obj.object_list %}
+            <h2>Resultados con <code>{{ query }}</code></h2>
+          {% else %}
+            <h2>No se han encontrado resultados con <code>{{ query }}</code></h2>
+          {% endif %}
+          <hr class="mt-1 mb-4">
+        {% endif %}
+
+        {% if query %}
+          {% for result in page_obj.object_list %}
+            <div class="media mb-4">
+              <img class="mr-3" src="{{ MEDIA_URL }}{{ result.object.get_image }}" alt="{{ result.title }}" width="60px">
+
+              <div class="media-body">
+                <h5><a href="{{ result.object.get_absolute_url }}">{{ result.title }}</a></h5>
+
+                {% for category in result.object.categories.all %}
+                  <span class="badge badge-default">{{ category.title }}</span>
+                {% endfor %}
+
+                {% for tag in result.object.tags.all %}
+                  <span class="badge badge-default">{{ tag.title }}</span>
+                {% endfor %}
+              </div>
+            </div>
+          {% endfor %}
+        {% endif %}
+      </div>
+    </section>
+
+    {% if query and page_obj.object_list %}
+      {% include "_pagination.html" %}
+    {% endif %}
+  </section>
+{% endblock content %}

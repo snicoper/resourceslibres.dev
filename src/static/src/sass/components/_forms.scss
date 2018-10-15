@@ -1,0 +1,88 @@
+// Los select por defecto, mostrarlos como .custom-select.
+// crispy forms añade la clase .select.
+// Añade un poco mas de padding entre las opciones.
+.select,
+.selectmultiple {
+  @extend .custom-select;
+
+  option {
+    padding: 0.5rem;
+  }
+}
+
+// Color del Label
+.form-control-label {
+  color: darken($brand-primary, 20%);
+}
+
+// Asterisco en el label
+.asteriskField {
+  color: $brand-danger;
+
+  &::before {
+    content: ' ';
+  }
+}
+
+// Errores a nivel de form.
+form {
+  .alert-block {
+    ul {
+      padding: 0.4rem;
+      margin-bottom: 0;
+    }
+  }
+}
+
+.help-block {
+  color: $red;
+  font-size: 0.8rem;
+  margin-bottom: 0;
+  margin-top: 0.3rem;
+}
+
+// El texto de help, eliminar el padding de los ul.
+// Crispy forms no añade clases.
+form {
+  small {
+    ul {
+      padding-left: 0.7rem;
+    }
+  }
+}
+
+/**
+ * Añade un icono derecho y/o izquierdo en el input.
+ *
+ * Ejemplo:
+ * <div class="form-group input-icons icon-left">
+ *   <i class="material-icons icon icon-left">email</i>
+ *   <input class="form-control" type="email" placeholder="Enter email">
+ * </div>
+ */
+.input-icons {
+  position: relative;
+
+  &.icon-left {
+    input {
+      padding-left: 33px;
+    }
+  }
+
+  &.icon-right {
+    input {
+      padding-right: 33px;
+    }
+  }
+
+  .icon {
+    color: #bdbdbd;
+    padding: 7px;
+    pointer-events: none;
+    position: absolute;
+    z-index: 4;
+
+    &.icon-left { left: 0; }
+    &.icon-right { right: 0; }
+  }
+}

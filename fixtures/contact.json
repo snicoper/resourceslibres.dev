@@ -1,0 +1,15 @@
+[
+{
+  "model": "contact.contactmessage",
+  "pk": 2,
+  "fields": {
+    "subject": "Prueba de email",
+    "message": "Hello",
+    "username": "snicoper",
+    "email": "snicoper@resourceslibres.com",
+    "read": true,
+    "is_register": true,
+    "create_at": "2017-03-02T19:07:59.638Z"
+  }
+}
+]

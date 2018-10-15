@@ -1,0 +1,9 @@
+[
+{
+  "model": "read.readuserresources",
+  "pk": 1,
+  "fields": {
+    "resources": []
+  }
+}
+]

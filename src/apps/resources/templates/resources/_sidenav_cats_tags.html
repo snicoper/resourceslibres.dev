@@ -1,0 +1,45 @@
+{% comment %}
+  Muestra una lista de categorías y etiquetas.
+  Es importante pasar el siguiente contexto:
+
+    MEDIA_URL: String con el valor de settings.MEDIA_URL
+    category_list: QuerySet con la lista de categorías
+    tag_list: QuerySet con la lista de tags.
+    category_url: Parte del URLConf para generar luego el enlace.
+    tag_url: Parte del URLConf para generar luego el enlace.
+    owner (User): Si es de un usuario concreto.
+
+  Se usan desde los xxx_tags.py
+  Ejemplo: src/apps/resources/templatetags/resources_tags.py
+{% endcomment %}
+{% if category_list %}
+  <div class="list-group">
+    <div class="list-group-item active">
+      Categorías {% if owner %}{{ owner.username }}{% endif %}
+    </div>
+    {% for category in category_list %}
+      <a class="list-group-item list-group-item-action"
+         href="{% if owner %}{% url category_url owner.slug category.slug %}{% else %}{% url category_url category.slug %}{% endif %}"
+      >
+        <img class="mr-2 img-tag" src="{{ MEDIA_URL }}{{ category.image }}" alt="{{ category.title }}">
+        {{ category.title }}
+      </a>
+    {% endfor %}
+  </div>
+{% endif %}
+
+{% if tag_list %}
+  <div class="list-group mt-4">
+    <div class="list-group-item active">
+      Etiquetas {% if owner %}{{ owner.username }}{% endif %}
+    </div>
+    {% for tag in tag_list %}
+      <a class="list-group-item list-group-item-action"
+         href="{% if owner %}{% url tag_url owner.slug tag.slug %}{% else %}{% url tag_url tag.slug %}{% endif %}"
+      >
+        <img class="mr-2 img-tag" src="{{ MEDIA_URL }}{{ tag.image }}" alt="{{ tag.title }}">
+        {{ tag.title }}
+      </a>
+    {% endfor %}
+  </div>
+{% endif %}

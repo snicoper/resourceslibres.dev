@@ -1,0 +1,108 @@
+{# Muestra información del recurso, solo owner y superuser. #}
+{% extends "base.html" %}
+
+{% block meta_description %}Información del recurso {{ resource.title }}{% endblock meta_description %}
+{% block head_title %}- Información del recurso {{ resource.title }}{% endblock head_title %}
+
+{% block page_title %}
+  <section class="jumbotron">
+    <section class="container">
+      <h1>Información del recurso</h1>
+      <hr>
+      <p class="lead">{{ resource.title }}</p>
+    </section>
+  </section>
+{% endblock page_title %}
+
+{% block content %}
+  <section class="container">
+    <section class="row">
+      <div class="col-lg-3 flex-last flex-lg-first">
+        {% include "accounts/_sidenav.html" %}
+      </div>
+
+      <div class="col-lg-9">
+        <div class="text-center mb-2">
+          <img class="img-fluid z-depth-1" src="{{ MEDIA_URL }}{{ resource.get_image }}" alt="{{ resource.title }}">
+        </div>
+
+        <table class="table table-sm">
+          <tbody>
+            <tr>
+              <td>
+                <i class="material-icons">schedule</i> Fecha publicación
+              </td>
+              <td class="text-value">{{ resource.create_at|date:'SHORT_DATE_FORMAT' }}</td>
+            </tr>
+            <tr>
+              <td>
+                <i class="material-icons">schedule</i> Ultima actualización
+              </td>
+              <td class="text-value">{{ resource.update_at|date:'SHORT_DATE_FORMAT' }}</td>
+            </tr>
+            <tr>
+              <td>
+                <i class="material-icons">remove_red_eye</i> Visto
+              </td>
+              <td class="text-value">{{ resource.views }}</td>
+            </tr>
+            <tr>
+              <td>
+                <i class="material-icons">open_in_new</i> Enlaces visitados
+              </td>
+              <td class="text-value">{{ resource.clicks }}</td>
+            </tr>
+            <tr>
+              <td>
+                <i class="material-icons">favorite</i> Añadido a favoritos
+              </td>
+              <td class="text-value">{{ resource.favorites_resource.count }}</td>
+            </tr>
+            <tr>
+              <td>
+                <i class="material-icons">comment</i> Numero de comentarios
+              </td>
+              <td class="text-value">
+                {% include "_disqus_num_comments.html" with resource=resource %}
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <i class="material-icons">flag</i> Enlace marcado roto
+              </td>
+              <td class="resouces-broken-count text-value">
+                {{ resource.marked_broken }}
+                {% if resource.marked_broken %}
+                  <a class="owner-broken-soluciona"
+                     href="javascript:void(0);"
+                     data-toggle="tooltip"
+                     title="Marcar como solucionado"
+                     data-resource-url="{% url 'resources:api_clear_broken_resource' resource.pk %}"
+                     data-message-success="Se ha marcado como solucionado"
+                  >
+                    <i class="material-icons text-success">done</i>
+                  </a>
+                {% endif %}
+              </td>
+            </tr>
+            <tr>
+              <td><i class="material-icons">star</i> Puntuación</td>
+              <td class="text-value">
+                <span class="text-right">
+                  {% include "resources/_rating_stars.html" with resource=resource readonly='1' %}
+                </span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <a class="btn btn-primary" href="{% url 'resources:details' resource.slug %}">
+          Ir al recurso
+        </a>
+        <a class="btn btn-info" href="{% url 'resources:private_user_list' user.slug %}">
+          Volver
+        </a>
+      </div>
+    </section>
+  </section>
+{% endblock content %}

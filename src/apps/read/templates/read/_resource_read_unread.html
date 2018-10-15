@@ -1,0 +1,38 @@
+{% load read_tags %}
+
+{% if user.is_authenticated %}
+  {% user_has_read_resource resource as has_read %}
+
+  <span class="resource-read-unread">
+    <i class="material-icons
+              cursor-pointer
+              resource-user-read
+              mark-has-read
+              text-success
+              {% if not has_read %}hidden{% endif %}"
+       data-user-has-read="true"
+       data-url="{% url 'read:api_user_resource_unread' resource.pk %}"
+       data-message-success="El recurso se ha marcado como no leído"
+       data-toggle="tooltip"
+       title="Marcar como no leído">visibility</i>
+
+    <i class="material-icons
+              cursor-pointer
+              resource-user-read
+              mark-has-unread
+              text-muted
+              {% if has_read %}hidden{% endif %}"
+       data-user-has-read="false"
+       data-url="{% url 'read:api_user_resource_read' resource.pk %}"
+       data-message-success="El recurso se ha marcado como leído"
+       data-toggle="tooltip"
+       title="Marcar como leído">visibility</i>
+  </span>
+{% else %}
+  {# Si el usuario es anónimo, mostrarlo para que sepa que existe esta función. #}
+  <a href="{% url 'authentication:login' %}?next={{ request.get_full_path }}">
+    <i class="material-icons text-muted"
+       data-toggle="tooltip"
+       title="Marcar como leído">visibility</i>
+  </a>
+{% endif %}

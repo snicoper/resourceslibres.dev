@@ -1,0 +1,218 @@
+{% extends "base.html" %}
+{% load resources_tags %}
+{% load utils_tags %}
+
+{% block meta_description %}Detalles {{ resource.title }}{% endblock meta_description %}
+{% block head_title %}- Detalles {{ resource.title }}{% endblock head_title %}
+{% block og_properties %}
+  <meta property="og:title" content="{{ resource.title }}">
+  <meta property="og:url" content="{{ request.build_absolute_uri }}">
+  <meta property="og:image" content="{{ PROTOCOL }}{{ request.get_host }}{{ MEDIA_URL }}{{ resource.get_image }}">
+{% endblock og_properties %}
+
+{% block content %}
+  <section class="container resource-details">
+    <section class="row">
+      <!-- SideNav -->
+      <div class="col-lg-4">
+        <section class="row">
+          <!-- Información del recurso -->
+          <div class="col-lg-12">
+            <div class="info-row d-flex justify-content-center">
+              <img class="z-depth-1 img-fluid" src="{{ MEDIA_URL }}{{ resource.get_image }}" alt="{{ resource.title }}">
+            </div>
+
+            <div class="info-row d-flex justify-content-left">
+              <span>Etiquetas</span>
+              <span class="ml-auto">
+                {% for category in resource.categories.all %}
+                  <a href="{% url 'resources:list_by_category' category.slug %}" data-toggle="tooltip" title="{{ category.title }}">
+                    <img class="img-tag" src="{{ MEDIA_URL }}{{ category.image }}" alt="{{ category.title }}">
+                  </a>
+                {% endfor %}
+              </span>
+            </div>
+
+            <div class="info-row d-flex justify-content-left">
+              <span>Categorías</span>
+              <span class="ml-auto">
+                {% for tag in resource.tags.all %}
+                  <a href="{% url 'resources:list_by_tag' tag.slug %}" data-toggle="tooltip" title="{{ tag.title }}">
+                    <img class="img-tag" src="{{ MEDIA_URL }}{{ tag.image }}" alt="{{ tag.title }}">
+                  </a>
+                {% endfor %}
+              </span>
+            </div>
+
+            <div class="info-row d-flex justify-content-left">
+              <span>Idiomas</span>
+              <span class="ml-auto">
+                {% for lang in resource.languages.all %}
+                  <img class="img-tag" src="{{ MEDIA_URL }}{{ lang.flag }}" alt="{{ lang.title }}" data-toggle="tooltip" title="{{ lang.title }}">
+                {% endfor %}
+              </span>
+            </div>
+
+            <div class="info-row d-flex justify-content-left">
+              <span>Formato</span>
+              <span class="ml-auto">
+                <img class="img-tag"
+                     data-toggle="tooltip"
+                     src="{{ MEDIA_URL }}{{ resource.resource_format.image }}"
+                     alt="{{ resource.resource_format.title }}"
+                     title="{{ resource.resource_format.title }}"
+                >
+              </span>
+            </div>
+
+            <div class="info-row d-flex justify-content-left">
+              <span>Favorito</span>
+              <span class="ml-auto">
+                {% include "favorites/_heart_favorite.html" with resource=resource %}
+              </span>
+            </div>
+
+            <div class="info-row d-flex justify-content-left">
+              <span>Leído</span>
+              <span class="ml-auto">
+                {% include "read/_resource_read_unread.html" with resource=resource %}
+              </span>
+            </div>
+
+            <div class="info-row d-flex justify-content-right">
+              <span class="ml-auto">{% include "resources/_rating_stars.html" with resource=resource %}</span>
+            </div>
+          </div><!-- end Información del recurso -->
+
+          <!-- Share icons -->
+          <div class="col-lg-12 text-center my-4">
+            {% include "resources/_share_social_icons.html" %}
+          </div><!-- end Share icons -->
+
+          <!-- Botón enlace del recurso -->
+          <div class="col-lg-12 mt-3">
+            <a class="btn btn-primary btn-block"
+               href="{% url 'resources:link' resource.slug %}"
+               target="_blank"
+               data-toggle="tooltip"
+               title="{{ resource.link }}"
+            >
+              Sitio Web <i class="material-icons">open_in_new</i>
+            </a>
+            {% if resource.require_register %}
+              <small class="center-align text-danger mt-1">
+                Este recurso require de un registro
+              </small>
+            {% endif %}
+          </div><!-- end Botón enlace del recurso -->
+
+          <!-- Información del usuario -->
+          <div class="col-lg-12 mt-3">
+            <div class="info-row d-flex justify-content-center">
+              <img class="img-fluid z-depth-1"
+                   src="{{ resource.owner.get_avatar }}"
+                   alt="Avatar {{ resource.owner.username }}"
+              >
+            </div>
+
+            <div class="info-row d-flex justify-content-left">
+              <span>
+                Por <a class="btn btn-outline-success btn-sm" href="{% url 'accounts:profile_public' resource.owner.slug %}">
+                  {{ resource.owner.username }}
+                </a>
+              </span>
+              <span class="ml-auto">
+                {% include "accounts/_buttons_karma.html" with user_karma=resource.owner %}
+              </span>
+            </div>
+
+            <div class="info-row d-flex justify-content-left">
+              <span>
+                Creado
+              </span>
+              <small class="ml-auto">
+                {{ resource.create_at|date:'SHORT_DATE_FORMAT' }}
+              </small>
+            </div>
+
+            <div class="info-row d-flex justify-content-left">
+              <span>
+                Actualizado
+              </span>
+              <small class="ml-auto">
+                {{ resource.create_at|date:'SHORT_DATE_FORMAT' }}
+              </small>
+            </div>
+          </div><!-- end Información del usuario -->
+
+          <!-- Repostar abusos -->
+          <div class="col-lg-12 mt-3">
+            <div class="info-row d-flex justify-content-left">
+              <small>Informar enlace roto</small>
+              <span class="ml-auto">
+                <a id="resource-broken-link"
+                   href="#!"
+                   data-url="{% url 'resources:api_broken_resource' resource.id %}"
+                   data-message-success="Se ha notificado, gracias por informar"
+                >
+                  <i class="material-icons text-danger">flag</i>
+                </a>
+              </span>
+            </div>
+
+            <div class="info-row d-flex justify-content-left">
+              <small>Informar spam</small>
+              <span class="ml-auto">
+                <a id="resource-spam-link"
+                   href="#!"
+                   data-url="{% url 'resources:api_spam_resource' resource.id %}"
+                   data-message-success="Se ha notificado, gracias por informar"
+                >
+                  <i class="material-icons text-danger">report</i>
+                </a>
+              </span>
+            </div>
+          </div><!-- end Repostar abusos -->
+
+          <div class="col-lg-12 mt-3">
+            {% include "adsense/_adsense_sidenav.html" %}
+          </div>
+        </section>
+      </div><!-- end SideNav -->
+
+      <!-- Contenido -->
+      <div class="col-lg-8">
+        <section class="row">
+          <div class="col-lg-12">
+            <h1 class="title">{{ resource.title }}</h1>
+            <hr>
+            {% markdown resource.description safe=False %}
+            {% if resource.owner == user %}
+              <!-- Editar recurso -->
+              <div class="text-right bg-faded p-2">
+                <a data-toggle="tooltip"
+                   title="Editar recurso"
+                   href="{% url 'resources:update' slug=resource.slug %}"
+                   target="_blank"
+                >
+                  <i class="material-icons">open_in_new</i>
+                </a>
+              </div><!-- end Editar recurso -->
+            {% endif %}
+            <hr>
+          </div>
+
+          <!-- addsense -->
+          <div class="col-lg-12">
+            {% include "adsense/_adsense_footer.html" %}
+          </div><!-- end addsense -->
+
+          <!-- disqus -->
+          <div class="col-lg-12 mt-4">
+            {% include "_disqus_comments.html" with resource=resource %}
+          </div><!-- end disqus -->
+        </section>
+      </div><!-- end Contenido -->
+    </section>
+  </section>
+{% endblock content %}

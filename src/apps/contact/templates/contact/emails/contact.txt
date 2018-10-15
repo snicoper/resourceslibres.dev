@@ -1,0 +1,15 @@
+Un usuario {{ register_text }} ha mandado un email de contacto.
+
+Usuario: {{ username }}
+Email: {{ user_email }}
+Asunto: {{ subject }}
+
+------------------------------------------------
+
+{{ message }}
+
+------------------------------------------------
+
+Para ver el mensaje desde la Web visita el siguiente enlace.
+
+{{ link_message }}

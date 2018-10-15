@@ -1,0 +1,7 @@
+Hola {{ user_name }},
+
+Te informamos que tu recurso {{ resource_title }} ha sido creado en {{ site_name }} y esta pendiente de publicación.
+
+En cuanto se apruebe el recurso, seras notificado con un email.
+
+Gracias, el equipo de {{ site_name }}

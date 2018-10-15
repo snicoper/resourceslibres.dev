@@ -1,0 +1,84 @@
+{% extends "base.html" %}
+
+{% block meta_description %}Lista de feeds{% endblock meta_description %}
+{% block head_title %}- Lista de feeds{% endblock head_title %}
+
+{% block page_title %}
+  <section class="jumbotron">
+    <section class="container">
+      <h1>Lista de feeds</h1>
+    </section>
+  </section>
+{% endblock page_title %}
+
+{% block content %}
+  <section class="container">
+    <section class="row">
+      <div class="col-md-10 col-lg-8 offset-md-1 offset-lg-2">
+        <!-- feed principal -->
+        <table class="table">
+          <thead class="thead-default">
+            <tr>
+              <th colspan="2">Feed principal</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <i class="material-icons text-warning">rss_feed</i>
+                Feed principal <strong>(todos)</strong>
+              </td>
+              <td class="text-value">
+                <a href="{% url 'feeds:feed' %}"><i class="material-icons">rss_feed</i></a>
+              </td>
+            </tr>
+          </tbody>
+        </table><!-- end feed principal -->
+
+        <!-- Categorías -->
+        <table class="table">
+          <thead class="thead-default">
+            <tr>
+              <th colspan="2">Feeds categorías</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for category in categories_list %}
+              <tr>
+                <td>
+                  <img src="{{ MEDIA_URL }}{{ category.image }}" alt="{{ category.title }}" width="20">
+                  {{ category.title }}
+                </td>
+                <td class="text-value">
+                  <a href="{% url 'feeds:feed_by_category' category.slug %}"><i class="material-icons">rss_feed</i></a>
+                </td>
+              </tr>
+            {% endfor %}
+          </tbody>
+        </table><!-- end Categorías -->
+
+        <!-- Etiquetas -->
+        <table class="table">
+          <thead class="thead-default">
+            <tr>
+              <th colspan="2">Feeds etiquetas</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for tag in tags_list %}
+              <tr>
+                <td>
+                  <img src="{{ MEDIA_URL }}{{ tag.image }}" alt="{{ tag.title }}" width="20">
+                  {{ tag.title }}
+                </td>
+                <td class="text-value">
+                  <a href="{% url 'feeds:feed_by_tag' tag.slug %}"><i class="material-icons">rss_feed</i></a>
+                </td>
+              </tr>
+            {% endfor %}
+          </tbody>
+        </table><!-- end Etiquetas -->
+      </div>
+    </section>
+  </section>
+{% endblock content %}

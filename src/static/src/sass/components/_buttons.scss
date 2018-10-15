@@ -1,0 +1,108 @@
+.btn {
+  @include media-breakpoint-down(xs) {
+    &.btn-xs-block {
+      display: block;
+      margin-bottom: 0.5rem;
+      width: 100%;
+    }
+  }
+
+  @include media-breakpoint-down(sm) {
+    &.btn-sm-block {
+      display: block;
+      margin-bottom: 0.5rem;
+      width: 100%;
+    }
+  }
+
+  // Un boton como simple texto.
+  &.btn-flat {
+    background: none !important;
+    border: none;
+    padding: 0;
+    color: $body-color !important;
+  }
+
+  &.btn-xs {
+    @include button-size(
+      $btn-padding-y-sm - 0.07rem,
+      $btn-padding-x-sm - 0.05rem,
+      $font-size-sm - 0.2rem,
+      $btn-border-radius-sm
+    );
+  }
+}
+
+// Botones sociales (share)
+.btn-social {
+  display: inline-block;
+
+  a {
+    color: #fff !important;
+    cursor: pointer;
+    display: block;
+    font-size: 0.9rem;
+    padding: 0.2rem 0.8rem;
+    border-radius: 1px;
+
+    &.facebook {
+      background-color: $facebook-color;
+      border: 1px solid $facebook-color;
+      padding: 0.2rem 1.1rem;
+    }
+
+    &.twitter {
+      background-color: $twitter-color;
+      border: 1px solid $twitter-color;
+    }
+
+    &.gplus {
+      background-color: $gplus-color;
+      border: 1px solid $gplus-color;
+      padding: 0.2rem 0.5rem;
+    }
+
+    &.linkedin {
+      background-color: $linkedin-color;
+      border: 1px solid $linkedin-color;
+    }
+
+    &.pinterest {
+      background-color: $pinterest-color;
+      border: 1px solid $pinterest-color;
+    }
+
+    &.envelope {
+      background-color: $brand-secondary;
+      border: 1px solid $brand-secondary;
+    }
+
+    &:hover {
+      background-color: transparent;
+
+      &.facebook {
+        color: $facebook-color !important;
+      }
+
+      &.twitter {
+        color: $twitter-color !important;
+      }
+
+      &.gplus {
+        color: $gplus-color !important;
+      }
+
+      &.pinterest {
+        color: $pinterest-color !important;
+      }
+
+      &.linkedin {
+        color: $linkedin-color !important;
+      }
+
+      &.envelope {
+        color: darken($brand-secondary, 15%) !important;
+      }
+    }
+  }
+}

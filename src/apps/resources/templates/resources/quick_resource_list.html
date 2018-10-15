@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+
+{% block meta_description %}Lista recursos rápidos{% endblock meta_description %}
+{% block head_title %}- Lista recursos rápidos{% endblock head_title %}
+
+{% block page_title %}
+  <section class="jumbotron">
+    <section class="container">
+      <h1>Lista recursos rápidos</h1>
+    </section>
+  </section>
+{% endblock page_title %}
+
+{% block content %}
+  <section class="container">
+    <section class="row d-flex">
+      <div class="col-lg-3 flex-last flex-lg-first">
+        {% include "accounts/_sidenav.html" %}
+      </div>
+
+      <div class="col-lg-9">
+        {% if resource_list %}
+          <table class="table">
+            <thead>
+              <tr class="thead-default">
+                <th>Usuario</th>
+                <th>Enlace</th>
+                <th>Creado el</th>
+                <th class="text-value">Acciones</th>
+              </tr>
+            </thead>
+            <tbody>
+              {% for resource in resource_list %}
+                <tr>
+                  <td>
+                    <a href="{% url 'accounts:profile_public' resource.owner.slug %}">
+                      {{ resource.owner.username }}
+                    </a>
+                  </td>
+                  <td><a href="{{ resource.link }}" target="_blank">{{ resource.link }}</a></td>
+                  <td>{{ resource.create_at|date:'SHORT_DATE_FORMAT' }}</td>
+                  <td class="text-value">
+                    <a href="{% url 'resources:quick_approve' resource.pk %}">
+                      <i class="material-icons text-muted">remove_red_eye</i>
+                    </a>
+                    <a class="ml-2" href="{% url 'resources:quick_approve' resource.pk %}">
+                      <i class="material-icons text-muted">delete</i>
+                    </a>
+                  </td>
+                </tr>
+              {% endfor %}
+            </tbody>
+          </table>
+        {% else %}
+          <h5 class="text-center">No hay recursos para mostrar</h5>
+        {% endif %}
+      </div>
+    </section>
+
+    {% include "_pagination.html"  %}
+  </section>
+{% endblock content %}

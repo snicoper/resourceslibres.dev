@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block head_title %}Bad request{% endblock head_title %}
+
+{% block content %}
+  <section class="jumbotron">
+    <section class="container">
+      <h1>Bad request (400)</h1>
+    </section>
+  </section>
+
+  <section class="container">
+    <section class="row">
+      <div class="col-md-10 offset-md-1 text-center">
+        <img src="{% static 'logo_large.png' %}" alt="logo">
+      </div>
+    </section>
+  </section>
+{% endblock content %}

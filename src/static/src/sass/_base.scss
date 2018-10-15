@@ -1,0 +1,48 @@
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  padding-top: 54px;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+button {
+  cursor: pointer;
+}
+
+.hidden {
+  display: none !important;
+  visibility: hidden !important;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+::selection {
+  background: $brand-secondary; /* WebKit/Blink Browsers */
+  color: #fff;
+}
+
+::-moz-selection {
+  background: $brand-secondary; /* Gecko Browsers */
+  color: #fff;
+}
+
+@include media-breakpoint-down(xs) {
+  // Eliminar paddings izquierdo y derecho en xs.
+  .px-xs-none {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}
+
+@include media-breakpoint-down(md) {
+  // En <= md usar todo el ancho de la ventana.
+  .container {
+    width: 98%;
+  }
+}

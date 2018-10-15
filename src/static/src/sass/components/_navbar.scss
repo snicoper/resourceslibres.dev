@@ -1,0 +1,22 @@
+.nb-top {
+  .nb-tablet {
+    a.dropdown-toggle {
+      color: #fff;
+
+      // Elimina el arrow down del dropdown
+      &::after {
+        content: none;
+      }
+    }
+  }
+
+  .nb-desktop {
+    .nav-link {
+      color: #fff;
+
+      &:hover {
+        background-color: lighten($brand-primary, 3%);
+      }
+    }
+  }
+}

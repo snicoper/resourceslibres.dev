@@ -1,0 +1,50 @@
+# File types #
+##############
+*.pyc
+*.swn
+*.swo
+*.swp
+*.db
+*.log
+*.sqlite3
+
+# Directories #
+###############
+__pycache__/
+_build/
+.tox
+bower_components/
+htmlcov
+node_modules/
+src/staticfiles/
+whoosh_index/
+
+# logs
+logs/*
+!logs/.keep
+
+# media, solo matener los directorios
+src/media/prod/*
+!src/media/prod/.keep
+src/media/local/*
+!src/media/local/.keep
+src/media/test/*
+!src/media/test/.keep
+
+# Editors and IDEs #
+####################
+.idea/
+
+# Specific files #
+##################
+.coverage
+.vscode/tags
+
+# OS generated files #
+######################
+*~
+.directory
+.DS_Store?
+Icon?
+thumbs.db
+Thumbs.db

@@ -1,0 +1,11 @@
+Hola, un usuario con email {{ from_email }} ha considerado que "{{ resource_title }}" te puede interesar!
+{% if message %}
+{{ from_email }} ha añadido el siguiente mensaje:
+
+{{ message }}
+{% endif %}
+Para ver el recurso, visita en el siguiente enlace:
+
+{{ resource_link }}
+
+Gracias, el equipo de {{ site_name }}

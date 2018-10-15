@@ -1,0 +1,45 @@
+// Tags ancho maximo.
+.img-tag {
+  width: 20px;
+}
+
+/**
+ * Lista de recursos.
+ */
+.resource-list {
+  .media {
+    .img-resource {
+      max-width: 120px;
+    }
+
+    .media-body {
+      .media-title {
+        text-decoration: none;
+        font-size: 1.2rem;
+      }
+    }
+  }
+}
+
+/**
+ * Detalles del un recurso.
+ */
+
+.resource-details {
+  h1.title {
+    color: $brand-primary;
+    font-size: 1.6rem;
+  }
+
+  .info-row {
+    &:not(:last-child) {
+      border-bottom: 1px solid $gray-lighter;
+    }
+
+    padding: 0.5rem 0.1rem;
+
+    a {
+      text-decoration: none;
+    }
+  }
+}

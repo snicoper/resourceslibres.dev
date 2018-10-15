@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block meta_description %}Actualizar recurso {{ resource.title }}{% endblock meta_description %}
+{% block head_title %}- Actualizar recurso {{ resource.title }}{% endblock head_title %}
+
+{% block page_title %}
+  <section class="jumbotron">
+    <section class="container">
+      <h1>Actualizar recurso</h1>
+      <hr>
+      <p class="lead">{{ resource.title }}</p>
+    </section>
+  </section>
+{% endblock page_title %}
+
+{% block content %}
+  <section class="container">
+    <section class="row">
+      <div class="col-lg-10 offset-lg-1">
+        {% include "resources/_form.html" %}
+      </div>
+    </section>
+  </section>
+{% endblock content %}
+
+{% block scripts %}
+  <script>
+    $('#id_tags').select2();
+    $('#id_categories').select2();
+    $('#id_languages').select2();
+  </script>
+{% endblock scripts %}

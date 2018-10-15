@@ -1,0 +1,109 @@
+Tareas sin version:
+
+  ☐ @high unittest
+  ☐ Añadir licencia y que sea opcional.
+  ☐ Crear opciones de usuario?.
+  ☐ El usuario poder configurar las notificaciones por email?.
+
+####################################################################################################
+
+Tareas V1.2.0:
+
+
+####################################################################################################
+
+Tareas V1.1.0:
+
+  ✔ Revisar share icons en ``src/apps/resources/templates/resources/details.html`` @done(2017-04-28 02:43) @project(Tareas V1.1.0)
+  ✔ Añadir un campo "Requiere registro". @done(2017-03-07 20:31) @project(Tareas V1.1.0)
+  ✔ Añadir mas formatos y que sea opcional. @done(2017-03-07 20:31) @project(Tareas V1.1.0) (Es obligatorio)
+  ✔ Mejorar detalles de los recursos. @done(2017-03-07 20:31) @project(Tareas V1.1.0)
+  ✔ Ping de google cambiar del método save por signals. @done(2017-03-05 17:13) @project(Tareas V1.1.0)
+  ✔ En los menus sidenavs, si es superuser los menus aprobar, links rotos, spam, poner el numero. @done(2017-03-08 08:55) @project(Tareas V1.1.0)
+  ✔ Crear condiciones para ser aprobado un recurso. @done(2017-03-05 09:09) @project(Tareas V1.1.0)
+  ✔ Añadir metas (tags) en base.html @done(2017-03-05 09:12) @project(Tareas V1.1.0)
+  ✔ Muchos metodos save() en resources se repite con la image, mirar de crear un mixin. @done(2017-03-03 18:45) @project(Tareas V1.1.0)
+  ✔ Añadir iconos categorias en lista de feeds. @done(2017-03-03 18:21) @project(Tareas V1.1.0)
+  ✔ Añadir si el recurso es de lectura o video, nada complicado, con esas dos, yo creo que vale. @done(2017-03-03 18:21) @project(Tareas V1.1.0)
+  ✔ Eliminar numero de paginas en pagination, dejar solo las flechas. @done (3/2/2017, 5:42:47 PM)
+  ✔ Eliminar numero de recursos en los sidenavs. @done (3/2/2017, 5:42:55 PM) (El numero de links rotos se ha dejado)
+  ✘ Crear un sistema para reclamar (claim) un Resource. @cancelled(2017-04-28 02:43) @project(Tareas V1.1.0)
+  ✘ Crear un sistema de aviso para duplicación de Resources. @cancelled(2017-04-28 02:43) @project(Tareas V1.1.0)
+  ✔ Editar archivos HTML de errores 4xx y 5xx. @done (3/8/2017, 10:36:43 PM)
+
+Fixes:
+
+  ✔ Averiguar por que pone un numero de comentarios cuando luego no sale ningún comentario. @done(2017-04-28 02:43) @project(Fixes)
+  ✔ Mostrar comentarios en cada recursos, en la lista de Mis recursos. @done(2017-03-04 17:53) @project(Fixes)
+
+apps:
+
+  ✘ claim @cancelled(2017-04-28 02:44) @project(apps)
+  ✘ stats (admin) @cancelled(2017-04-28 02:44) @project(apps)
+
+####################################################################################################
+
+  Tareas V1.0.1:
+
+  Revisar:
+
+    ✔ Google console. @done (3/2/2017, 5:29:23 PM)
+    ✔ Probar HAYSTACK_SIGNAL_PROCESSOR = 'haystack.signals.RealtimeSignalProcessor' http://django-haystack.readthedocs.io/en/latest/signal_processors.html @done (3/2/2017, 5:28:35 PM)
+    ✔ Cuando tenga dominio, ver TODOS para descomentar analytics, etc. @done (3/2/2017, 5:28:54 PM)
+    ✔ Ver como quedan los bloques de Adsense. @done (3/2/2017, 5:29:03 PM)
+    ✔ Cambiar el código de Analytics en src/templates/_google_analytics.html @done (3/2/2017, 5:29:08 PM)
+    ✔ Falta comprobar que Disqus funciona correctamente. @done (3/2/2017, 5:29:14 PM)
+
+####################################################################################################
+
+Tareas V1.0.0:
+
+  ToDo:
+
+    ✔ Revision de todos los texto y frases "strings". @done(2017-03-01 12:13) @project(Tareas V1.0.0 / ToDo)
+    ✔ Google Analytics. @done(2017-02-25 15:19) @project(Tareas V1.1.0)
+    ✔ Adsense. @done(2017-02-25 15:20) @project(Tareas V1.1.0
+    ✔ Implementar Disqus. @done(2017-02-24 20:29) @project(Tareas V1.0.1)
+    ✔ Implementar google_ping en los sitemaps. @done(2017-02-25 15:54) @project(Tareas V1.1.0)
+    ✔ Implementar sitemaps. @done(2017-02-25 15:54) @project(Tareas V1.1.0)
+    ✔ Footer de la pagina. @done(2017-02-24 21:09) @project(Tareas V1.0.0 / ToDo)
+    ✔ Ver como solucionar cookies consent en dos idiomas. @done(2017-02-25 16:47) @project(Tareas V1.0.0 / ToDo)
+    ✔ Crear formulario alternativo simple para los recursos que no tengan opciones. @done(2017-02-23 19:27) @project(Tareas V1.0.0 / ToDo)
+    ✔ Crear sistema de ordenación en las listas de Resources. @done(2017-02-22 19:00) @project(Tareas V1.0.0 / ToDo) (Parcial, ordena por categorías y etiquetas)
+    ✔ JavaScript para solucionar links marcados como Spam, igual que los links rotos. @done(2017-02-22 12:23) @project(Tareas V1.0.0 / ToDo)
+    ✘ Poder mostrar los favorites de un usuario a otro. @cancelled(2017-02-22 18:17) @project(Tareas V1.0.0 / ToDo) de momento, cancelado.
+    ✔ Admin poder aprobar un Resource. @done(2017-02-18 12:45) @project(Tareas V1.0.0 / ToDo)
+    ✔ Lista global de spams para el admin. @done(2017-02-21 07:37) @project(Tareas V1.0.0 / ToDo)
+    ✔ Lista global de links rotos para el admin. @done(2017-02-21 07:37) @project(Tareas V1.0.0 / ToDo)
+    ✔ Lista de links rotos para el owner de los Resources. @done(2017-02-21 07:37) @project(Tareas V1.0.0 / ToDo)
+    ✔ Poder marcar como Resource leído/visto. @done(2017-02-21 17:27) @project(Tareas V1.0.0 / ToDo) (creada app read)
+    ✔ Favorites y User Resources, poner sidenav las tags con resources del usuario. @done(2017-02-22 18:17) @project(Tareas V1.0.0 / ToDo)
+    ✔ Marcar recurso como Favoritos. @done (2/13/2017, 11:34:27 AM)
+    ✔ Marcar los links de los recursos como rotos. @done (2/13/2017, 11:34:35 AM)
+    ✔ Marcar los recursos como spam. @done (2/13/2017, 11:34:40 AM)
+    ✔ Botón Donate PayPal. @done(2017-02-24 21:09) @project(Tareas V1.0.0 / ToDo)
+    ✔ Implementar feeds en Resources, tanto en general como en categorias y tags. @done(2017-02-24 19:23) @project(Tareas V1.0.0 / ToDo)
+    ✔ Internacionalizar el sitio (Revisar todo los archivos). @done(2017-02-11 16:17) @project(Tareas V1.0.0 / Hacer)
+    ✘ Plantearse si eliminar Category y solo dejar tags, enfocarse solo a resources relacionados con la programación. @cancelled (2/14/2017, 7:58:49 AM) (Dejar las categorias.)
+    ✔ Poder valorar a los usuarios que han añadido resources, por si meten fakes/spam poderlos vigilar. @done(2017-02-24 12:59) @project(Tareas V1.0.0 / ToDo)
+    ✔ Añadir numero de visitas del resource. @done(2017-01-19 13:49)
+    ✔ Añadir numero de visitas del link del resource. @done(2017-01-19 14:02)
+
+  Fixes:
+
+    ✔ Revisar los archivos .txt de emails, los saltos de linea. @done(2017-02-25 16:28) @project(Tareas V1.0.0 / Fixes)
+    ✔ Listas de recursos en favorites y accounts, pensar donde ponerlos, si en las apps o en resources. @done(2017-02-16 19:03) @project(Tareas V1.0.0 / Fixes)
+
+  Apps:
+
+    ✔ accounts @done(2017-02-22 18:58) @project(Tareas V1.0.0 / Apps)
+    ✔ authentication @done(2017-01-17 16:19)
+    ✔ contact @done(2017-02-14 12:16) @project(Tareas V1.0.0 / Apps)
+    ✔ favorites @done(2017-02-22 18:58) @project(Tareas V1.0.0 / Apps)
+    ✔ feeds @done(2017-02-24 19:23) @project(Tareas V1.0.0 / Apps)
+    ✘ home @cancelled(2017-02-07 09:55) @project(Tareas V1.0.0 / Apps) resources como Home
+    ✔ pages @done(2017-02-14 18:42) @project(Tareas V1.0.0 / Apps)
+    ✔ read @done(2017-02-21 17:27) @project(Tareas V1.0.0 / Apps)
+    ✔ recommend @done(2017-02-13 13:04) @project(Tareas V1.0.0 / Apps)
+    ✔ resources @done(2017-02-24 17:53) @project(Tareas V1.0.0 / Apps)
+    ✔ search @done(2017-02-24 17:49) @project(Tareas V1.0.0 / Apps)
